@@ -1,0 +1,79 @@
+{
+  "status": "count-only; no risk equation, category or change computed",
+  "flow": [
+    [
+      "examse records",
+      2596
+    ],
+    [
+      "MEC second exam (PERTECH not blank)",
+      1859
+    ],
+    [
+      "linked MEC first exam",
+      1859
+    ],
+    [
+      "age 30-79 at first exam",
+      1106
+    ],
+    [
+      "adult questionnaire present",
+      1106
+    ],
+    [
+      "no self-reported MI, stroke or CHF",
+      990
+    ],
+    [
+      "not pregnant at either visit",
+      988
+    ],
+    [
+      "history determinable (all three answered No)",
+      979
+    ],
+    [
+      "complete base-model inputs at both visits",
+      759
+    ],
+    [
+      "also UACR at both visits",
+      725
+    ]
+  ],
+  "missing_among_history_determinable": {
+    "TC v1": 39,
+    "TC v2": 93,
+    "HDL v1": 45,
+    "HDL v2": 100,
+    "creatinine v1": 52,
+    "creatinine v2": 99,
+    "SBP v1 (readings 2 and 3)": 41,
+    "SBP v2 (readings 2 and 3)": 104,
+    "statin known": 1
+  },
+  "sensitivity_counts": {
+    "SBP any available reading at both visits (among history-determinable)": 839,
+    "UACR both visits keeping urine creatinine below-detection values": 732
+  },
+  "interval_days_complete_pairs": {
+    "n_known": 759,
+    "min": 3.0,
+    "median": 16.0,
+    "max": 48.0
+  },
+  "statin": {
+    "users_any_age": 189,
+    "unknown_any_age": 91
+  },
+  "gate": {
+    "base_pairs_threshold": 600,
+    "uacr_pairs_threshold": 400,
+    "base_pairs": 759,
+    "uacr_pairs": 725,
+    "decision": "PROCEED"
+  },
+  "completed_utc": "2026-10-08T23:56:07.139965+00:00",
+  "variable_map_sha256": "712e64a33490f2510c0514c2e797c5eef7c946f097dd00c8a9d333774bd06c81"
+}

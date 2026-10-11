@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-09",
+  "trigger": "P5 external consistency: HbA1c derived CVI with the NHANES III Laboratory Procedures Manual CVa (1.57%) = 3.41%, ratio 2.27 to Lacher 2005 CVw 1.5% (outside 0.5-2).",
+  "audit": [
+    "With Lacher's own method CVi (3.1%) as CVa, derived CVI = 2.11%, ratio 1.41 (inside 0.5-2). The trigger arises from the choice of CVa bracket, not from the data.",
+    "Linkage: HbA1c between-visit Pearson r = 0.967 (threshold 0.85); HbA1c values parsed with embedded decimal (GHP '02.8'-'16.2', GHR '03.4'-'0014') and match the codebook ranges; fill counts match (P2).",
+    "Lacher 2005 itself reports CVw below method CVi for HbA1c (1.5% vs 3.1%), so the analytical bracket dominates any HbA1c CVI comparison."
+  ],
+  "conclusion": "No parsing or unit error. The trigger is retained and reported; the HbA1c CVa uncertainty (1.57-3.1%) is carried into the S12 analytical-imprecision brackets as already specified.",
+  "other_external_checks": {
+    "calibrated_creatinine_total_CV_after_3SD_exclusion": 7.596,
+    "selvin_2013_creatinine": 7.6,
+    "tc_CVI_range": [7.47, 7.71],
+    "lacher_tc": 8.2
+  }
+}

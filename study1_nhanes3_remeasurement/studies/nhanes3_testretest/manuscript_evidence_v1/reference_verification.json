@@ -1,0 +1,411 @@
+{
+  "accessed": "2026-10-09",
+  "method_note": "Bibliographic data from PubMed (E-utilities via the bio-research PubMed MCP: metadata, abstracts, PMC full text where available). Non-PubMed items checked with Crossref/OpenAlex metadata, publisher or agency web pages (WebFetch) and web search. 'verified' means the bibliographic record was matched to an authoritative index; content claims are flagged separately in 'values' and 'notes'. Nothing was saved deliberately; note that WebFetch auto-cached two PDFs (Statistics Canada Korn & Graubard PDF; NCHS Series 2 No. 175 PDF) in the Claude tool-results cache, neither was readable as text and neither was used as evidence.",
+  "references": [
+    {
+      "key": "khan2024",
+      "citation": "Khan SS, Matsushita K, Sang Y, et al. Development and validation of the American Heart Association's PREVENT equations. Circulation 2024;149(6):430-449. https://doi.org/10.1161/CIRCULATIONAHA.123.067626",
+      "pmid": "37947085",
+      "pmcid": "PMC10910659",
+      "doi": "10.1161/CIRCULATIONAHA.123.067626",
+      "status": "verified",
+      "evidence": "PubMed citation match (Circulation, vol 149, first page 430, Khan) and PubMed metadata: vol 149, issue 6, pages 430-449.",
+      "values": {"derivation_n": 3281919, "external_validation_n": 3330085, "age_range": "30-79 years"},
+      "notes": "Epub 2023-11-10; issue year 2024. Title in PubMed: 'Development and Validation of the American Heart Association's PREVENT Equations.'"
+    },
+    {
+      "key": "khan2023_ckm",
+      "citation": "Khan SS, Coresh J, Pencina MJ, et al. Novel prediction equations for absolute risk assessment of total cardiovascular disease incorporating cardiovascular-kidney-metabolic health: a scientific statement from the American Heart Association. Circulation 2023;148(24):1982-2004. https://doi.org/10.1161/CIR.0000000000001191",
+      "pmid": "37947094",
+      "pmcid": "",
+      "doi": "10.1161/CIR.0000000000001191",
+      "status": "verified",
+      "evidence": "PubMed search (Khan SS[Author], Circulation, cardiovascular-kidney-metabolic) and PubMed metadata: vol 148, issue 24, pages 1982-2004.",
+      "values": {},
+      "notes": "No PMCID returned by PubMed."
+    },
+    {
+      "key": "dyslipidemia2026",
+      "citation": "Blumenthal RS, Morris PB, Gaudino M, et al. 2026 ACC/AHA/AACVPR/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA guideline on the management of dyslipidemia: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines. Circulation 2026;153(17):e1154-e1276. https://doi.org/10.1161/CIR.0000000000001423",
+      "pmid": "41824552",
+      "pmcid": "",
+      "doi": "10.1161/CIR.0000000000001423",
+      "status": "verified",
+      "evidence": "PubMed metadata for PMID 41824552: Circulation vol 153, issue 17, pages e1154-e1276, published 2026-03-13; authors Blumenthal RS, Morris PB, Gaudino M, Johnson HM, ...",
+      "values": {"volume": "153", "issue": "17", "pages": "e1154-e1276"},
+      "notes": "Simultaneously published in J Am Coll Cardiol 2026;87(19):2624-2757, doi 10.1016/j.jacc.2025.11.016, PMID 41824590. It retires and replaces the 2018 cholesterol guideline (per abstract)."
+    },
+    {
+      "key": "htn2025",
+      "citation": "Jones DW, Ferdinand KC, Taler SJ, et al. 2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM guideline for the prevention, detection, evaluation and management of high blood pressure in adults: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines. Circulation 2025;152(11):e114-e218. https://doi.org/10.1161/CIR.0000000000001356",
+      "pmid": "40811497",
+      "pmcid": "",
+      "doi": "10.1161/CIR.0000000000001356",
+      "status": "verified",
+      "evidence": "Bibliographic record: PubMed metadata for the three simultaneous publications (PMIDs 40811497, 40811516, 40815242). Threshold claim: (a) PubMed abstract of the companion AHA/ACC scientific statement (Khan SS et al., Circulation 2025;152(11):e219-e238, PMID 40875802) states the 2025 guideline adopted PREVENT 10-year total CVD risk (ASCVD + heart failure) and 'defined a new risk threshold for initiation of antihypertensive therapy in patients with stage 1 hypertension' of 10-year CVD risk >=7.5%; (b) peer-reviewed review Giacona JM, Vongpatanasin W. Curr Cardiol Rep 2026;28(1) (PMID 42704524, PMC13550040): 'For stage-1 hypertension, increased risk is defined as a 10-year PREVENT cardiovascular disease risk >= 7.5%'; adults with BP 130-139/80-89 should begin medication if clinical CVD or PREVENT risk >=7.5% (list also includes diabetes/CKD per secondary summaries); otherwise medication if BP remains >=130/80 after 3-6 months of lifestyle intervention; (c) Radcliffe Cardiology news (30 Oct 2025): 'estimated 10-year total CVD risk of >=7.5% calculated using the PREVENT equations'.",
+      "values": {"threshold": "PREVENT 10-year total CVD risk >=7.5%", "stage1_definition": "SBP 130-139 or DBP 80-89 mm Hg", "lifestyle_trial_if_below_threshold": "3-6 months, then medication if BP >=130/80"},
+      "notes": "Guideline full text not accessible (ahajournals/jacc returned HTTP 403; not in PMC), so the exact recommendation wording and COR/LOE were NOT read from the guideline itself; threshold confirmed through the companion scientific statement abstract and a peer-reviewed review. Simultaneous publications: Hypertension 2025;82(10):e212-e316, doi 10.1161/HYP.0000000000000249, PMID 40811516; J Am Coll Cardiol 2025;86(18):1567-1678, doi 10.1016/j.jacc.2025.05.007, PMID 40815242. PubMed lists a collective (writing committee) author entry first in the Circulation/Hypertension records. Consider also citing the companion statement: Khan SS, Abdalla M, Bello NA, et al. Use of risk assessment to guide decision-making for blood pressure management in the primary prevention of cardiovascular disease: a scientific statement from the American Heart Association and American College of Cardiology. Circulation 2025;152(11):e219-e238. https://doi.org/10.1161/CIR.0000000000001355 (PMID 40875802)."
+    },
+    {
+      "key": "ye2014",
+      "citation": "Ye S, Wang YC, Shimbo D, et al. Effect of change in systolic blood pressure between clinic visits on estimated 10-year cardiovascular disease risk. J Am Soc Hypertens 2014;8(3):159-165. https://doi.org/10.1016/j.jash.2013.12.006",
+      "pmid": "24462238",
+      "pmcid": "PMC3959282",
+      "doi": "10.1016/j.jash.2013.12.006",
+      "status": "verified",
+      "evidence": "PMC full text (PMC3959282) and PubMed metadata (vol 8, issue 3, pages 159-165; epub 2013-12-19).",
+      "values": {
+        "n_analyzed": 808,
+        "second_exam_subsample_adults": 2174,
+        "eligible_with_3_BP_same_arm_both_visits": 956,
+        "interval_days_median": 17,
+        "interval_days_range": "1-48",
+        "risk_band_numerator_denominator": "12/106 (11.3%) crossed 7.5% among those with visit-1 risk 5% to <10%",
+        "others": "2/702 (0.3%) among those with risk <5% or >=10% (abstract says '>10%'; methods categories are <5, 5-<7.5, 7.5-<10, >=10%)",
+        "equation": "Pooled Cohort Equations",
+        "inputs_remeasured": "SBP only (other inputs held at visit-1 values)",
+        "weights": "unweighted, as recommended for NHANES III second-exam data",
+        "pct_abs_change_ge3": "8%",
+        "pct_abs_change_ge5": "4%"
+      },
+      "notes": "The denominator band is 5% to <10% (not 5% to <7.5%). Exclusions: missing inputs (32) and history of CHD, diabetes or stroke (116). BP = mean of 2nd and 3rd readings per visit. Important for novelty: same data source (NHANES III second exam) and same rescoring idea, but PCE and SBP only."
+    },
+    {
+      "key": "lacher2005",
+      "citation": "Lacher DA, Hughes JP, Carroll MD. Estimate of biological variation of laboratory analytes based on the Third National Health and Nutrition Examination Survey. Clin Chem 2005;51(2):450-452. https://doi.org/10.1373/clinchem.2004.039354",
+      "pmid": "15590751",
+      "pmcid": "",
+      "doi": "10.1373/clinchem.2004.039354",
+      "status": "verified",
+      "evidence": "PubMed citation match and metadata (vol 51, issue 2, pages 450-2); publisher page (academic.oup.com) confirms authors, title, pages.",
+      "values": {},
+      "notes": "Bibliographic confirmation only. PubMed has no abstract and the publisher full text is paywalled, so the article's methods (use of the NHANES III second examination, sample size, analytes) were not checked."
+    },
+    {
+      "key": "selvin2013",
+      "citation": "Selvin E, Juraschek SP, Eckfeldt J, et al. Within-person variability in kidney measures. Am J Kidney Dis 2013;61(5):716-722. https://doi.org/10.1053/j.ajkd.2012.11.048",
+      "pmid": "23337799",
+      "pmcid": "PMC3628297",
+      "doi": "10.1053/j.ajkd.2012.11.048",
+      "status": "verified",
+      "evidence": "PubMed citation match and metadata (vol 61, issue 5, pages 716-22) and abstract.",
+      "values": {"design": "NHANES III adults >=18 y with repeat blood/urine ~18 days apart", "CVw_standardized_creatinine": "7.6%", "CVw_cystatinC": "6.8%", "CVw_ACR": "11.3%", "CVw_urine_albumin_and_creatinine": ">30%", "prevalence_reduction_reduced_eGFR_with_repeat": "~20% lower", "prevalence_reduction_albuminuria_with_repeat": "33% lower"},
+      "notes": "CVw includes biological plus analytical variability."
+    },
+    {
+      "key": "selvin2007",
+      "citation": "Selvin E, Manzi J, Stevens LA, et al. Calibration of serum creatinine in the National Health and Nutrition Examination Surveys (NHANES) 1988-1994, 1999-2004. Am J Kidney Dis 2007;50(6):918-926. https://doi.org/10.1053/j.ajkd.2007.08.020",
+      "pmid": "18037092",
+      "pmcid": "",
+      "doi": "10.1053/j.ajkd.2007.08.020",
+      "status": "verified",
+      "evidence": "Bibliographic: PubMed metadata (vol 50, issue 6, pages 918-26) and abstract. Equation: quoted verbatim in Shafi T, et al. BMC Nephrol 2012;13:42 (PMC3447668, doi 10.1186/1471-2369-13-42), which recalibrated NHANES III creatinine 'as described previously [standard creatinine = (0.960 x serum creatinine) - 0.184]' citing the Selvin calibration work.",
+      "values": {"equation": "standard creatinine = 0.960 x NHANES III creatinine - 0.184 (mg/dL)", "calibration_subsample": "random samples of approximately 200 stored specimens per survey from persons aged >=60 years (abstract)", "reference_assay": "Roche enzymatic assay at Cleveland Clinic Research Laboratory, traceable to gold-standard methods", "original_assay": "Jaffe (kinetic alkaline picrate)"},
+      "notes": "The equation could NOT be read in the primary source (AJKD full text returned HTTP 403; not in PMC); it is confirmed only via a secondary peer-reviewed source (Shafi 2012, coauthored by Selvin and Coresh). A CDC NHANES correction note (seen only as a search snippet; the PDF URL returned 404) refers to 190 stored NHANES III specimens. Age of the subsample: >=60 years. The abstract notes the calibration could not examine drift within survey or freeze-thaw effects."
+    },
+    {
+      "key": "coresh2002",
+      "citation": "Coresh J, Astor BC, McQuillan G, et al. Calibration and random variation of the serum creatinine assay as critical elements of using equations to estimate glomerular filtration rate. Am J Kidney Dis 2002;39(5):920-929. https://doi.org/10.1053/ajkd.2002.32765",
+      "pmid": "11979335",
+      "pmcid": "",
+      "doi": "10.1053/ajkd.2002.32765",
+      "status": "verified",
+      "evidence": "PubMed citation match, metadata (vol 39, issue 5, pages 920-9) and abstract.",
+      "values": {"offset": "serum creatinine on the same samples was 0.23 mg/dL higher in NHANES III than in the MDRD Study laboratory", "samples_reassayed": "212 MDRD + 342 NHANES III frozen samples (Nov 2000)", "repeat_visit_n": 1919, "repeat_interval_days_median": 17, "SD_pct_difference_eGFR_repeat": "15%"},
+      "notes": "The abstract states the 0.23 mg/dL difference; describing it as a '-0.23 mg/dL correction' is an inference (subtract 0.23 to align NHANES III to the MDRD laboratory), not the abstract's wording. Also relevant to novelty/background: creatinine measured at two NHANES III visits a median of 17 days apart in 1,919 participants."
+    },
+    {
+      "key": "inker2021",
+      "citation": "Inker LA, Eneanya ND, Coresh J, et al. New creatinine- and cystatin C-based equations to estimate GFR without race. N Engl J Med 2021;385(19):1737-1749. https://doi.org/10.1056/NEJMoa2102953",
+      "pmid": "34554658",
+      "pmcid": "PMC8822996",
+      "doi": "10.1056/NEJMoa2102953",
+      "status": "verified",
+      "evidence": "PubMed citation match and metadata (vol 385, issue 19, pages 1737-1749).",
+      "values": {},
+      "notes": ""
+    },
+    {
+      "key": "goff2014",
+      "citation": "Goff DC Jr, Lloyd-Jones DM, Bennett G, et al. 2013 ACC/AHA guideline on the assessment of cardiovascular risk: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines. Circulation 2014;129(25 Suppl 2):S49-S73. https://doi.org/10.1161/01.cir.0000437741.48606.98",
+      "pmid": "24222018",
+      "pmcid": "",
+      "doi": "10.1161/01.cir.0000437741.48606.98",
+      "status": "verified",
+      "evidence": "PubMed citation match and metadata (vol 129, issue '25 Suppl 2', pages S49-73).",
+      "values": {},
+      "notes": "Epub November 2013."
+    },
+    {
+      "key": "ogunwale2016",
+      "citation": "Ogunwale AN, Morrison AC, Sun W, et al. The impact of multiple single day blood pressure readings on cardiovascular risk estimation: the Atherosclerosis Risk in Communities study. Eur J Prev Cardiol 2016;23(14):1529-1536. https://doi.org/10.1177/2047487316633549",
+      "pmid": "26869459",
+      "pmcid": "PMC4981557",
+      "doi": "10.1177/2047487316633549",
+      "status": "verified",
+      "evidence": "PubMed metadata (vol 23, issue 14, pages 1529-36) and PMC full text (PMC4981557), Results section 'ASCVD Pooled Cohort Risk Reclassification'.",
+      "values": {
+        "n": 11129,
+        "pct_reclassified_PCE_2nd_vs_3rd_sitting_SBP": "5.8% (2.6% up, 3.2% down)",
+        "pct_reclassified_PCE_mean_sitting_vs_mean_standing_SBP": "11.6% (8.1% up, 3.5% down)",
+        "PCE_categories": "<=5%, >5-7.5%, >7.5% (alternate analysis <=7.5% vs >7.5%)",
+        "readings": "2nd vs 3rd of three manual sitting readings (random-zero sphygmomanometer), ~5 min apart, same day",
+        "other_scores_2nd_vs_3rd_sitting": "ARIC CHD 5.1%, Framingham 3.3%, ARIC HF 1.9%, ARIC stroke 2.1% (abstract says 2.7% for stroke)"
+      },
+      "notes": "ARIC study, Black and White participants; measurements from one ARIC visit (limitations paragraph refers to Visit 2 equipment). Only SBP substituted; all other inputs unchanged. The number of participants actually eligible for the PCE (ages 40-79) is not stated in the extracted text. Minor internal inconsistency in the paper for stroke (2.1% in Results vs 2.7% in abstract)."
+    },
+    {
+      "key": "cole2023",
+      "citation": "Cole J, Sampson M, van Deventer HE, et al. Reducing lipid panel error allowances to improve the accuracy of cardiovascular risk stratification. Clin Chem 2023;69(10):1145-1154. https://doi.org/10.1093/clinchem/hvad109",
+      "pmid": "37624942",
+      "pmcid": "",
+      "doi": "10.1093/clinchem/hvad109",
+      "status": "verified",
+      "evidence": "PubMed metadata/abstract (vol 69, issue 10, pages 1145-1154; authors Cole J, Sampson M, van Deventer HE, Remaley AT) and publisher full-text page (academic.oup.com/clinchem) Results: 'BV alone resulted in misclassification of 6.3% of individuals on average.'",
+      "values": {
+        "pct_misclassified_BV_alone_mean": "6.3%",
+        "worst_case_NCEP_limits_plus_BV": "10.1% (abstract: 'up to 10%')",
+        "scenario_means_with_BV": "imprecision only 7.1%; max positive error 9.5%; max negative error 7.6%",
+        "data": "NHANES 2005-2020, n=8,506 after exclusions",
+        "simulation_replicates": 50,
+        "CVi_used_EFLM": "TC 5.3%, HDL-C 5.8%, TG 20%, LDL-C 8.3%",
+        "classification": "4 risk groups (A-D) of the 2018 US multisociety cholesterol guideline algorithm combining calculated LDL-C and PCE 10-year risk (intermediate = LDL-C 70-190 mg/dL and risk 7.5%-20%)"
+      },
+      "notes": "Simulated (not real remeasurement); only lipid inputs perturbed (no BP, no kidney inputs); outcome is misclassification across guideline management groups, not across a single PCE threshold."
+    },
+    {
+      "key": "ulbricht2018",
+      "citation": "Ulbricht S, Gross S, Brammen E, et al. Effect of blood pressure and total cholesterol measurement on risk prediction using the Systematic COronary Risk Evaluation (SCORE). BMC Cardiovasc Disord 2018;18(1):84. https://doi.org/10.1186/s12872-018-0823-3",
+      "pmid": "29728071",
+      "pmcid": "PMC5935918",
+      "doi": "10.1186/s12872-018-0823-3",
+      "status": "verified",
+      "evidence": "PubMed metadata and PMC full text incl. Table 1 and Table 2.",
+      "values": {
+        "n": 307,
+        "age": "40-65 y, northeast Germany, 2012-2013",
+        "design": "in-office screening program (single seated BP reading, nonfasting TC) followed by examination program in a clinical-trial center (standardized BP: 5-min rest, three readings 3 min apart; nonfasting TC)",
+        "interval_days_mean_sd": "24.1 (24.8)",
+        "SCORE_low_lt1_pct": "42.7 (SP) -> 46.6 (EP first BP) -> 51.1 (EP mean 2nd/3rd BP)",
+        "SCORE_moderate_1to5_pct": "50.2 -> 49.2 -> 46.6",
+        "SCORE_high_ge5_pct": "7.1 -> 4.2 -> 2.3",
+        "TC_change": "5.75 -> 5.54 mmol/L (diff 0.21; ICC 0.91)",
+        "SBP_change": "140.5 -> 134.0 (first EP reading; ICC 0.60) -> 128.6 mm Hg (mean 2nd/3rd; ICC 0.91)"
+      },
+      "notes": "The paper does NOT report an individual-level % reclassified; only marginal category proportions (chi-square tests). The two occasions used different BP protocols, so the change mixes biological variability with protocol differences. Any manuscript sentence giving a '% reclassified' for this study should be revised to the marginal shifts above."
+    },
+    {
+      "key": "eflm",
+      "citation": "European Federation of Clinical Chemistry and Laboratory Medicine (EFLM). EFLM Biological Variation Database. https://biologicalvariation.eu/. Accessed October 9, 2026.",
+      "pmid": "",
+      "pmcid": "",
+      "doi": "",
+      "status": "verified",
+      "evidence": "Website reachable on 2026-10-09 (page title 'EFLM Biological Variation'; content is script-rendered, so no on-page citation text could be read). Companion methods paper verified in PubMed: Aarsand AK, Roraas T, Fernandez-Calle P, et al. The Biological Variation Data Critical Appraisal Checklist: a standard for evaluating studies on biological variation. Clin Chem 2018;64(3):501-514. https://doi.org/10.1373/clinchem.2017.281808 (PMID 29222339).",
+      "values": {"companion_paper_pmid": "29222339", "companion_paper_doi": "10.1373/clinchem.2017.281808"},
+      "notes": "A commonly used author-style citation is 'Aarsand AK, Fernandez-Calle P, Webster C, et al. The EFLM Biological Variation Database. https://biologicalvariation.eu/' but the site's official recommended author list could NOT be confirmed. PubMed title search found no peer-reviewed article whose title describes the EFLM database itself (the 2015 Perich et al. CCLM paper describes the older Ricos/SEQC database, not EFLM). BIVAC (2018) is the methodological basis of the database's meta-analysed estimates and is the best journal citation found. State the database version/access date and cite the underlying values used."
+    },
+    {
+      "key": "fraser1989",
+      "citation": "Fraser CG, Harris EK. Generation and application of data on biological variation in clinical chemistry. Crit Rev Clin Lab Sci 1989;27(5):409-437. https://doi.org/10.3109/10408368909106595",
+      "pmid": "2679660",
+      "pmcid": "",
+      "doi": "10.3109/10408368909106595",
+      "status": "verified",
+      "evidence": "PubMed citation match, metadata (vol 27, issue 5, pages 409-37) and abstract (covers 'deciding the significance of changes in serial results from an individual').",
+      "values": {},
+      "notes": "Abstract describes significance of serial changes; the term 'reference change value' itself was not confirmed from the abstract."
+    },
+    {
+      "key": "kottner2011",
+      "citation": "Kottner J, Audigé L, Brorson S, et al. Guidelines for Reporting Reliability and Agreement Studies (GRRAS) were proposed. J Clin Epidemiol 2011;64(1):96-106. https://doi.org/10.1016/j.jclinepi.2010.03.002",
+      "pmid": "21130355",
+      "pmcid": "",
+      "doi": "10.1016/j.jclinepi.2010.03.002",
+      "status": "verified",
+      "evidence": "PubMed citation match and metadata (vol 64, issue 1, pages 96-106).",
+      "values": {},
+      "notes": "Epub 2010."
+    },
+    {
+      "key": "vonelm2007",
+      "citation": "von Elm E, Altman DG, Egger M, et al. The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. Lancet 2007;370(9596):1453-1457. https://doi.org/10.1016/S0140-6736(07)61602-X",
+      "pmid": "18064739",
+      "pmcid": "",
+      "doi": "10.1016/S0140-6736(07)61602-X",
+      "status": "verified",
+      "evidence": "PubMed citation match and metadata (Lancet vol 370, issue 9596, pages 1453-7).",
+      "values": {},
+      "notes": "Open-access alternative: von Elm E, Altman DG, Egger M, et al. PLoS Med 2007;4(10):e296. https://doi.org/10.1371/journal.pmed.0040296 (PMID 17941714, PMCID PMC2020495)."
+    },
+    {
+      "key": "shapley1953",
+      "citation": "Shapley LS. A value for n-person games. In: Kuhn HW, Tucker AW, eds. Contributions to the Theory of Games, Volume II (AM-28). Princeton University Press; 1953:307-317. https://doi.org/10.1515/9781400881970-018",
+      "pmid": "",
+      "pmcid": "",
+      "doi": "10.1515/9781400881970-018",
+      "status": "verified",
+      "evidence": "Crossref records for chapter doi 10.1515/9781400881970-018 (author L. S. Shapley; container 'Contributions to the Theory of Games (AM-28), Volume II'; Princeton University Press; 1953) and book doi 10.1515/9781400881970 (editors Harold W. Kuhn and Albert W. Tucker); OpenAlex match.",
+      "values": {"crossref_pages": "307-318"},
+      "notes": "Conventional citations give pp. 307-317; the Crossref chapter record lists 307-318 (likely includes an end page). An earlier RAND report version exists (RAND P-295, 1952, doi 10.7249/p0295)."
+    },
+    {
+      "key": "korn1998",
+      "citation": "Korn EL, Graubard BI. Confidence intervals for proportions with small expected number of positive counts estimated from survey data. Surv Methodol 1998;24(2):193-201. https://www150.statcan.gc.ca/n1/en/catalogue/12-001-X19980024356",
+      "pmid": "",
+      "pmcid": "",
+      "doi": "",
+      "status": "verified",
+      "evidence": "Statistics Canada catalogue page 12-001-X19980024356 (Survey Methodology, issue 1998002, released 15 Dec 1998; PDF 9 pages, consistent with pp. 193-201); reference list of Ward BW, Stata J 2019 (PMC6896998) gives 'Korn EL, Graubard BI 1998 ... Survey Methodology 24(2): 193-201'.",
+      "values": {},
+      "notes": "Not indexed in PubMed/OpenAlex. The Statistics Canada catalogue lists authors as 'Graubard, Barry I.; Korn, Edward L.' (possibly alphabetical); the scanned PDF byline could not be read. Korn-first order is how NCHS-related sources and the R survey package cite it. Some R documentation gives volume 23 (appears to be an error)."
+    },
+    {
+      "key": "tango1998",
+      "citation": "Tango T. Equivalence test and confidence interval for the difference in proportions for the paired-sample design. Stat Med 1998;17(8):891-908. https://doi.org/10.1002/(SICI)1097-0258(19980430)17:8<891::AID-SIM780>3.0.CO;2-B",
+      "pmid": "9595618",
+      "pmcid": "",
+      "doi": "10.1002/(SICI)1097-0258(19980430)17:8<891::AID-SIM780>3.0.CO;2-B",
+      "status": "verified",
+      "evidence": "PubMed citation match and metadata (vol 17, issue 8, pages 891-908) and abstract (score-based CI for paired difference of proportions; works with off-diagonal zero cells).",
+      "values": {},
+      "notes": "Whether an erratum exists was not checked."
+    },
+    {
+      "key": "raowu1988",
+      "citation": "Rao JNK, Wu CFJ. Resampling inference with complex survey data. J Am Stat Assoc 1988;83(401):231-241. https://doi.org/10.1080/01621459.1988.10478591",
+      "pmid": "",
+      "pmcid": "",
+      "doi": "10.1080/01621459.1988.10478591",
+      "status": "verified",
+      "evidence": "OpenAlex verify_reference (status verified) and Crossref record (vol 83, issue 401, pages 231-241, 1988).",
+      "values": {},
+      "notes": "Not in PubMed (statistics journal)."
+    },
+    {
+      "key": "cameron2015",
+      "citation": "Cameron AC, Miller DL. A practitioner's guide to cluster-robust inference. J Hum Resour 2015;50(2):317-372. https://doi.org/10.3368/jhr.50.2.317",
+      "pmid": "",
+      "pmcid": "",
+      "doi": "10.3368/jhr.50.2.317",
+      "status": "verified",
+      "evidence": "OpenAlex lookup by DOI and Crossref record (Journal of Human Resources vol 50, issue 2, pages 317-372, 2015).",
+      "values": {},
+      "notes": "Not in PubMed."
+    },
+    {
+      "key": "bland1986",
+      "citation": "Bland JM, Altman DG. Statistical methods for assessing agreement between two methods of clinical measurement. Lancet 1986;1(8476):307-310. https://doi.org/10.1016/S0140-6736(86)90837-8",
+      "pmid": "2868172",
+      "pmcid": "",
+      "doi": "10.1016/S0140-6736(86)90837-8",
+      "status": "verified",
+      "evidence": "PubMed citation match and metadata (vol 1, issue 8476, pages 307-10); DOI confirmed via OpenAlex.",
+      "values": {},
+      "notes": "PubMed record lists the PII but not a DOI; DOI resolved via OpenAlex/Crossref."
+    },
+    {
+      "key": "muntner2019",
+      "citation": "Muntner P, Shimbo D, Carey RM, et al. Measurement of blood pressure in humans: a scientific statement from the American Heart Association. Hypertension 2019;73(5):e35-e66. https://doi.org/10.1161/HYP.0000000000000087",
+      "pmid": "30827125",
+      "pmcid": "PMC11409525",
+      "doi": "10.1161/HYP.0000000000000087",
+      "status": "verified",
+      "evidence": "PubMed citation match and metadata (vol 73, issue 5, pages e35-e66).",
+      "values": {},
+      "notes": ""
+    },
+    {
+      "key": "nhanes3_plan",
+      "citation": "National Center for Health Statistics. Plan and operation of the Third National Health and Nutrition Examination Survey, 1988-94. Vital Health Stat 1. 1994;(32):1-407.",
+      "pmid": "7975354",
+      "pmcid": "",
+      "doi": "",
+      "status": "verified",
+      "evidence": "PubMed record PMID 7975354 (Vital Health Stat 1, July 1994, issue 32, pages 1-407).",
+      "values": {},
+      "notes": "A CDC PDF URL was not checked; cite by series/number. The PubMed abstract describes ~40,000 sampled persons in 81 counties, two 3-year phases."
+    },
+    {
+      "key": "nhanes3_secondexam",
+      "citation": "National Center for Health Statistics. NHANES III (1988-1994) data files: Second Exam files, Release 3A (July 1999) - EXAMSE (Examination - Second Exam), LABSE (Lab - Second Exam), LAB2SE (Second Lab - Second Exam), with documentation. Hyattsville, MD: NCHS. https://wwwn.cdc.gov/nchs/nhanes/nhanes3/datafiles.aspx. Accessed October 9, 2026.",
+      "pmid": "",
+      "pmcid": "",
+      "doi": "",
+      "status": "verified",
+      "evidence": "CDC page 'NHANES III (1988-1994) - Data Files' fetched 2026-10-09: Release 3A (July 1999) 'Second Exam files for Dietary Recall, Examination, Laboratory, Additional Laboratory Analytes' with seven files CFFSE, EXAMDRSE, EXAMSE, IFFSE, LABSE, LAB2SE, VIFSE. Release readme (https://wwwn.cdc.gov/nchs/data/nhanes3/3a/readme.txt) title: 'NHANES III, 1988-94 on CD-ROM (Series 11, No. 3A)', 'data obtained from a second exam of selected survey participants'.",
+      "values": {"documentation_urls_constructed": ["https://wwwn.cdc.gov/nchs/data/nhanes3/3a/EXAMSE-acc.pdf", "https://wwwn.cdc.gov/nchs/data/nhanes3/3a/LABSE-acc.pdf"]},
+      "notes": "Documentation PDF URLs were built from the page's relative links and were not opened (to avoid downloading PDFs); verify case/path before citing them. The readme does not state subsample selection, size or interval; for those, cite Ye 2014 (2,174 adults; median 17 days, range 1-48) or Coresh 2002 / Selvin 2013. Ye 2014 states analyses were unweighted 'as recommended for NHANES III second examination data'."
+    },
+    {
+      "key": "barnett2005",
+      "citation": "Barnett AG, van der Pols JC, Dobson AJ. Regression to the mean: what it is and how to deal with it. Int J Epidemiol 2005;34(1):215-220. https://doi.org/10.1093/ije/dyh299",
+      "pmid": "15333621",
+      "pmcid": "",
+      "doi": "10.1093/ije/dyh299",
+      "status": "verified",
+      "evidence": "PubMed citation match and metadata (vol 34, issue 1, pages 215-20).",
+      "values": {},
+      "notes": "Epub 2004-08-27."
+    }
+  ],
+  "novelty_search": {
+    "date": "2026-10-09",
+    "database": "PubMed via NCBI E-utilities (bio-research PubMed MCP); supplementary: Consensus semantic search, web search (standard and extended)",
+    "claim_tested": "First study to rescore PREVENT after real short-interval remeasurement of all routinely measured inputs.",
+    "queries": [
+      {
+        "id": "Q1_user_specified",
+        "string": "(PREVENT[tiab] OR \"pooled cohort\"[tiab]) AND (repeat*[tiab] OR remeasure*[tiab] OR test-retest[tiab] OR variability[tiab]) AND (reclassif*[tiab] OR categor*[tiab])",
+        "hits": 531,
+        "screening": "PREVENT[tiab] also matches the verb 'prevent', so most hits are irrelevant. 113 records with PMID < 24,200,000 (entered before the Pooled Cohort Equations were published in Nov 2013) were excluded by construction. The remaining 418 were retrieved; 410 had metadata and were screened by title/abstract keyword filter (risk-equation terms AND variability/remeasurement terms) plus manual reading of every flagged record; the other 8 were NCBI Bookshelf/StatPearls/AHRQ records (titles checked via esummary; none relevant).",
+        "relevant_hits": [
+          {"pmid": "24462238", "title": "Effect of change in systolic blood pressure between clinic visits on estimated 10-year cardiovascular disease risk (Ye et al., J Am Soc Hypertens 2014)", "relevance": "Rescored the PCE after real remeasurement in the NHANES III second exam (median 17 days) but SBP only; other inputs held fixed. Closest prior work; same data source."}
+        ],
+        "notes": "Other risk-equation records (34878493 smoking history and PCE; 42470426 PREVENT vs other scores in STEMI; 42381136 review) are not remeasurement studies. This query misses key adjacent studies (Ogunwale 2016, Cole 2023, Ulbricht 2018) because they use other wording, so it should not be the only search reported."
+      },
+      {
+        "id": "Q1b_phrase_restricted",
+        "string": "(\"pooled cohort\"[tiab] OR \"PREVENT equation\"[tiab] OR \"PREVENT equations\"[tiab] OR \"PREVENT risk\"[tiab] OR \"PREVENT score\"[tiab] OR \"PREVENT calculator\"[tiab] OR \"PREVENT model\"[tiab] OR \"PREVENT models\"[tiab] OR \"AHA PREVENT\"[tiab] OR \"PREVENT-CVD\"[tiab] OR \"PREVENT-ASCVD\"[tiab] OR \"PREVENT total CVD\"[tiab]) AND (repeat*[tiab] OR remeasure*[tiab] OR test-retest[tiab] OR variability[tiab]) AND (reclassif*[tiab] OR categor*[tiab])",
+        "hits": 8,
+        "screening": "All 8 read (PMIDs 42470426, 42381136, 41870764, 34878493, 33598936, 32441491, 28334007, 24462238). PubMed silently dropped several phrases not in its phrase index (e.g., 'PREVENT calculator', 'PREVENT model').",
+        "relevant_hits": [{"pmid": "24462238", "title": "Ye et al. 2014", "relevance": "as above"}]
+      },
+      {
+        "id": "Q2_PREVENT_variability_2024_2026",
+        "string": "(\"PREVENT\"[tiab] AND (equation*[tiab] OR \"Predicting Risk\"[tiab] OR calculator[tiab])) AND (variability[tiab] OR \"biological variation\"[tiab] OR \"measurement error\"[tiab] OR reproducib*[tiab] OR repeat*[tiab] OR remeasure*[tiab] OR uncertainty[tiab] OR \"within-person\"[tiab] OR \"within-individual\"[tiab] OR imprecision[tiab]) AND 2024:2026[dp]",
+        "hits": 87,
+        "screening": "All 87 retrieved and screened (keyword filter plus manual reading of the 15 PREVENT-related records).",
+        "relevant_hits": [],
+        "notes": "No study rescored PREVENT after real remeasurement. Adjacent: 41570789 (Metlock et al., JACC Adv 2026: simulation of antihypertensive eligibility under 2025 vs 2017 guidelines in NHANES 2017-2020, single measurement; 'repeated' refers to repeating analyses across PREVENT variants); 41403046, 41059636, 40615687 (PREVENT validation/CAC; no remeasurement)."
+      },
+      {
+        "id": "Q3_measurement_error_reclassification_any_score",
+        "string": "(\"pooled cohort\"[tiab] OR \"PREVENT\"[tiab] OR \"ASCVD risk\"[tiab] OR \"cardiovascular risk\"[tiab] OR \"risk score\"[tiab] OR Framingham[tiab]) AND (\"visit-to-visit\"[tiab] OR \"between-visit\"[tiab] OR \"second examination\"[tiab] OR \"biological variability\"[tiab] OR \"biological variation\"[tiab] OR \"within-person variability\"[tiab] OR \"measurement variability\"[tiab] OR \"measurement error\"[tiab]) AND (reclassif*[tiab] OR \"statin eligib*\"[tiab] OR misclassif*[tiab])",
+        "hits": 22,
+        "screening": "All 22 read.",
+        "relevant_hits": [
+          {"pmid": "37624942", "title": "Reducing Lipid Panel Error Allowances to Improve the Accuracy of Cardiovascular Risk Stratification (Cole et al., Clin Chem 2023)", "relevance": "Simulated lipid biological variation and analytical error with PCE-based 2018 guideline groups; 6.3% misclassified from BV alone. Simulation, lipids only."}
+        ],
+        "notes": "Other hits concern Lp(a) variability (42624725, 12964817), cumulative exposure, or unrelated measurement-error methods."
+      },
+      {
+        "id": "Q4_semantic_and_web",
+        "string": "Consensus: 'reclassification of PREVENT cardiovascular risk equations after repeated measurement of blood pressure, cholesterol, and kidney function in the same individuals'; WebSearch (extended): 'PREVENT equations repeat measurement test-retest reclassification risk category short-term variability blood pressure cholesterol eGFR 2025 OR 2026'; WebSearch: medRxiv/second examination/test-retest NHANES III PREVENT 7.5%",
+        "hits": "Consensus returned 3 (free-tier cap); web searches ~20 links each",
+        "relevant_hits": [
+          {"pmid": "28549073", "title": "Use of Repeated Blood Pressure and Cholesterol Measurements to Improve Cardiovascular Disease Risk Prediction: An Individual-Participant-Data Meta-Analysis (Paige et al., Am J Epidemiol 2017;186:899)", "relevance": "Long-term repeated measures (years) used to improve prediction (ERFC, 191,445 adults); not short-interval test-retest rescoring; not PREVENT."}
+        ],
+        "notes": "No preprint or paper found that rescored PREVENT after short-interval remeasurement. A web summary suggested the 2025 AHA/ACC scientific statement on risk-based BP management (PMID 40875802) argues PREVENT estimates should be stable in the short term because of slowly varying inputs; this was NOT verified from the statement's full text. If true, it is a reasoned expectation that the manuscript directly tests."
+      }
+    ],
+    "closest_prior_work_summary": [
+      "Ye 2014 (PMID 24462238): NHANES III second exam, PCE, real remeasurement of SBP only (~17 days); 12/106 with 5%-<10% risk crossed 7.5%.",
+      "Ogunwale 2016 (PMID 26869459): ARIC, PCE, same-day 2nd vs 3rd sitting SBP; 5.8% reclassified.",
+      "Ulbricht 2018 (PMID 29728071): SCORE, real remeasurement of TC and SBP ~24 days apart but different BP protocols; marginal category shifts only.",
+      "Cole 2023 (PMID 37624942): simulated lipid BV, PCE-based groups; 6.3% misclassified.",
+      "Data-source precedents without risk rescoring: Coresh 2002 (creatinine at two NHANES III visits, n=1,919, median 17 days), Selvin 2013 (kidney measures incl. ACR ~18 days apart), Lacher 2005 (biological variation of NHANES III analytes)."
+    ],
+    "assessment": "Nothing found weakens the claim as worded (PREVENT; real short-interval remeasurement; all routinely measured inputs). The claim would be weakened if worded more broadly (e.g., 'first to rescore a CVD risk equation after real remeasurement' - Ye 2014 did this for the PCE with SBP in the same NHANES III data; Ulbricht 2018 did it for SCORE with TC and SBP). Recommend phrasing 'to our knowledge' and explicitly contrasting with Ye 2014 (single input, PCE) and Ulbricht 2018 (two inputs, SCORE, protocol change). Limitations of the search: PubMed and web only (no Embase/Scopus/medRxiv full-text search); Consensus results capped at 3."
+  }
+}

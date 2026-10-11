@@ -1,0 +1,93 @@
+[
+  {
+    "date": "2026-10-09",
+    "before_results": true,
+    "item": "P3 expected diabetes.both_visits_protocol 90 -> 91",
+    "reason": "Protocol text fills a missing visit HbA1c from the other visit; under that rule SEQN 6366 (HbA1c 7.5% at visit 1, missing at visit 2) has diabetes at both visits. The frozen expected value 90 was computed without the fill and is inconsistent with the frozen discordance count 9 (which requires the fill). Protocol text governs.",
+    "evidence": "analysis_v1_attempt1_p3_mismatch/p3_counts.json; reconciliation script output 2026-10-09"
+  },
+  {
+    "date": "2026-10-09",
+    "before_results": true,
+    "item": "P3 Ye variant_also_chf definition",
+    "reason": "Variant 908 is the 920 variant (no determinate-history rule) additionally excluding HAC1C=1; the first implementation applied it to the determinate cohort (898). Counts-only variant, never scored.",
+    "evidence": "reconciliation script output 2026-10-09"
+  },
+  {
+    "date": "2026-10-09",
+    "before_results": true,
+    "item": "P4(e) PCE worked-example tolerance",
+    "reason": "Exact computation reproduces every published Coefficient x Value term (within 0.01) and individual sum, but the printed white-men risk 5.3% is not the conventional rounding of the exact 5.385% (the other three examples are). The 0.05 pp risk tolerance therefore tests the table rounding, not the implementation. Criterion v1.1: term and sum agreement within 0.02 (first set at 0.01, which failed at 0.0105 from 2-dp printing) plus risk within 0.1 pp. The independent double transcription remains the transcription check. No participant PCE value existed when this was decided.",
+    "evidence": "analysis_v1_attempt2_p4e/p4e output; hand recomputation 2026-10-09"
+  },
+  {
+    "date": "2026-10-09",
+    "before_results": true,
+    "item": "P4(a)/P7 total-CVD tolerance",
+    "reason": "Pinned pyprevent hard-codes the female base 10-year total-CVD SBP-high coefficient as 0.360078 while the preventr base_10yr table (AHA-derived) has 0.3600781, giving up to 8.6e-6 pp disagreement. ASCVD (primary) and UACR models agree to <1e-13. Total CVD (S10 only) uses the full-precision preventr table; scalar agreement tolerance for this output is 1e-4 pp, and the S10 7.5% crossing must be identical under both implementations. No participant had been scored.",
+    "evidence": "analysis_v1/stage3_attempt1_p4_total_cvd/p4_verification.json; coefficient comparison 2026-10-09"
+  },
+  {
+    "date": "2026-10-09",
+    "before_results": true,
+    "item": "Stage 3 rerun after crash in E14 (coding error)",
+    "reason": "Attempt 2 passed P4 and P7 but crashed in the exploratory E14 step because the Paper 1 export already contains WTMEC2YR (duplicate merge). No estimand was printed or written (stage3_results.json absent). Fixed by using the existing column; Stage 3 rerun from the start with identical seeds.",
+    "evidence": "analysis_v1/stage3_attempt2_e14_merge_crash (contains only p4/p7 check files)"
+  },
+  {
+    "date": "2026-10-09",
+    "before_results": false,
+    "stage": "Stage 4",
+    "item": "Stage 4 rerun after attempt 1 stopped at the total-CVD scalar-agreement assertion",
+    "reason": "Attempt 1 used the pre-deviation tolerance for the total-CVD agreement check (the deviation of entry 4) and stopped before any sensitivity-analysis estimate was written; it was rerun with the logged tolerance. Stage 3 results already existed. Not logged at the time; recorded during manuscript review.",
+    "evidence": "analysis_v1/stage4_attempt1_tolerance (executed script only)"
+  },
+  {
+    "date": "2026-10-09",
+    "before_results": false,
+    "stage": "Stage 3",
+    "item": "Monte Carlo SE rule for bootstrap intervals implemented only for Shapley contributions",
+    "reason": "Protocol: if the batch-means MCSE of any primary-figure CI endpoint exceeds 0.1 pp, B rises to 10,000. The code computed batch MCSE only for the Shapley contributions (maximum 0.045 pp); other bootstrap intervals used 4,000 replicates without the check.",
+    "evidence": "manuscript review workflow wf_47ea3196-9ae; analysis_v1_posthoc/review_round1.json"
+  },
+  {
+    "date": "2026-10-09",
+    "before_results": false,
+    "stage": "Stage 3",
+    "item": "Tango interval not computed for the PCE 7.5% crossing contrast (S11); helper variance error",
+    "reason": "The contrast has 15 discordant pairs (12 vs 3), below the protocol threshold of 20, but the code requested Tango intervals only for Delta_U. The tango() helper also used n(2q - d(1+d)) instead of n(2q + d(1-d)); corrected and the interval computed post hoc (0.3 to 3.2 pp). The CR1 interval (0.1 to 3.1 pp) is wider and governs wording, which is unchanged.",
+    "evidence": "manuscript review workflow wf_47ea3196-9ae; analysis_v1_posthoc/review_round1.json"
+  },
+  {
+    "date": "2026-10-09",
+    "before_results": false,
+    "stage": "Stage 3",
+    "item": "S12 simulation SDs fixed at full-sample values across bootstrap replicates; no CI for the S12(A) UACR ratio",
+    "reason": "Protocol: everything depending on sample-estimated quantities is recomputed in each replicate. The simulation error SDs were estimated once from the full sample (bootstrap varies people, not SDs), so S12 intervals understate uncertainty; the bootstrap CI for the UACR-model S12(A) ratio was not computed.",
+    "evidence": "stage3_results.json S12 note"
+  },
+  {
+    "date": "2026-10-09",
+    "before_results": false,
+    "stage": "Reporting",
+    "item": "Prespecified displays not produced by the frozen run",
+    "reason": "Full Shapley subset tables (K2) and K3 distances in SD(Delta LP) units were not in the frozen outputs; they are derived from the frozen participant export and frozen SD(Delta LP) for reporting (no new model fitting).",
+    "evidence": "manuscript review workflow wf_47ea3196-9ae; analysis_v1_posthoc/review_round1.json"
+  },
+  {
+    "date": "2026-10-09",
+    "before_results": false,
+    "stage": "Stage 3",
+    "item": "Coding error in the bootstrap interval for systematic visit effects (S9); corrected",
+    "reason": "Each replicate subtracted the replicate-weighted theta with shifts removed from the fixed full-sample theta instead of the replicate-weighted theta, so the interval (-2.5 to 2.4 pp) was that of a single proportion. Corrected per the freeze rules for coding errors in a new versioned directory: -0.9 to 1.1 pp (paired bootstrap; CR1 Wald -0.9 to 1.1 pp). The point estimate (+0.13 pp) and interpretation are unchanged; the original output is retained.",
+    "evidence": "analysis_v1_corrections/s9_and_swap_counts.json; scripts/nh3_s9_correction.py; review wf_d7bb43be-c55"
+  },
+  {
+    "date": "2026-10-09",
+    "before_results": false,
+    "stage": "Reporting",
+    "item": "Paper 1 reported with this study as Study 2 (change of reporting plan)",
+    "reason": "The frozen protocol treats the urine-specimen analysis ('Paper 1') as a separate manuscript and its 5.34% and 4.25% only as described comparisons. After Study 1 results, the author decided to report both in one paper. Study 2 values are reported unchanged from its locked outputs (no reanalysis, pooling or testing against Study 1); no Study 1 estimate changes.",
+    "evidence": "scripts/nh3_study2_evidence.py; manuscript_evidence_v1/study2_evidence.json; merge review wf_46b5c4b7-031"
+  }
+]

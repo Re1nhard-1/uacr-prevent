@@ -1,0 +1,1254 @@
+{
+ "label": "Study 2 evidence collected from locked companion-analysis outputs (no new analysis)",
+ "sources": {
+  "final_and_external_v1/analysis_results.json": "536f15f5747920f65ddd9e31dfaedb582010e8ef155fa7ef9c2a4a37a85c823a",
+  "bp_benchmark_v1/analysis_results.json": "3ed343b7a789f197d902128a21c25b2692bdab7c654ef7152e503c8f6fdbb153",
+  "interpretability_extension_v2/analysis_results.json": "5b9f130806715f402924ae239d50424e0167061d09ae4b7b400ac02b9ec58755",
+  "clinical_context_extension_v1/analysis_results.json": "6e5fc1b21c6f66b04f01a58fed3da47f026be2e100954cd6547403b1128fd547",
+  "manuscript_evidence_v1/supplement_threshold_crossings.csv": "0f296ad1a4aa97678d0f280c867c57f454f5298535b3068371d72c9a38fbfb55",
+  "manuscript/uacr_prevent_manuscript.docx": "5224855a75b540190b9a85bec0781c8f0f74a02b4437ba5e8ba6994cceebb45b"
+ },
+ "provenance": {
+  "primary_cohort": "Final main cohort is a disclosed post-pilot amendment, not original preregistration.",
+  "post_hoc": "UACR-flag cross-classification, selection scenarios, fasting gross vs net crossing and the single-reading SBP benchmark were post hoc (the benchmark specified before its calculation).",
+  "external_protocol": "fixed before risk calculation in the 2001-2002 sample"
+ },
+ "flow_primary": [
+  {
+   "rule": "age30_79",
+   "remaining": 4752,
+   "removed": 5785
+  },
+  {
+   "rule": "explicit_no_cvd_hf",
+   "remaining": 4219,
+   "removed": 533
+  },
+  {
+   "rule": "ascvd_inputs_known",
+   "remaining": 3661,
+   "removed": 558
+  },
+  {
+   "rule": "exclude_disclosed_pregnancy",
+   "remaining": 3636,
+   "removed": 25
+  },
+  {
+   "rule": "sbp90_200",
+   "remaining": 3603,
+   "removed": 33
+  },
+  {
+   "rule": "tc130_320",
+   "remaining": 3511,
+   "removed": 92
+  },
+  {
+   "rule": "hdl20_100",
+   "remaining": 3466,
+   "removed": 45
+  },
+  {
+   "rule": "egfr15_140",
+   "remaining": 3460,
+   "removed": 6
+  },
+  {
+   "rule": "random_uacr0_1_25000",
+   "remaining": 3441,
+   "removed": 19
+  },
+  {
+   "rule": "positive_mec_and_design",
+   "remaining": 3441,
+   "removed": 0
+  },
+  {
+   "rule": "morning_uacr0_1_25000",
+   "remaining": 3166,
+   "removed": 275
+  }
+ ],
+ "primary": {
+  "any_category_change": {
+   "n": 3166,
+   "events": 194,
+   "estimate": 0.05338110678948707,
+   "lower95": 0.04169910314281745,
+   "upper95": 0.06810324293085844
+  },
+  "lower_category": {
+   "n": 3166,
+   "events": 160,
+   "estimate": 0.044398608394122775,
+   "lower95": 0.03487601531859167,
+   "upper95": 0.05636940262058211
+  },
+  "higher_category": {
+   "n": 3166,
+   "events": 34,
+   "estimate": 0.008982498395364294,
+   "lower95": 0.005476925425761212,
+   "upper95": 0.01469869379998045
+  },
+  "mean_delta_pp": {
+   "n": 3166,
+   "events": null,
+   "estimate": -0.15953085856166424,
+   "lower95": -0.1848135406087752,
+   "upper95": -0.13424817651455329
+  },
+  "mean_absolute_delta_pp": {
+   "n": 3166,
+   "events": null,
+   "estimate": 0.2624841557438864,
+   "lower95": 0.24154527367034045,
+   "upper95": 0.28342303781743233
+  },
+  "absolute_delta_ge1pp": {
+   "n": 3166,
+   "events": 274,
+   "estimate": 0.05638075496620957,
+   "lower95": 0.0465184427105422,
+   "upper95": 0.06818444065763003
+  }
+ },
+ "quantiles_abs_pp": {
+  "0.1": 0.010291771791369975,
+  "0.5": 0.08593608360153038,
+  "0.9": 0.6798213053963806
+ },
+ "transition_counts": [
+  [
+   1819,
+   13,
+   0,
+   0
+  ],
+  [
+   55,
+   378,
+   10,
+   0
+  ],
+  [
+   0,
+   50,
+   473,
+   11
+  ],
+  [
+   0,
+   0,
+   55,
+   302
+  ]
+ ],
+ "max_categories_moved": 1,
+ "design": {
+  "df": 16,
+  "strata": 15,
+  "psus": 31
+ },
+ "crossings_raw": {
+  "3": {
+   "primary": {
+    "n": 3166,
+    "events": 68,
+    "estimate": 0.024341035039054607,
+    "lower95": 0.01597228415176915,
+    "upper95": 0.03693006994497367
+   },
+   "external": {
+    "n": 278,
+    "events": 6,
+    "estimate": 0.02158273381294964,
+    "lower95": 0.00932927447814598,
+    "upper95": 0.049132208760661496
+   }
+  },
+  "5": {
+   "primary": {
+    "n": 3166,
+    "events": 60,
+    "estimate": 0.015066878360569011,
+    "lower95": 0.010861909695977931,
+    "upper95": 0.02086537652248897
+   },
+   "external": {
+    "n": 278,
+    "events": 6,
+    "estimate": 0.02158273381294964,
+    "lower95": 0.008973788591211106,
+    "upper95": 0.05099666085456767
+   }
+  },
+  "10": {
+   "primary": {
+    "n": 3166,
+    "events": 66,
+    "estimate": 0.013973193389863454,
+    "lower95": 0.010425194963194167,
+    "upper95": 0.018705854297674514
+   },
+   "external": {
+    "n": 278,
+    "events": 4,
+    "estimate": 0.014388489208633094,
+    "lower95": 0.004669311726679542,
+    "upper95": 0.043454907592661574
+   }
+  }
+ },
+ "crossings": {
+  "3": {
+   "primary_events": 68,
+   "primary": "2.43 (1.60 to 3.69)",
+   "external_events": 6,
+   "external": "2.16 (0.93 to 4.91)"
+  },
+  "5": {
+   "primary_events": 60,
+   "primary": "1.51 (1.09 to 2.09)",
+   "external_events": 6,
+   "external": "2.16 (0.90 to 5.10)"
+  },
+  "10": {
+   "primary_events": 66,
+   "primary": "1.40 (1.04 to 1.87)",
+   "external_events": 4,
+   "external": "1.44 (0.47 to 4.35)"
+  }
+ },
+ "bp_benchmark": {
+  "reading1_vs_reading2": {
+   "n": 2959,
+   "readings": [
+    "BPXSY1",
+    "BPXSY2"
+   ],
+   "excluded_missing_reading": 191,
+   "excluded_outside_90_200": 16,
+   "bp": {
+    "n": 2959,
+    "events": 133,
+    "estimate": 0.04246716388013595,
+    "lower95": 0.035821895059691154,
+    "upper95": 0.05028090019388496
+   },
+   "urine_same_participants": {
+    "n": 2959,
+    "events": 180,
+    "estimate": 0.051560547843330175,
+    "lower95": 0.04006197631521597,
+    "upper95": 0.06613206914115181
+   },
+   "bp_detail": {
+    "lower_category": {
+     "n": 2959,
+     "events": 91,
+     "estimate": 0.02641348697546167,
+     "lower95": 0.021603284999231906,
+     "upper95": 0.0322594176425725
+    },
+    "higher_category": {
+     "n": 2959,
+     "events": 42,
+     "estimate": 0.016053676904674286,
+     "lower95": 0.011048778634790181,
+     "upper95": 0.023272353306028445
+    },
+    "mean_delta_pp": {
+     "n": 2959,
+     "events": null,
+     "estimate": -0.049223610724943,
+     "lower95": -0.061905735074402814,
+     "upper95": -0.03654148637548319
+    },
+    "mean_absolute_delta_pp": {
+     "n": 2959,
+     "events": null,
+     "estimate": 0.16891829015220508,
+     "lower95": 0.15681850729797306,
+     "upper95": 0.1810180730064371
+    },
+    "absolute_delta_ge1pp": {
+     "n": 2959,
+     "events": 73,
+     "estimate": 0.01756786217590839,
+     "lower95": 0.012352865132198814,
+     "upper95": 0.024928899272904075
+    }
+   }
+  },
+  "reading2_vs_reading3": {
+   "n": 3020,
+   "readings": [
+    "BPXSY2",
+    "BPXSY3"
+   ],
+   "excluded_missing_reading": 130,
+   "excluded_outside_90_200": 16,
+   "bp": {
+    "n": 3020,
+    "events": 124,
+    "estimate": 0.04454329301181403,
+    "lower95": 0.03454921263527262,
+    "upper95": 0.057256916494395176
+   },
+   "urine_same_participants": {
+    "n": 3020,
+    "events": 185,
+    "estimate": 0.05286658923938815,
+    "lower95": 0.04138095358604269,
+    "upper95": 0.06731629703207237
+   },
+   "bp_detail": {
+    "lower_category": {
+     "n": 3020,
+     "events": 73,
+     "estimate": 0.02629318645519946,
+     "lower95": 0.020348710756248042,
+     "upper95": 0.03391410658772063
+    },
+    "higher_category": {
+     "n": 3020,
+     "events": 51,
+     "estimate": 0.018250106556614562,
+     "lower95": 0.012498088531919102,
+     "upper95": 0.026578136532941006
+    },
+    "mean_delta_pp": {
+     "n": 3020,
+     "events": null,
+     "estimate": -0.03185671912633471,
+     "lower95": -0.04331690426218724,
+     "upper95": -0.020396533990482184
+    },
+    "mean_absolute_delta_pp": {
+     "n": 3020,
+     "events": null,
+     "estimate": 0.1509961596887407,
+     "lower95": 0.13932110104566825,
+     "upper95": 0.16267121833181314
+    },
+    "absolute_delta_ge1pp": {
+     "n": 3020,
+     "events": 63,
+     "estimate": 0.011668974994817732,
+     "lower95": 0.007691807219576029,
+     "upper95": 0.017665987890742873
+    }
+   }
+  }
+ },
+ "response_weighting": {
+  "target_n": 3441,
+  "responders_n": 3166,
+  "nonresponders_n": 275,
+  "ipw_estimate": 0.05277229309964574,
+  "ipw_lower95": 0.041307652890208754,
+  "ipw_upper95": 0.06719583630897981,
+  "maximum_inverse_response_multiplier": 1.5461648156623577,
+  "extreme_missing_outcome_bounds": [
+   0.04955415157229695,
+   0.12124534434359047
+  ],
+  "all_replicates_converged": true,
+  "replicates": 31
+ },
+ "sensitivities": {
+  "exclude_indeterminate_pregnancy": {
+   "n": 3156,
+   "events": 194,
+   "estimate": 0.05355751714459792,
+   "lower95": 0.04183349155967041,
+   "upper95": 0.06833292912270723
+  },
+  "exclude_albumin_below_lod": {
+   "n": 3158,
+   "events": 194,
+   "estimate": 0.05352716808490058,
+   "lower95": 0.04180396466871709,
+   "upper95": 0.06830359276577824
+  },
+  "matched_age30_69": {
+   "n": 2788,
+   "events": 153,
+   "estimate": 0.04765837994293815,
+   "lower95": 0.03571753214084651,
+   "upper95": 0.06332903983956846
+  },
+  "alternative_sbp": {
+   "n": 3160,
+   "events": 200,
+   "estimate": 0.05702963618976367,
+   "lower95": 0.04482221173090231,
+   "upper95": 0.07231008656249209
+  },
+  "fasting_treatment_context": {
+   "n": 1053,
+   "events": 49,
+   "estimate": 0.042054487206550376,
+   "lower95": 0.030351036809119884,
+   "upper95": 0.05800087860273155
+  }
+ },
+ "uacr_flag": {
+  "both_below30_fraction": {
+   "n": 3166,
+   "events": 2848,
+   "estimate": 0.9188876229398305,
+   "lower95": 0.9007030830809204,
+   "upper95": 0.9339860487080899
+  },
+  "both_below30_disagreement": {
+   "n": 2848,
+   "events": 150,
+   "estimate": 0.04558034514636458,
+   "lower95": 0.034355929185022165,
+   "upper95": 0.0602431079212717
+  },
+  "both_below30_share_of_changes": {
+   "n": 194,
+   "events": 150,
+   "estimate": 0.7846074673852309,
+   "lower95": 0.6523669290309317,
+   "upper95": 0.8760975912437924
+  },
+  "both_below30_down_up": [
+   120,
+   30
+  ],
+  "same_flag_share_of_changes": {
+   "n": 194,
+   "events": 159,
+   "estimate": 0.831565381784488,
+   "lower95": 0.7186505208562918,
+   "upper95": 0.9051451051803555
+  },
+  "joint": [
+   {
+    "flag_changed": false,
+    "category_changed": false,
+    "n": 3166,
+    "events": 2817,
+    "estimate": 0.9019370647178289,
+    "lower95": 0.8867833966914349,
+    "upper95": 0.9152562918512268
+   },
+   {
+    "flag_changed": false,
+    "category_changed": true,
+    "n": 3166,
+    "events": 159,
+    "estimate": 0.04438988044747835,
+    "lower95": 0.034748971675363984,
+    "upper95": 0.056548902483824395
+   },
+   {
+    "flag_changed": true,
+    "category_changed": false,
+    "n": 3166,
+    "events": 155,
+    "estimate": 0.044681828492683914,
+    "lower95": 0.03462273297131035,
+    "upper95": 0.05748939820786836
+   },
+   {
+    "flag_changed": true,
+    "category_changed": true,
+    "n": 3166,
+    "events": 35,
+    "estimate": 0.008991226342008723,
+    "lower95": 0.004674840265976739,
+    "upper95": 0.017224062122972634
+   }
+  ]
+ },
+ "selection": {
+  "first": [
+   {
+    "scenario": "everyone",
+    "selected_n": 3166,
+    "selected_change_n": 194,
+    "missed_change_n": 0,
+    "workload": {
+     "n": 3166,
+     "events": 3166,
+     "estimate": 1.0,
+     "lower95": null,
+     "upper95": null
+    },
+    "coverage": {
+     "n": 194,
+     "events": 194,
+     "estimate": 1.0,
+     "lower95": null,
+     "upper95": null
+    },
+    "yield": {
+     "n": 3166,
+     "events": 194,
+     "estimate": 0.05338110678948707,
+     "lower95": 0.04169910314281745,
+     "upper95": 0.06810324293085844
+    }
+   },
+   {
+    "scenario": "uacr_ge30",
+    "selected_n": 278,
+    "selected_change_n": 40,
+    "missed_change_n": 154,
+    "workload": {
+     "n": 3166,
+     "events": 278,
+     "estimate": 0.06765799945934872,
+     "lower95": 0.05259975556857999,
+     "upper95": 0.08663291541171249
+    },
+    "coverage": {
+     "n": 194,
+     "events": 40,
+     "estimate": 0.19294197594114787,
+     "lower95": 0.11110499521425707,
+     "upper95": 0.3137794633774191
+    },
+    "yield": {
+     "n": 278,
+     "events": 40,
+     "estimate": 0.15222821106434473,
+     "lower95": 0.0947622243627369,
+     "upper95": 0.23547776678742569
+    }
+   },
+   {
+    "scenario": "risk_within_half_pp",
+    "selected_n": 524,
+    "selected_change_n": 137,
+    "missed_change_n": 57,
+    "workload": {
+     "n": 3166,
+     "events": 524,
+     "estimate": 0.16143707716556807,
+     "lower95": 0.14448571226061688,
+     "upper95": 0.17995887052791973
+    },
+    "coverage": {
+     "n": 194,
+     "events": 137,
+     "estimate": 0.7354973892932347,
+     "lower95": 0.6754590725900708,
+     "upper95": 0.7879162942100986
+    },
+    "yield": {
+     "n": 524,
+     "events": 137,
+     "estimate": 0.2432010376462948,
+     "lower95": 0.18974238057487094,
+     "upper95": 0.3060325742287211
+    }
+   }
+  ],
+  "second": [
+   {
+    "scenario": "everyone",
+    "selected_n": 3166,
+    "selected_change_n": 194,
+    "missed_change_n": 0,
+    "workload": {
+     "n": 3166,
+     "events": 3166,
+     "estimate": 1.0,
+     "lower95": null,
+     "upper95": null
+    },
+    "coverage": {
+     "n": 194,
+     "events": 194,
+     "estimate": 1.0,
+     "lower95": null,
+     "upper95": null
+    },
+    "yield": {
+     "n": 3166,
+     "events": 194,
+     "estimate": 0.05338110678948707,
+     "lower95": 0.04169910314281745,
+     "upper95": 0.06810324293085844
+    }
+   },
+   {
+    "scenario": "uacr_ge30",
+    "selected_n": 168,
+    "selected_change_n": 13,
+    "missed_change_n": 181,
+    "workload": {
+     "n": 3166,
+     "events": 168,
+     "estimate": 0.040893699826297154,
+     "lower95": 0.03278353904968398,
+     "upper95": 0.050904600635013425
+    },
+    "coverage": {
+     "n": 194,
+     "events": 13,
+     "estimate": 0.06940847107287841,
+     "lower95": 0.030708644070023584,
+     "upper95": 0.1493634991747411
+    },
+    "yield": {
+     "n": 168,
+     "events": 13,
+     "estimate": 0.09060322304350997,
+     "lower95": 0.042915615409725424,
+     "upper95": 0.18124612399708767
+    }
+   },
+   {
+    "scenario": "risk_within_half_pp",
+    "selected_n": 515,
+    "selected_change_n": 130,
+    "missed_change_n": 64,
+    "workload": {
+     "n": 3166,
+     "events": 515,
+     "estimate": 0.15865795215121262,
+     "lower95": 0.13866059401353892,
+     "upper95": 0.18093347942601376
+    },
+    "coverage": {
+     "n": 194,
+     "events": 130,
+     "estimate": 0.7569835423103752,
+     "lower95": 0.6615305303812002,
+     "upper95": 0.8323399380578514
+    },
+    "yield": {
+     "n": 515,
+     "events": 130,
+     "estimate": 0.2546901605753867,
+     "lower95": 0.1991591751589031,
+     "upper95": 0.31952692303133756
+    }
+   }
+  ]
+ },
+ "fasting": {
+  "n": 1053,
+  "weight": "WTSAF2YR",
+  "any": {
+   "n": 1053,
+   "events": 49,
+   "estimate": 0.042054487206550376,
+   "lower95": 0.030351036809119884,
+   "upper95": 0.05800087860273155
+  },
+  "thresholds": {
+   "3": {
+    "up": {
+     "n": 1053,
+     "events": 1,
+     "estimate": 0.002325904049225239,
+     "lower95": 0.0002805345806381632,
+     "upper95": 0.019000572914875676
+    },
+    "down": {
+     "n": 1053,
+     "events": 14,
+     "estimate": 0.014473380656267125,
+     "lower95": 0.00668052281742121,
+     "upper95": 0.031072280625889574
+    },
+    "gross": {
+     "n": 1053,
+     "events": 15,
+     "estimate": 0.01679928470549236,
+     "lower95": 0.008182890528009579,
+     "upper95": 0.03417591075891607
+    },
+    "above_first": {
+     "n": 1053,
+     "events": 308,
+     "estimate": 0.24120826003012968,
+     "lower95": 0.21452168344954617,
+     "upper95": 0.2700731936521409
+    },
+    "above_second": {
+     "n": 1053,
+     "events": 295,
+     "estimate": 0.22906078342308778,
+     "lower95": 0.20284698851552985,
+     "upper95": 0.2575676083034634
+    },
+    "net": {
+     "n": 1053,
+     "events": null,
+     "estimate": -0.012147476607041883,
+     "lower95": -0.024471432387325617,
+     "upper95": 0.00017647917324185164
+    }
+   },
+   "5": {
+    "up": {
+     "n": 1053,
+     "events": 4,
+     "estimate": 0.0019537330527245704,
+     "lower95": 0.0005599387847094454,
+     "upper95": 0.006793364448594684
+    },
+    "down": {
+     "n": 1053,
+     "events": 17,
+     "estimate": 0.013454221315679128,
+     "lower95": 0.008008252898956071,
+     "upper95": 0.022519615944577045
+    },
+    "gross": {
+     "n": 1053,
+     "events": 21,
+     "estimate": 0.015407954368403698,
+     "lower95": 0.0094312281541334,
+     "upper95": 0.0250763492006674
+    },
+    "above_first": {
+     "n": 1053,
+     "events": 171,
+     "estimate": 0.12807377920759414,
+     "lower95": 0.10497040148615652,
+     "upper95": 0.15537932215967226
+    },
+    "above_second": {
+     "n": 1053,
+     "events": 158,
+     "estimate": 0.11657329094463958,
+     "lower95": 0.09341964768510347,
+     "upper95": 0.1445504771052568
+    },
+    "net": {
+     "n": 1053,
+     "events": null,
+     "estimate": -0.011500488262954555,
+     "lower95": -0.01870766499543666,
+     "upper95": -0.004293311530472453
+    }
+   },
+   "10": {
+    "up": {
+     "n": 1053,
+     "events": 2,
+     "estimate": 0.0017838887788553023,
+     "lower95": 0.00041528334592844807,
+     "upper95": 0.007628441119143268
+    },
+    "down": {
+     "n": 1053,
+     "events": 11,
+     "estimate": 0.008063359353799012,
+     "lower95": 0.004238397645816585,
+     "upper95": 0.015287181844637612
+    },
+    "gross": {
+     "n": 1053,
+     "events": 13,
+     "estimate": 0.009847248132654314,
+     "lower95": 0.0060288297159136845,
+     "upper95": 0.01604506003578996
+    },
+    "above_first": {
+     "n": 1053,
+     "events": 55,
+     "estimate": 0.03756955747661178,
+     "lower95": 0.0288343628010626,
+     "upper95": 0.04881800479509967
+    },
+    "above_second": {
+     "n": 1053,
+     "events": 46,
+     "estimate": 0.03129008690166807,
+     "lower95": 0.025292229840064573,
+     "upper95": 0.0386538836584504
+    },
+    "net": {
+     "n": 1053,
+     "events": null,
+     "estimate": -0.0062794705749437095,
+     "lower95": -0.012898519328968377,
+     "upper95": 0.0003395781790809585
+    }
+   }
+  }
+ },
+ "external": {
+  "any_category_change": {
+   "n": 278,
+   "events": 16,
+   "estimate": 0.05755395683453238,
+   "lower95": 0.03127736641202154,
+   "upper95": 0.10354628520699663
+  },
+  "lower_category": {
+   "n": 278,
+   "events": 6,
+   "estimate": 0.02158273381294964,
+   "lower95": 0.009089013348325589,
+   "upper95": 0.05037716727804741
+  },
+  "higher_category": {
+   "n": 278,
+   "events": 10,
+   "estimate": 0.03597122302158273,
+   "lower95": 0.01791862281264031,
+   "upper95": 0.07089840510823325
+  },
+  "mean_delta_pp": {
+   "n": 278,
+   "events": null,
+   "estimate": -0.05206694231824238,
+   "lower95": -0.12480967025395302,
+   "upper95": 0.02067578561746826
+  },
+  "mean_absolute_delta_pp": {
+   "n": 278,
+   "events": null,
+   "estimate": 0.24820701635737039,
+   "lower95": 0.17287344435744528,
+   "upper95": 0.3235405883572955
+  },
+  "absolute_delta_ge1pp": {
+   "n": 278,
+   "events": 14,
+   "estimate": 0.050359712230215826,
+   "lower95": 0.02560357362592443,
+   "upper95": 0.09667764683679522
+  },
+  "sensitivities": {
+   "native_assay": {
+    "n": 278,
+    "events": 16,
+    "estimate": 0.05755395683453238,
+    "lower95": 0.029560263558790715,
+    "upper95": 0.10907803781009331
+   },
+   "exclude_indeterminate_pregnancy": {
+    "n": 276,
+    "events": 16,
+    "estimate": 0.057971014492753624,
+    "lower95": 0.03162876686373849,
+    "upper95": 0.10389867484944453
+   }
+  },
+  "gate": {
+   "n": 278,
+   "discordant_pairs": 16,
+   "psus_with_discordance": 10,
+   "ci_width_pp": 7.226891879497509,
+   "prespecified_maximum_width_pp": 6.0,
+   "precise_transfer_estimate_gate_passed": false,
+   "interpretation": "Conditional cluster-adjusted interval for selected repeaters; no national sampling inference.",
+   "native_vs_bridged_change_status_disagreement_n": 2,
+   "native_vs_bridged_first_category_disagreement_n": 1,
+   "native_vs_bridged_second_category_disagreement_n": 1
+  },
+  "both_below30_share_of_changes": {
+   "n": 16,
+   "events": 8,
+   "estimate": 0.5,
+   "lower95": 0.13434174883414335,
+   "upper95": 0.8656582511658567
+  },
+  "transition_counts": [
+   [
+    169,
+    4,
+    0,
+    0
+   ],
+   [
+    2,
+    38,
+    4,
+    0
+   ],
+   [
+    0,
+    2,
+    46,
+    2
+   ],
+   [
+    0,
+    0,
+    2,
+    9
+   ]
+  ]
+ },
+ "flow_external": [
+  {
+   "rule": "In repeat file",
+   "remaining": 555
+  },
+  {
+   "rule": "Age 30–69 years",
+   "remaining": 351
+  },
+  {
+   "rule": "Positive urine pairs",
+   "remaining": 348
+  },
+  {
+   "rule": "Explicit absence of five CVD histories",
+   "remaining": 317
+  },
+  {
+   "rule": "Required continuous inputs known",
+   "remaining": 308
+  },
+  {
+   "rule": "Categorical inputs known",
+   "remaining": 306
+  },
+  {
+   "rule": "ASCVD input ranges",
+   "remaining": 294
+  },
+  {
+   "rule": "Exclude disclosed pregnancy",
+   "remaining": 278
+  }
+ ],
+ "numerical_checks": {
+  "pyprevent_vs_preventr_max_pp": {
+   "primary": 2.842170943040401e-14,
+   "alternative_bp": 2.1316282072803006e-14,
+   "external_bridged": 1.2434497875801753e-14,
+   "external_native": 1.0658141036401503e-14
+  },
+  "samplics_any_change_max_abs_discrepancy": 1.734723475976807e-18
+ },
+ "characteristics": [
+  [
+   "Characteristic",
+   "2009–2010 Random to morning n = 3,166",
+   "2001–2002 Repeat examination n = 278"
+  ],
+  [
+   "Age, years",
+   "49.0 (40.0–59.0)",
+   "50.0 (41.0–59.0)"
+  ],
+  [
+   "Female, n (%)",
+   "1,644 (51.6)",
+   "126 (45.3)"
+  ],
+  [
+   "Diabetes, n (%)",
+   "469 (10.7)",
+   "30 (10.8)"
+  ],
+  [
+   "Current smoking, n (%)",
+   "607 (17.3)",
+   "66 (23.7)"
+  ],
+  [
+   "Blood pressure treatment, n (%)",
+   "827 (23.7)",
+   "47 (16.9)"
+  ],
+  [
+   "Statin use, n (%)",
+   "507 (14.9)",
+   "23 (8.3)"
+  ],
+  [
+   "Systolic blood pressure, mmHg",
+   "119.3 (110.0–130.0)",
+   "122.7 (113.3–132.7)"
+  ],
+  [
+   "Total cholesterol, mmol/L",
+   "5.17 (4.58–5.84)",
+   "5.28 (4.71–5.90)"
+  ],
+  [
+   "HDL cholesterol, mmol/L",
+   "1.32 (1.09–1.63)",
+   "1.24 (1.09–1.55)"
+  ],
+  [
+   "eGFR, mL/min/1.73 m²",
+   "96.5 (82.9–107.1)",
+   "93.1 (80.4–105.3)"
+  ],
+  [
+   "First urine UACR, mg/g",
+   "5.67 (3.85–9.69)",
+   "5.81 (3.64–11.75)"
+  ],
+  [
+   "Second urine UACR, mg/g",
+   "4.38 (3.16–6.36)",
+   "5.61 (3.81–9.60)"
+  ],
+  [
+   "First urine based ASCVD risk, %",
+   "1.75 (0.74–4.19)",
+   "2.31 (0.94–4.51)"
+  ],
+  [
+   "Second urine based ASCVD risk, %",
+   "1.74 (0.72–4.03)",
+   "2.27 (0.95–4.56)"
+  ]
+ ],
+ "cholesterol_mgdl_quartiles": {
+  "tc": {
+   "primary": [
+    177.0,
+    200.0,
+    226.0
+   ],
+   "external": [
+    182.0,
+    204.0,
+    228.0
+   ]
+  },
+  "hdl": {
+   "primary": [
+    42.0,
+    51.0,
+    63.0
+   ],
+   "external": [
+    42.0,
+    48.0,
+    60.0
+   ]
+  }
+ },
+ "uacr_flag_external": {
+  "both_below30_fraction": {
+   "n": 278,
+   "events": 243,
+   "estimate": 0.8741007194244604,
+   "lower95": 0.8190985650741488,
+   "upper95": 0.9141328568259047
+  },
+  "both_below30_disagreement": {
+   "n": 243,
+   "events": 8,
+   "estimate": 0.03292181069958848,
+   "lower95": 0.01291166484581727,
+   "upper95": 0.08138623767413274
+  },
+  "both_below30_share_of_changes": {
+   "n": 16,
+   "events": 8,
+   "estimate": 0.5,
+   "lower95": 0.13434174883414335,
+   "upper95": 0.8656582511658567
+  },
+  "both_below30_down_up": [
+   2,
+   6
+  ],
+  "joint": [
+   {
+    "flag_changed": false,
+    "category_changed": false,
+    "n": 278,
+    "events": 255,
+    "estimate": 0.9172661870503597,
+    "lower95": 0.8761416127978953,
+    "upper95": 0.9455842726414505
+   },
+   {
+    "flag_changed": false,
+    "category_changed": true,
+    "n": 278,
+    "events": 10,
+    "estimate": 0.03597122302158273,
+    "lower95": 0.01414487297804969,
+    "upper95": 0.088455034510205
+   },
+   {
+    "flag_changed": true,
+    "category_changed": false,
+    "n": 278,
+    "events": 7,
+    "estimate": 0.025179856115107913,
+    "lower95": 0.014691454916578887,
+    "upper95": 0.042830561156988176
+   },
+   {
+    "flag_changed": true,
+    "category_changed": true,
+    "n": 278,
+    "events": 6,
+    "estimate": 0.02158273381294964,
+    "lower95": 0.010840666058521168,
+    "upper95": 0.04251169843205912
+   }
+  ]
+ },
+ "source_files": [
+  [
+   "Role",
+   "2009–2010",
+   "2001–2002"
+  ],
+  [
+   "Demographics and design",
+   "DEMO_F",
+   "DEMO_B"
+  ],
+  [
+   "Urine pairs",
+   "ALB_CR_F",
+   "L16_B; L16_2_B"
+  ],
+  [
+   "Serum creatinine",
+   "BIOPRO_F",
+   "L40_B"
+  ],
+  [
+   "Total and HDL cholesterol",
+   "TCHOL_F; HDL_F",
+   "L13_B"
+  ],
+  [
+   "Blood pressure",
+   "BPX_F; BPQ_F",
+   "BPX_B; BPQ_B"
+  ],
+  [
+   "Diabetes and HbA1c",
+   "DIQ_F; GHB_F",
+   "DIQ_B; L10_B"
+  ],
+  [
+   "Smoking and clinical history",
+   "SMQ_F; MCQ_F",
+   "SMQ_B; MCQ_B"
+  ],
+  [
+   "Prescription ingredients",
+   "RXQ_RX_F",
+   "RXQ_RX_B"
+  ],
+  [
+   "BMI audit only",
+   "BMX_F",
+   "BMX_B"
+  ],
+  [
+   "Fasting LDL context",
+   "TRIGLY_F",
+   "Not used"
+  ]
+ ],
+ "input_completeness": [
+  [
+   "Variable",
+   "Primary missing n Among 4,219",
+   "External missing n Among 318"
+  ],
+  [
+   "Age",
+   "0",
+   "0"
+  ],
+  [
+   "Recorded sex",
+   "0",
+   "0"
+  ],
+  [
+   "Total cholesterol",
+   "332",
+   "7"
+  ],
+  [
+   "HDL cholesterol",
+   "332",
+   "7"
+  ],
+  [
+   "Systolic blood pressure",
+   "287",
+   "2"
+  ],
+  [
+   "Serum creatinine",
+   "340",
+   "6"
+  ],
+  [
+   "eGFR",
+   "340",
+   "6"
+  ],
+  [
+   "Diabetes phenotype",
+   "265",
+   "1"
+  ],
+  [
+   "Current smoking",
+   "0",
+   "0"
+  ],
+  [
+   "Blood pressure treatment",
+   "9",
+   "0"
+  ],
+  [
+   "Statin use",
+   "43",
+   "1"
+  ],
+  [
+   "First UACR",
+   "166",
+   "0"
+  ],
+  [
+   "Second UACR",
+   "553",
+   "1"
+  ]
+ ],
+ "supplement_facts": {
+  "pilot": {
+   "n": 2883,
+   "events": 166,
+   "pct": 4.97
+  },
+  "pilot_corrected": {
+   "n": 2863,
+   "events": 166,
+   "pct": 5.01
+  },
+  "response_probability_range": [
+   0.647,
+   0.988
+  ],
+  "max_abs_smd_before_after": [
+   0.03,
+   0.001
+  ],
+  "external_native_vs_bridged_status_changes": 2
+ },
+ "text_facts": {
+  "external_interval_days": "median 16 days (interquartile range 13–22; range 6–47)",
+  "flow_demographic_age": 4752,
+  "clinical_history": 4219
+ }
+}

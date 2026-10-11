@@ -1,0 +1,1156 @@
+{
+ "sbp_domain": {
+  "items": [
+   {
+    "label": "SBP range used in PREVENT derivation (developer paper)",
+    "value": "90-200 mmHg. Adults with SBP <90 or >200 mm Hg were excluded, using the cutoffs from PCE development.",
+    "source": "Khan SS et al. Circulation 2024;149:430-449, PMC10910659, DOI 10.1161/CIRCULATIONAHA.123.067626 (https://doi.org/10.1161/CIRCULATIONAHA.123.067626), retrieved via PubMed get_full_text_article on 2026-10-09",
+    "location": "Methods > Study Population, paragraph beginning 'Individual-level participant data were included...': '(SBP<90 or >200 mm Hg, TC <130 or >320 mg/dL, and HDL-C <20 or >100 mg/dL)'. Discussion > Limitations repeats that extreme SBP, TC (misprinted 'TV'), HDL-C and BMI values were excluded.",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "Total cholesterol range (developer paper)",
+    "value": "130-320 mg/dL (excluded if TC <130 or >320 mg/dL)",
+    "source": "Khan SS et al. Circulation 2024, PMC10910659 (DOI 10.1161/CIRCULATIONAHA.123.067626)",
+    "location": "Methods > Study Population, same paragraph as the SBP cutoffs",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "HDL-C range (developer paper)",
+    "value": "20-100 mg/dL (excluded if HDL-C <20 or >100 mg/dL)",
+    "source": "Khan SS et al. Circulation 2024, PMC10910659 (DOI 10.1161/CIRCULATIONAHA.123.067626)",
+    "location": "Methods > Study Population, same paragraph as the SBP cutoffs",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "BMI range (developer paper)",
+    "value": "18.5 to <40.0 kg/m2 (excluded if <18.5 or >=40.0 kg/m2, the range used in PCP-HF development)",
+    "source": "Khan SS et al. Circulation 2024, PMC10910659 (DOI 10.1161/CIRCULATIONAHA.123.067626)",
+    "location": "Methods > Study Population, same paragraph. Results > PREVENT Model Performance Characteristics: supplemental analyses in people with BMI >40 kg/m2 showed modest underestimation of risk (calibration slope 1.30 [0.96, 1.47]).",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "Age range (developer paper)",
+    "value": "30-79 years, without known ASCVD or HF at baseline",
+    "source": "Khan SS et al. Circulation 2024, PMC10910659 (DOI 10.1161/CIRCULATIONAHA.123.067626)",
+    "location": "Methods > Study Population ('adults aged 30 to 79 years without known ASCVD or HF at baseline'); last paragraph of the Introduction; first paragraph of the Discussion",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "eGFR / UACR / HbA1c ranges in developer paper main text",
+    "value": "Not stated. The main text gives exclusion ranges only for SBP, TC, HDL-C and BMI. eGFR uses CKD-EPI 2021 creatinine and has a spline knot at 60 (per -15 mL/min/1.73m2). UACR enters log-transformed with a missing indicator. HbA1c enters linear with a missing indicator and a diabetes interaction. SBP is modelled per 20 mmHg with a knot at 110; BMI per 5 kg/m2 with a knot at 30.",
+    "source": "Khan SS et al. Circulation 2024, PMC10910659 (DOI 10.1161/CIRCULATIONAHA.123.067626)",
+    "location": "Methods > Measurement of Traditional and Novel Predictors (CKD-EPI 2021; UACR and HbA1c missing indicators); Methods > Statistical Analysis (knots; 'UACR (log-transformed), HbA1c, and SDI')",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "Developer paper supplement (Supplemental Appendices and Tables)",
+    "value": "Not inspected. It may document further input limits.",
+    "source": "Khan SS et al. Circulation 2024 supplement (listed under 'Supplementary Material' in PMC10910659)",
+    "location": "Supplemental Appendices and Figure (docx); Supplemental Tables (xlsx)",
+    "access": "abstract",
+    "status": "unknown",
+    "note": "These files are downloads (docx/xlsx), and the task forbids downloading data files. The earlier agent reported that the ahajournals links were disabled and the PMC links returned a bot challenge. No supplement value is used anywhere in this verification."
+   },
+   {
+    "label": "SBP range in official AHA PREVENT online calculator",
+    "value": "90-200 mmHg. Input placeholder \"90-200\". Error text \"Systolic blood pressure must be between 90-200 mm Hg\" (template text says \"mmHg\"). Validation rejects sbp<90 or sbp>200.",
+    "source": "AHA PREVENT Online Calculator, https://professional.heart.org/en/guidelines-and-statements/prevent-calculator; code https://professional.heart.org/dist/common/app.bundle.js?v=1.28.2.29416 (2,430,667 chars). Re-read in the built-in browser on 2026-10-09 by in-page fetch, without saving the file.",
+    "location": "DOM input #SBPvalue placeholder=\"90-200\". app.bundle.js char offsets: 439112 (sbp_range.errorMessage); 1534340 (template placeholder); 1534722 (template error text); 509914 (sbpValidation); 510106 and 511762 ('value<90||...value>200').",
+    "access": "official_page",
+    "status": "verified",
+    "note": "The string \"90-180\" does not occur anywhere in the bundle."
+   },
+   {
+    "label": "Other required-input ranges in official AHA calculator",
+    "value": "Age 30-79 years; total cholesterol 130-320 mg/dL; HDL-C 20-100 mg/dL; BMI 18.5-39.9 kg/m2; eGFR 15-140 mL/min/1.73m2",
+    "source": "AHA PREVENT online calculator page and app.bundle.js v=1.28.2.29416",
+    "location": "DOM placeholders: #age \"30-79\", #TotalCholesterol \"130-320\", #HDLCholesterol \"20-100\", #eGFR \"15-140\", #BMI \"18.5-39.9\". Error messages at offsets ~438650-439650 (the data() block). Validation at ~509700-510700 and ~511000-512150 (e.g. 'age<30||age>79', 'TC<130||>320', 'HDL<20||>100', 'bmi<18.5||>39.9', 'egfr<15||>140').",
+    "access": "official_page",
+    "status": "verified",
+    "note": "The eGFR message says \"may be between 15 - 140\", but validation treats values <15 or >140 as errors. The calculator's BMI upper bound is 39.9, while the paper excluded >=40.0."
+   },
+   {
+    "label": "Optional-input ranges in official AHA calculator (UACR, HbA1c)",
+    "value": "UACR 0-25000 mg/g; an entry of exactly \"0\" is stored as 0.1 before use. HbA1c 3-15%.",
+    "source": "AHA PREVENT online calculator, app.bundle.js v=1.28.2.29416",
+    "location": "UACR: placeholder \"0 to 25000\" (offset 1551686); message \"UACR must be between 0 - 25000 mg/g\" (1552087); validation '<0||>25e3' (453209); mapping '\"0\"==uacr_range_front_end?.1' (~453460-453560). HbA1c: placeholder \"3 to 15\" (1554797); message \"HbA1C must be between 3% - 15%\" (1555171); validation '<3||>15' (~453250).",
+    "access": "official_page",
+    "status": "verified",
+    "note": "The 0-to-0.1 substitution applies only to an input of exactly \"0\". Other values in (0, 0.1) are not changed by this front-end code."
+   },
+   {
+    "label": "30-year risk display limited to age <60 in official calculator",
+    "value": "The calculator shows 30-year results only when the submitted age is <60, i.e. ages 30-59.",
+    "source": "AHA PREVENT online calculator app.bundle.js v=1.28.2.29416",
+    "location": "'e.submittedAge<60' at offsets 1518490, 1518959, 1519442, 1520391, 1521427, 1521939, 1522403, 1523358; 'Number(e.userPrintData.age)<60' at 1503251",
+    "access": "official_page",
+    "status": "verified",
+    "note": "Correction: the visible text of the calculator page does not say this. It comes only from the code. The FAQ mentions 'adults aged 30-59 years' only in the 2026 Dyslipidemia Guideline context (FAQ PDF p.6)."
+   },
+   {
+    "label": "Developer guidance on out-of-range values",
+    "value": "If any required variable (sex, age, TC, HDL-C, SBP, BMI, eGFR, diabetes, smoking, antihypertensive use, lipid-lowering use) is missing or out of range, the calculator gives no estimate. Out-of-range values should be managed clinically; risk can still be estimated with the closest in-range value, which may over- or under-estimate it.",
+    "source": "AHA PREVENT FAQs PDF (https://professional.heart.org/-/media/PHD-Files/Guidelines-and-Statements/PREVENT/PREVENT-FAQs-FINAL.pdf, 8 pages, read in memory); calculator page 'Patient Eligibility for the PREVENT Equations' footnote (*); PREVENT Equations Quickstart Guide PDF",
+    "location": "FAQ PDF page 7 of 8 (page order resolved from the PDF /Kids array): question 'How should the PREVENT equations be used in patients with incomplete data (e.g. missing eGFR) or those outside validated ranges (BMI >39.9 kg/m2, under age 30, or over 79)?' Calculator page eligibility footnote (*). Quickstart Guide 'When to Use the PREVENT Equations?' footnote (*).",
+    "access": "official_page",
+    "status": "verified",
+    "note": "No numeric SBP range appears in the FAQ text. The Quickstart text extraction was partial (some glyphs could not be decoded), and no numeric SBP range appeared in what was decoded. The numeric limits come from the calculator code."
+   },
+   {
+    "label": "Official AHA PREVENT R/STATA code (AHAprevent / AHA-DS-Analytics/PREVENT)",
+    "value": "Not inspected. The code is available only after accepting a license agreement.",
+    "source": "AHA 'About the PREVENT Calculator' page ('Request the PREVENT Code' links to https://www.jotform.com/240774577352161; 'Access AHA-DS-Analytics/PREVENT on GitHub ... R and STATA'); FAQ PDF p.8 (access link emailed after agreement; https://github.com/AHA-DS-Analytics/PREVENT); pyprevent README cites https://github.com/AHA-Tools/AHAprevent",
+    "location": "github.com/AHA-DS-Analytics/PREVENT and github.com/AHA-Tools/AHAprevent both returned HTTP 404 to an unauthenticated WebFetch on 2026-10-09. A web search found no public AHAprevent documentation.",
+    "access": "official_page",
+    "status": "unknown",
+    "note": "No terms were accepted. Any claim about AHAprevent behaviour rests only on pyprevent's 'R parity' comments."
+   },
+   {
+    "label": "pyprevent (pinned commit 69f3414, v0.2.0) input validation",
+    "value": "For every model and outcome: age 30-79, sex 0/1, SBP 90-200, diabetes 0/1, smoking 0/1 and eGFR >0 are required; any failure sets all outcomes to NaN. TC 130-320 and HDL 20-100 (plus statin and bptreat 0/1) gate CVD/ASCVD. BMI 18.5 to <40 (plus bptreat) gates HF only. UACR <0 is invalid and values in [0, 0.1) become 0.1 before log(). HbA1c <=0 is invalid. SDI must be an integer decile 1-10. 30-year outputs are NaN when age >59. Nothing is clipped.",
+    "source": "E:\\Research\\uacr-prevent\\studies\\uacr_prevent\\method_sources\\pyprevent (manifest.json commit 69f341472daf9cb049a399b3e38db60fd8896e56; pyproject.toml version 0.2.0); README.md read from https://raw.githubusercontent.com/kingrc15/pyprevent/69f341472daf9cb049a399b3e38db60fd8896e56/README.md",
+    "location": "prevent\\_core.py lines 237-252 (validate_common_inputs, line 244 'sbp < 90 or sbp > 200'), lines 48-81 (adjust, invalid_uacr, invalid_hba1c, invalid_sdi_decile), lines 255-275 (apply_age_horizon_masks); prevent\\_base.py lines 23-41 (TC/HDL/BMI gates); the same gates are in _uacr.py lines 26-46, _hba1c.py lines 24-44, _sdi.py lines 24-44 and _full.py lines 33-53",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Correction: the README is not among the locally pinned files. I read it from GitHub at the pinned commit. Its input table lists SBP [90, 200], BMI [18.5, 39.9], EGFR >0, UACR >=0 and HBA1C >0, while the code's HF gate uses BMI >=40, so 39.9-40 is not reconciled. The code's 'R parity: AHAprevent::pred_risk_*' comments cannot be checked because AHAprevent is license-gated."
+   },
+   {
+    "label": "preventr (pinned commit ebe2ac1, v0.12.0, 2026-06-23) SBP limit and the cited comment",
+    "value": "preventr limits SBP to 90-180 mmHg. Its roxygen documentation (not a code comment) says the PREVENT equations \"technically permit up to 200 mmHg\". The author restricted the range to 180 because SBP >180 is hypertensive urgency. This is the package author's clinical choice, not a developer limit.",
+    "source": "E:\\Research\\uacr-prevent\\studies\\uacr_prevent\\method_sources\\preventr\\R\\estimate_risk.R and R\\helpers.R (github.com/martingmayer/preventr @ ebe2ac15c38569c3bdaf871c4853b6eeff77b039); DESCRIPTION Version 0.12.0, Date 2026-06-23",
+    "location": "estimate_risk.R lines 220-222 (@param sbp 'from 90-180') and lines 410-419 (@details '## Why is the upper limit of the SBP range 180 mmHg?'); helpers.R line 403 (sbp = c(lower = 90, upper = 180))",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "preventr other ranges (for comparison)",
+    "value": "Age 30-79; TC 130-320 mg/dL (3.36-8.28 mmol/L); HDL 20-100 mg/dL (0.52-2.59 mmol/L); BMI 18.5-39.9; eGFR 15-140; UACR 0.1-25000 mg/g; HbA1c 4.5-15%. The 4.5% HbA1c floor is also author-imposed; the documentation says the equations technically permit down to 3%.",
+    "source": "preventr pinned source (commit ebe2ac1)",
+    "location": "helpers.R lines 369-414 (valid list); estimate_risk.R lines 196, 226-232, 243-254 (@param ranges), 421-429 (HbA1c floor rationale)",
+    "access": "full_text",
+    "status": "verified"
+   }
+  ],
+  "conclusion": "The developers document an SBP range of 90-200 mmHg, not 90-180. I re-opened every primary source on 2026-10-09 and confirmed this.\n\n1. **Developer paper.** Khan et al., Circulation 2024;149:430-449 (PMC10910659, DOI https://doi.org/10.1161/CIRCULATIONAHA.123.067626, full text via PubMed). Methods > Study Population excludes people with SBP <90 or >200 mm Hg, using the PCE cutoffs. Other limits there:\n   - TC 130-320 mg/dL\n   - HDL-C 20-100 mg/dL\n   - BMI 18.5 to <40.0 kg/m2 (the PCP-HF range)\n   - adults aged 30-79 without ASCVD or HF\n\n   The main text gives no ranges for eGFR, UACR or HbA1c.\n\n2. **Official AHA calculator.** I re-read app.bundle.js v=1.28.2.29416 in the browser.\n   - SBP: placeholder \"90-200\", message \"Systolic blood pressure must be between 90-200 mm Hg\", validation rejects <90 or >200. The string \"90-180\" does not appear anywhere in the bundle.\n   - Other limits: age 30-79, TC 130-320, HDL 20-100, BMI 18.5-39.9, eGFR 15-140, UACR 0-25000 mg/g (an entry of exactly \"0\" becomes 0.1), HbA1c 3-15%.\n   - The AHA FAQ PDF (p.7 of 8) says missing or out-of-range required inputs produce no estimate. It suggests using the closest in-range value, which may over- or under-estimate risk.\n\n3. **pyprevent (pinned commit 69f3414, v0.2.0).** It enforces SBP 90-200 (_core.py line 244). It is looser than the calculator on eGFR (>0), UACR (>=0) and HbA1c (>0). It gates CVD/ASCVD on TC/HDL and gates HF only on BMI 18.5 to <40.\n\n4. **preventr (pinned commit ebe2ac1, v0.12.0).** The 90-180 bound comes from here. estimate_risk.R lines 410-419 say the equations \"technically permit up to 200 mmHg\"; the author capped SBP at 180 for clinical reasons (hypertensive urgency). This is roxygen documentation, not a code comment. His 4.5% HbA1c floor, against 3% in the calculator, is likewise his own choice.\n\n**Corrections to the extraction:**\n- The previous conclusion said the calculator page states that 30-year risk applies only to ages 30-59. The visible page text does not say this. The code shows 30-year results only when submittedAge <60 (offsets ~1518490-1523358). I added this as a separate item.\n- The pyprevent README is not among the local pinned files. I read it from raw.githubusercontent.com at the pinned commit.\n- I corrected several bundle offsets: SBP validation is at 510106 and 511762; the UACR 0-to-0.1 mapping is at ~453460-453560.\n- I added the FAQ page number (p.7) and the full list of required variables from the FAQ.\n- I added pyprevent's age-horizon mask and binary-input checks.\n- I added a separate item for the supplement, marked unknown.\n\n**Still unverified:**\n- **Supplement:** not inspected. The files are docx/xlsx downloads, which the task forbids.\n- **AHA's official R/STATA code:** AHAprevent / AHA-DS-Analytics/PREVENT is behind a license agreement, and both GitHub URLs return 404 without sign-in.\n\nNeither of these affects the SBP answer: the paper and the AHA's own calculator agree on 200.\n\nI fetched both PDFs and the JS bundle in memory inside the browser and saved nothing to disk.\n\n**Recommendation:** use 90-200 mmHg as the developer-documented SBP domain. Treat 180 only as a stricter optional sensitivity bound, credited to preventr (Mayer), not to the AHA."
+ },
+ "lacher": {
+  "items": [
+   {
+    "label": "Lacher 2005: identifiers",
+    "value": "Lacher DA, Hughes JP, Carroll MD. Estimate of biological variation of laboratory analytes based on the Third National Health and Nutrition Examination Survey. Clin Chem 2005;51(2):450-452. Article type: Technical Brief. DOI 10.1373/clinchem.2004.039354; PMID 15590751; no PMC copy. Published online December 8, 2004.",
+    "source": "PubMed metadata (PMID 15590751); archived journal page",
+    "location": "PubMed record; archived page 'This Article' box ('Published December 8, 2004'; Classifications: Technical Brief)",
+    "access": "official_page",
+    "status": "verified",
+    "note": "Correction to the earlier note: today the current OUP page (academic.oup.com/clinchem/article/51/2/450/5629683) is a plain paywall ('You do not currently have access to this article'; PDF for subscribers only), not a bot check. I re-fetched the full text and Table 1 myself from the Wayback snapshots (web.archive.org/web/20131120051143id_/http://www.clinchem.org:80/content/51/2/450.full and .../20131118212823id_/http://www.clinchem.org/content/51/2/450/T1.expansion.html) into scratchpad\\verify_lacher. My files are 3 bytes shorter than the earlier copies, so the hashes differ, but every table row is identical."
+   },
+   {
+    "label": "Lacher 2005: how CVw (CVI) was computed",
+    "value": "The paper defines CVt = [(CVa)^2 + (CVw)^2]^1/2. This assumes all CVs are measured at the same analyte mean and that pre- and postanalytical variation is negligible. CVa equals the lab method imprecision (CVi) if there is no bias. Hence 'The CVw was calculated as [(CVt)^2 - (CVa)^2]^1/2'. CVi values come from the NHANES III laboratory procedures manual (ref 6). WP variation came from a nonrandom, unweighted repeat sample with a mean (SD) of 17 (8) days between the two measurements. Some distributions were non-Gaussian, so extreme outliers were removed by Tukey's method (more than 3 IQR below the 25th or above the 75th percentile). No log transformation is described; CVs are on the original scale. The paper does not say how CVt was estimated from the paired values.",
+    "source": "Lacher 2005 full text",
+    "location": "Body paragraph 2 (CVt formula); paragraph 3 (CVi, ref 6); paragraph 5 ('The CVg values were estimated...', which gives the CVw formula and Tukey rule); Table 1 footnote 3 ('Outliers were deleted by the Tukey method')",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Sample sizes: BP n = 24 978 and WP n = 2426 sample persons. The WP sample (about 10%) was recruited for roughly equal sex proportions, half aged 20-39 and half 40+. It was older than the BP sample (mean age 42.9 vs 30.8 y). Second exams were scheduled at the same time of day when possible. CVg came from a weighted Taylor-series analysis, with BP SD = (SE^2 + SDsrs^2)^1/2. Footnote 3 is attached to all six PREVENT-relevant rows, but not to albumin, apolipoprotein A, apolipoprotein B, bicarbonate, chloride, total protein, varicella antibody or vitamin A."
+   },
+   {
+    "label": "Lacher 2005 Table 1: total cholesterol (serum, mmol/L)",
+    "value": "BP n 20 690, mean 5.01, SD 1.12, CVg 22.3%; WP n 2299, mean 5.21, SD 0.43, CVw 8.2%; index of individuality 0.37; method CVi 2.3%; Tukey outliers deleted",
+    "source": "Lacher 2005, Table 1",
+    "location": "Table 1, row 'Cholesterol, total (mmol/L)' (footnote 3)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The text also contradicts itself. The imprecision example uses CVw 8.2% ('one half of CVw (8.2%), or 4.1%'), but the bias example uses 0.079 and 0.226 to get about 6.0%. With 0.082 and 0.223 the bias would be 5.9%. Selvin 2013 (ref 25) quotes 8.2%."
+   },
+   {
+    "label": "Lacher 2005 Table 1: HDL cholesterol (serum, mmol/L)",
+    "value": "BP n 20 534, mean 1.31, SD 0.37, CVg 28.3%; WP n 2266, mean 1.31, SD 0.16, CVw 12.4%; index 0.44; method CVi 2.5%; Tukey outliers deleted",
+    "source": "Lacher 2005, Table 1",
+    "location": "Table 1, row 'HDL-cholesterol (mmol/L)' (footnote 3)",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "Lacher 2005 Table 1: creatinine (serum, umol/L)",
+    "value": "BP n 16 026, mean 92.70, SD 17.36, CVg 18.7%; WP n 2062, mean 93.11, SD 6.38, CVw 6.8%; index 0.36; method CVi 1.0%; Tukey outliers deleted",
+    "source": "Lacher 2005, Table 1",
+    "location": "Table 1, row 'Creatinine (umol/L)' (footnote 3)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Correction: Lacher does not say which creatinine values were used. That these are the original NHANES III (Jaffe) values, not the recalibrated ones from 2007 (Selvin 2007, AJKD 50:918), is my inference from the 2004 publication date. It is not stated in the paper."
+   },
+   {
+    "label": "Lacher 2005 Table 1: glycohemoglobin (blood, %)",
+    "value": "BP n 19 846, mean 5.16, SD 0.49, CVg 9.6%; WP n 2195, mean 5.34, SD 0.18, CVw 1.5%; index 0.16; method CVi 3.1%; Tukey outliers deleted",
+    "source": "Lacher 2005, Table 1",
+    "location": "Table 1, row 'Glycohemoglobin, blood (%)' (footnote 3)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "CVi (3.1%) is larger than CVw (1.5%), so this value depends heavily on the CVa subtraction. Selvin 2013 (ref 25) quotes 1.5%."
+   },
+   {
+    "label": "Lacher 2005 Table 1: glucose (plasma, mmol/L)",
+    "value": "BP n 15 341, mean 5.07, SD 0.63, CVg 12.5%; WP n 1950, mean 5.14, SD 0.43, CVw 8.3%; index 0.66; method CVi 1.7%; Tukey outliers deleted",
+    "source": "Lacher 2005, Table 1",
+    "location": "Table 1, row 'Glucose, plasma (mmol/L)' (footnote 3)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The paper does not state fasting status or the time of day of the blood draw beyond 'same time of day when possible'. Selvin 2013 (ref 25) quotes 8.3%."
+   },
+   {
+    "label": "Lacher 2005 Table 1: urine creatinine (urine, mmol/L)",
+    "value": "BP n 19 676, mean 11.55, SD 7.08, CVg 61.3%; WP n 1626, mean 11.89, SD 5.11, CVw 43.0%; index 0.70; method CVi 2.2%; Tukey outliers deleted",
+    "source": "Lacher 2005, Table 1",
+    "location": "Table 1, row 'Creatinine, urine (mmol/L)' (footnote 3)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "This is on the original scale. It is numerically identical to the 43.0% printed in Selvin 2013 Table 2 for 'Log(Urine Creatinine)'. That looks like a coincidence: recomputing from Selvin's own columns puts its 43.0% on the log-albumin row (see the Selvin derived item)."
+   },
+   {
+    "label": "Lacher 2005: urine albumin / ACR",
+    "value": "Not reported. Table 1 lists 42 analytes and has no urine albumin or albumin-creatinine ratio row. The only urine analyte is urine creatinine.",
+    "source": "Lacher 2005, Table 1",
+    "location": "Table 1, all 42 rows checked (the text also says '42 ... analytes')",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Other rows that may be relevant: apolipoprotein B (CVw 9.5%, CVi 2.7%, WP n 1073); triglycerides (CVw 28.8%, CVi 4.7%, WP n 2219); uric acid (CVw 9.0%, CVi 0.7%); urea nitrogen (CVw 18.0%, CVi 3.7%). There is no LDL or non-HDL row. Footnote 1: specimen is serum unless noted."
+   },
+   {
+    "label": "Lacher 2005: text claim that CVw exceeds CVi is contradicted by the table (observation, not a source value)",
+    "value": "The text says 'The CVw and CVg exceeded the CVi for laboratory analytes (Table 1)'. Yet Table 1 shows CVw below CVi for albumin (2.8 vs 3.4%), alkaline phosphatase (4.4 vs 6.5%) and glycohemoglobin (1.5 vs 3.1%).",
+    "source": "Lacher 2005 full text and Table 1",
+    "location": "Body paragraph 6; Table 1 rows Albumin, Alkaline phosphatase, Glycohemoglobin",
+    "access": "full_text",
+    "status": "verified",
+    "note": "This matters for HbA1c: its biological CV comes from subtracting a CVa larger than itself, so it is fragile."
+   },
+   {
+    "label": "Lacher 2005: derived check of whether Table 1 CVw had CVa subtracted (not a source value)",
+    "value": "Method: I treated WP SD / WP mean as the total CV, propagated rounding of the printed SD and mean, and tested all 42 rows. 18 rows fit only the CVa-subtracted value (e.g., albumin, ALP, insulin, LDH, B12, HbA1c). 4 rows fit only the unsubtracted total CV: total cholesterol (total 8.15-8.36% vs subtracted 7.82-8.03%; printed 8.2), total calcium, TIBC and sodium. 20 rows are ambiguous. PREVENT rows: total cholesterol looks unsubtracted, which agrees with the text's 0.079. HbA1c is subtracted (total 3.27-3.47%, subtracted 1.05-1.55%, printed 1.5). Serum creatinine favors subtraction (total 6.85-6.86% would usually print as 6.9; subtracted 6.77-6.78% prints as 6.8). HDL (12.4), glucose (8.3) and urine creatinine (43.0) are ambiguous because their CVa is small.",
+    "source": "My calculation from Lacher 2005 Table 1",
+    "location": "Table 1 columns WP Mean, WP SD, CVw, Method CVi; text bias example",
+    "access": "full_text",
+    "status": "likely",
+    "note": "Correction to the earlier version: creatinine is not an even 'either fits' case (it leans toward subtraction), and HDL is undecidable, not 'maybe total'. The check assumes the WP SD column is the within-person SD, which the paper never defines. It shows the subtraction was applied inconsistently or with errors in at least 4 rows. Do not cite this as a reported value."
+   },
+   {
+    "label": "Selvin 2013: identifiers",
+    "value": "Selvin E, Juraschek SP, Eckfeldt J, Levey AS, Inker LA, Coresh J. Within-person variability in kidney measures. Am J Kidney Dis 2013;61(5):716-722. PMID 23337799; PMCID PMC3628297; DOI 10.1053/j.ajkd.2012.11.048",
+    "source": "PubMed metadata; PMC full text (pubmed get_full_text_article plus NCBI efetch XML for tables and references)",
+    "location": "PubMed record",
+    "access": "official_page",
+    "status": "verified",
+    "note": "I fetched my own XML copy to scratchpad\\verify_selvin\\pmc.xml."
+   },
+   {
+    "label": "Selvin 2013: how CVw was computed",
+    "value": "Selvin says 'The within-person coefficients of variation (CVw) were calculated using a standard approach' and cites ref 22: Juraschek SP et al., Clin Biochem 2012;45(9):694-6, PMID 22425605, PMC3575740, DOI 10.1016/j.clinbiochem.2012.02.027. Ref 22 defines CV = SD/mean, with SD = sqrt( sum_i (x_i - y_i)^2 / (2n) ) and mean = (sum x_i/n + sum y_i/n)/2. That is the root-mean-square of the uncentered pair differences over sqrt 2, divided by the grand mean. Selvin adds: 'Because urine albumin and urine creatinine are highly skewed, they were analyzed on the log scale.' CVw is total within-person variability ('includes biological and analytical variability'); CVa was not subtracted.",
+    "source": "Selvin 2013 full text; Juraschek 2012 full text (ref 22)",
+    "location": "Selvin: Methods, Statistical Analysis; abstract Measurements; Table 2 footnote. Juraschek: Materials and methods, CV equation",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The log base is not stated, but log10 is strongly supported. With albumin in mg/L and creatinine in mg/dL, log10 ACR (mg/g) = log10 albumin - (log10 creatinine - 2) = 0.88 - 0.03 = 0.85, exactly the Table 2 log-ACR mean. No natural-log unit conversion gives this. Because the SD uses uncentered differences, any systematic Exam 1-Exam 2 shift adds to CVw, for example the cystatin C recalibration drift (mean difference -0.03 mg/L) and eGFRcys (+3.05). Table 2 footnote a says 'Range is shown in parentheses', but the Results text calls them 'confidence intervals' ('non-overlapping confidence intervals'). Selvin does not say how they were computed; Juraschek 2012 used bias-corrected bootstrap CIs with 1000 replications. Differences = Exam 1 minus Exam 2."
+   },
+   {
+    "label": "Selvin 2013 Table 2: serum creatinine (standardized, mg/dL)",
+    "value": "CVw 7.6% (7.2 to 8.0); Exam 1 0.88 ± 0.23, Exam 2 0.87 (0.22); difference 0.01 (SD 0.09), 95% CI -0.00 to 0.01; N = 795",
+    "source": "Selvin 2013, Table 2",
+    "location": "Table 2, Serum measurements, row 'Creatinine (mg/dL)' (footnote b: standardized)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Assay: kinetic rate Jaffe from the original NHANES III protocol, recalibrated to standardized creatinine. Inter-assay CVs: 2.7% at 1.7 mg/dL, 2.1% at 3.5 mg/dL, 2.0% at 4.4 mg/dL (Methods, Assays). Related rows: eGFRcr CKD-EPI CVw 6.6% (6.1-7.1); eGFRcr MDRD 9.6% (8.7-10.4)."
+   },
+   {
+    "label": "Selvin 2013 Table 2: cystatin C (standardized, mg/L)",
+    "value": "CVw 6.8% (6.4 to 7.3); Exam 1 0.91 (0.24), Exam 2 0.94 (0.26); difference -0.03 (SD 0.08), 95% CI -0.04 to -0.03 (p<0.05); N = 795",
+    "source": "Selvin 2013, Table 2",
+    "location": "Table 2, row 'Cystatin C (mg/L)' (footnote b: standardized)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Exam 1 samples were assayed in 2006 on a BNII, inter-assay CV 5.1% at mean 0.970 (the unit is printed as 'mg/dL'). Exam 2 samples were assayed in 2009 on a ProSpec, 4.0% at 0.689 mg/L. All values were aligned and converted to ERM471/IFCC-traceable values. The Discussion says recalibration may have added to total variability. Results: cystatin C was 3.3% lower at Exam 1. eGFRcys CKD-EPI CVw 6.7% (6.3-7.2)."
+   },
+   {
+    "label": "Selvin 2013 Table 2: urine albumin",
+    "value": "Row 'Log(Urine Albumin)': CVw 37.3% (34.4 to 40.1); Exam 1 0.88 (0.66), Exam 2 0.87 (0.66); difference 0.01 (SD 0.53), 95% CI -0.02 to 0.04; N = 1294",
+    "source": "Selvin 2013, Table 2",
+    "location": "Table 2, Urine Measurements (N=1,294) block",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Random spot urine from the original NHANES III protocol, not re-assayed. Solid-phase fluorescence immunoassay; inter-assay CVs from 4.8% (mean 7.11 ug/mL) to 16.1% (mean 1.67 ug/mL). This is a CV of log-transformed values, not a concentration-scale CV."
+   },
+   {
+    "label": "Selvin 2013 Table 2: urine creatinine",
+    "value": "Row 'Log(Urine Creatinine)': CVw 43.0% (39.8 to 46.3); Exam 1 2.03 (0.33), Exam 2 2.03 (0.33); difference 0.00 (SD 0.32), 95% CI -0.01 to 0.02; N = 1294",
+    "source": "Selvin 2013, Table 2",
+    "location": "Table 2, Urine Measurements block",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Modified kinetic Jaffe on a Synchron AS/Astra; inter-assay CVs from 1.5% (mean 5.77 mg/dL) to 7.7% (mean 0.91 mg/dL)."
+   },
+   {
+    "label": "Selvin 2013 Table 2: ACR",
+    "value": "Row 'Log(ACR)': CVw 11.3% (10.7 to 11.9); Exam 1 0.85 (0.62), Exam 2 0.85 (0.64); difference 0.00 (SD 0.45), 95% CI -0.02 to 0.03; N = 1294",
+    "source": "Selvin 2013, Table 2; abstract; Results text",
+    "location": "Table 2; Results paragraph 3 ('On the log scale, ACR varied substantially less (CVw = 11.3%) than urine albumin (CVw = 37.3%) or urine creatinine (CVw = 43.0%)'); abstract Results",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The printed value is transcribed correctly, but see the derived item: it is probably on the wrong row. Albuminuria = ACR >= 30 mg/g. Table 3: requiring both exams lowered albuminuria prevalence by 32.7% (-39.3 to -26.4; bias-corrected bootstrap, 1000 replications)."
+   },
+   {
+    "label": "Selvin 2013: exclusions and sample",
+    "value": "'After excluding 26 persons with extreme values (with observations >3 SDs from the mean: serum creatinine, 8; cystatin C, 14; BTP, 10; and B2M, 8)'. This takes the serum sample from 821 to 795. Final urine n = 1294; serum and urine were analyzed separately. No urine-specific exclusion is listed. Participants were 18+, from the unweighted, nonrandom NHANES III Second Examination sample; the serum sample oversampled ages 60+. Days between exams: serum 17.9 ± 7.8, urine 17.2 ± 7.9. Age: serum 57.7 ± 18.1, urine 46.8 ± 18.0.",
+    "source": "Selvin 2013 full text",
+    "location": "Methods, Study Populations (paragraphs 2-3); Table 1",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The per-marker counts sum to 40, more than 26, so some people were extreme on several markers (my inference). Selvin does not say whether levels or pair differences were screened; Juraschek 2012 screened differences (>3 SD). Selvin calls the Second Examination about 5% of NHANES III (2596 participants, 2209 aged 18+). Lacher calls the WP sample about 10% (2426 persons). The descriptions differ; I did not reconcile them."
+   },
+   {
+    "label": "Selvin 2013: citation of Lacher",
+    "value": "Selvin cites Lacher 2005 (ref 25) for short-term within-person 'biological' CVs, 'after subtracting the analytical method component': total cholesterol 8.2%, plasma glucose 8.3%, glycated hemoglobin 1.5%.",
+    "source": "Selvin 2013 full text",
+    "location": "Discussion paragraph 1, ref 25",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The numbers match Lacher Table 1. Per the Lacher derived check, the 8.2% for cholesterol appears not to have had CVa subtracted, despite Selvin's description."
+   },
+   {
+    "label": "Selvin 2013: derived consistency check on the log-scale urine CVw (not a source value)",
+    "value": "Applying ref 22's formula to Table 2's own columns, SDw = sqrt((SDd^2 + mean_d^2)/2) divided by the mean of the two exam means: log albumin 0.3748/0.875 = 42.8%; log urine creatinine 0.2263/2.03 = 11.1%; log ACR 0.3182/0.85 = 37.4%. The printed values are 37.3%, 43.0% and 11.3%: the same three numbers, but on permuted rows. The same calculation reproduces the eGFR rows exactly (MDRD 9.6, CKD-EPI cr 6.6, CKD-EPI cys 6.7) and the serum rows within about 0.3 points (creatinine 7.3 vs 7.6, cystatin C 6.5 vs 6.8, BTP 11.5 vs 11.6, B2M 8.1 vs 8.4). That validates the method.",
+    "source": "My calculation from Selvin 2013 Table 2",
+    "location": "Table 2, Difference (SD) and Exam 1/Exam 2 mean columns",
+    "access": "full_text",
+    "status": "likely",
+    "note": "The SD-of-difference column shows log ACR (0.45) varying more than log urine creatinine (0.32), contradicting the text's claim that ACR is much less variable than either part. Those SDs are internally consistent: the implied correlation of the albumin and creatinine differences is about 0.53. So the published 11.3% 'ACR CVw' is very likely a row-label permutation. In any case it is a CV of log10 values and depends on units. Derived original-scale equivalents, assuming log10: within-person SD of log10 ACR = 0.318 (0.733 ln units), giving CV = sqrt(exp(0.733^2) - 1) = 84%. Urine albumin is 105% and urine creatinine 56%. Recompute in the project's NHANES III data before using any of these."
+   }
+  ],
+  "conclusion": "I re-checked both papers against the primary sources myself. Every transcribed value in the extraction is correct. I made five corrections or downgrades and added one item.\n\n**Sources I re-opened**\n- **Lacher 2005** (Clin Chem 51:450-452; [DOI](https://doi.org/10.1373/clinchem.2004.039354), PMID 15590751): full text and Table 1 from the Wayback copies of the old clinchem.org site. My fresh copies are in scratchpad\\verify_lacher. The current OUP page is a plain paywall, not a bot check.\n- **Selvin 2013** (AJKD 61:716-722; [DOI](https://doi.org/10.1053/j.ajkd.2012.11.048), PMC3628297): full text via PubMed Central, with tables and references from NCBI's XML. My copy is scratchpad\\verify_selvin\\pmc.xml.\n- **Juraschek 2012** (Selvin's ref 22; [DOI](https://doi.org/10.1016/j.clinbiochem.2012.02.027), PMC3575740): checked for the CV formula Selvin relies on.\n\n**Lacher 2005**\n- **Method:** CVw = sqrt(CVt² − CVa²), with CVa taken as the lab's method imprecision (CVi). Values are on the original scale, with no log transform. Outliers were removed by Tukey's rule (beyond 3 IQR). The repeat sample was nonrandom and unweighted, about 17 (SD 8) days apart.\n- **PREVENT-relevant rows, all confirmed:**\n\n| Analyte | CVw | CVa | WP n |\n|---|---|---|---|\n| Total cholesterol | 8.2% | 2.3% | 2299 |\n| HDL cholesterol | 12.4% | 2.5% | 2266 |\n| Serum creatinine | 6.8% | 1.0% | 2062 |\n| HbA1c | 1.5% | 3.1% | 2195 |\n| Plasma glucose | 8.3% | 1.7% | 1950 |\n| Urine creatinine | 43.0% | 2.2% | 1626 |\n\n- **Missing:** there is no urine albumin or ACR row among the 42 analytes.\n\n**Lacher corrections and additions**\n1. **Creatinine note relabelled:** that these are the original NHANES III Jaffe values (not recalibrated) is my inference from the 2004 date. The paper does not say so.\n2. **Subtraction check widened to all 42 rows (my arithmetic, rated likely):**\n   - 18 rows match the value after subtracting CVa.\n   - 4 rows match the total CV before subtraction: total cholesterol, total calcium, TIBC and sodium.\n   - 20 rows are ambiguous.\n   - For PREVENT: cholesterol looks unsubtracted, and the text's own 0.079 is the subtracted value. HbA1c is clearly subtracted. Serum creatinine leans toward subtracted, not an even case as the earlier version said. HDL, glucose and urine creatinine cannot be decided.\n3. **New item:** the text says CVw exceeded CVi for all analytes. The table contradicts this for albumin, ALP and HbA1c. So the 1.5% for HbA1c depends on subtracting a CVa larger than itself.\n\n**Selvin 2013**\n- **Method:** CVw is total within-person variation; analytical CV was not subtracted. The formula comes from Juraschek 2012: CV = SD/mean, with SD = sqrt(Σ(x−y)²/2n) on the raw differences and mean = the average of the two exam means. Because the differences are not mean-centred, a systematic shift between exams adds to CVw. That matters for cystatin C, which was assayed in 2006 and 2009.\n- **Scale:** urine albumin and creatinine were analyzed on the log scale. The base is not stated, but log10 is supported by the table itself: 0.88 − (2.03 − 2) = 0.85, exactly the log-ACR mean.\n- **Brackets after each CVw:** footnoted as a \"range\", but the Results text calls them confidence intervals. Selvin doesn't say how they were computed; Juraschek used a bias-corrected bootstrap.\n- **Values, all confirmed:**\n\n| Measure | CVw | n |\n|---|---|---|\n| Serum creatinine (standardized) | 7.6% (7.2–8.0) | 795 |\n| Cystatin C | 6.8% (6.4–7.3) | 795 |\n| Log urine albumin | 37.3% (34.4–40.1) | 1294 |\n| Log urine creatinine | 43.0% (39.8–46.3) | 1294 |\n| Log ACR | 11.3% (10.7–11.9) | 1294 |\n\n- **Exclusions:** 26 people with values more than 3 SD from the mean were dropped from the serum analysis, taking it from 821 to 795. No urine exclusions are listed.\n\n**The ACR problem (my arithmetic, rated likely):** Selvin's formula, applied to Table 2's own columns, reproduces the three eGFR rows exactly and the serum rows within about 0.3 points. Applied to the urine rows, it gives:\n- 42.8% for log albumin,\n- 11.1% for log urine creatinine,\n- 37.4% for log ACR.\n\nThat is the printed set of values on the wrong rows. So the 11.3% \"ACR CVw\" is very likely mislabelled, and it is also unit-dependent. My derived original-scale CVs are about 84% for ACR, 105% for albumin and 56% for urine creatinine. Recompute in the project data rather than cite Selvin's 11.3%.\n\n**Connector status:** four PubMed-related connectors (biorender, owkin, synapse, wiley) need authorizing in claude.ai connector settings or via /mcp before they can be used. The research-desk reference-lookup server failed to connect; I didn't need it for this check."
+ },
+ "cva": {
+  "items": [
+   {
+    "label": "Total cholesterol CVa (NHANES III, Johns Hopkins Lipoprotein Analytical Lab, Hitachi 704 enzymatic): total pool CV",
+    "value": "Q20 pool (mean 213 mg/dL, n=100): total CV 1.25% (SD 2.67). Q17 pool (mean 166 mg/dL, n=64): total CV 1.33% (SD 2.20)",
+    "source": "Gunter EW, Lewis BG, Koncikowski SM. Laboratory Procedures Used for NHANES III, 1988-1994 (CDC/NCHS 1996), https://wwwn.cdc.gov/nchs/data/nhanes3/manuals/labman.pdf",
+    "location": "Section VII-Q 'Lipids in Serum or Plasma', 10. Quality Control (QC) Procedures (starts VII-Q-14, PDF p. 325), Table 8 'Total Pool Variability', manual p. VII-Q-16 (PDF p. 327)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "I re-fetched the PDF into memory (11,141,265 bytes, 754 pages) and extracted the text myself; the values match. Table 7 'Within Run Variability' on the same page gives Q20 mean 261, SD 4.07, CV 1.56% and Q17 mean 166, SD 2.32, CV 1.40%. Each table agrees with its own SD/mean (2.67/213 = 1.25%; 4.07/261 = 1.56%), so the Q20 mean (261 vs 213) is inconsistent between the two tables, not within either one."
+   },
+   {
+    "label": "HDL cholesterol CVa (NHANES III, heparin-Mn precipitation then Hitachi 704): total pool CV",
+    "value": "AQ13 pool, carried through the full HDL separation (mean 50 mg/dL, n=186): total CV 2.49% (SD 1.24). MQ8 pool, cholesterol assay step only (mean 50 mg/dL, n=186): total CV 1.46% (SD 0.72)",
+    "source": "NHANES III Laboratory Procedures Manual (labman.pdf, CDC 1996)",
+    "location": "Section VII-Q, 10. QC Procedures, Table 8 'Total Pool Variability', manual p. VII-Q-16 (PDF p. 327); pool definitions in section 6.e 'Preparation of Quality Control Materials', manual p. VII-Q-5 (PDF p. 316)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Section 6.e says AQ pools 'are carried through the entire HDL separation and analysis procedure', so AQ13 is the relevant CVa. Table 7 (within-run) prints AQ13 n=187, SD 3.84, CV 7.73%, which is larger than its total CV of 2.49%. That is impossible if within-run is a component of total, so it is a probable typo in the source. MQ8 within-run CV is 1.54%."
+   },
+   {
+    "label": "Lipid analytical goals quoted in the NHANES III manual (CDC standardization criteria; goals, not observed values)",
+    "value": "Cholesterol: accuracy ±3% of CDC reference value, CV ≤3%. HDL-C: accuracy ±10% of reference value, maximum SD 2.5 mg/dL (<40), 3.0 mg/dL (40-60), 3.5 mg/dL (>60)",
+    "source": "NHANES III Laboratory Procedures Manual (labman.pdf)",
+    "location": "Section VII-Q, 7.b Verification, 'Current CDC standardization criteria are as follows (11)', manual p. VII-Q-6 (PDF p. 317); HDL in Table 2 'CDC Standardization Criteria for HDL-Cholesterol', manual p. VII-Q-7 (PDF p. 318)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "In the raw content stream, the ± and ≤ in the cholesterol criteria are a '+' and a '<' glyph each followed by a 5.28 x 0.48 pt filled rectangle drawn just below them (an underline). Plain text extraction shows them as '+' and '<'. Table 2 prints '±' as text. These are GOALS."
+   },
+   {
+    "label": "NCEP total cholesterol analytical goal (goal, not NHANES-observed)",
+    "value": "NCEP performance criteria: imprecision <3% and bias <3%, total error 9%",
+    "source": "Lacher DA, Hughes JP, Carroll MD. Estimate of biological variation of laboratory analytes based on NHANES III. Clin Chem 2005;51:450-2 (doi:10.1373/clinchem.2004.039354). Read as an Internet Archive capture of the publisher HTML: https://web.archive.org/web/20150724131034/http://www.clinchem.org/content/51/2/450.full",
+    "location": "Main text, paragraph after the Table 1 description ('This compares with the National Cholesterol Education Program (NCEP) performance criteria of <3% for imprecision and bias and 9% for total error'), citing ref 9 (NCEP Laboratory Standardization Panel, Clin Chem 1988;34:193-201)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "This sentence supports the TC CV ≤3% goal named in the task (Lacher writes '<3%'). Use it only as a labelled goal, because NHANES-specific observed values exist."
+   },
+   {
+    "label": "CDC Lipids Standardization Program acceptance criteria (goals, not NHANES-observed)",
+    "value": "TC: maximum bias 0.03×RV; maximum SD 0.03×RV (= CV ≤3%) above 149.9 mg/dL (>3.877 mmol/L), SD 4.0 mg/dL at 100-149.9 mg/dL. HDL-C: maximum bias 0.05×RV; maximum SD 0.04×RV (= CV ≤4%) at ≥40 mg/dL (≥1.03 mmol/L), SD 1.7 mg/dL below 40 mg/dL",
+    "source": "CDC 'Monitoring Accuracy - LSP' page, https://www.cdc.gov/clinical-standardization-programs/php/cvd/monitoring-accuracy-lsp.html (accessed 2026-10-09; the page shows the date April 24, 2024)",
+    "location": "Tables 'Criteria for Acceptable Performance for the CDC Lipids Standardization Program (mg/dL)' and '(mmol/L)'",
+    "access": "official_page",
+    "status": "verified",
+    "note": "Correction to the earlier ambiguity: the mg/dL table prints the TC >149.9 SD as a bare '0.03', but the mmol/L table prints '0.03 (RV)' for TC >3.877 mmol/L, so it is 0.03 x RV. The page does not mention NCEP and does not define RV. The column is 'Maximum Allowable Standard Deviation', not CV."
+   },
+   {
+    "label": "HDL-C imprecision goal ≤4% (NCEP context; goal, not NHANES-observed)",
+    "value": "'HDL-C imprecision goal of ≤4%'; NCEP HDL-C total error goal ≤13%; recommended mean bias ≤5%",
+    "source": "Miller WG et al. Seven direct methods for measuring HDL and LDL cholesterol compared with ultracentrifugation reference measurement procedures. Clin Chem 2010;56:977-86 (PMC4687457, doi:10.1373/clinchem.2009.142810)",
+    "location": "Results, 'Imprecision' (≤4% goal); Results, 'Error sources contributing to total error' (NCEP total error ≤13%, bias ≤5%)",
+    "access": "full_text",
+    "status": "likely",
+    "note": "The ≤4% sentence does not itself name NCEP; the NCEP attribution comes from the surrounding text. The primary NCEP document (Warnick GR, Wood PD. Clin Chem 1995;41:1427-33, PMID 7586512) has no PubMed abstract, and the archive copy could not be reached. The CDC LSP SD ≤0.04×RV at ≥40 mg/dL is the same goal expressed as an SD."
+   },
+   {
+    "label": "Serum creatinine CVa (NHANES III biochemistry profile, Hitachi 737, kinetic Jaffe, White Sands Research Center)",
+    "value": "Total CV: 2.7% at 1.7 mg/dL; 2.1% at 3.5 mg/dL; 2.0% at 4.4 mg/dL. Within-run CV: 1.8%, 1.1%, 1.2%. N=20 for each pool",
+    "source": "NHANES III Laboratory Procedures Manual (labman.pdf)",
+    "location": "Section VII-T 'Biochemistry Profile in Serum', 10. QC Procedures (VII-T-26, PDF p. 391), Table 3 'Precision For Hitachi 737 Analyzer', rows Creatinine/A and /B on PDF p. 392 and Creatinine/C on PDF p. 393 (landscape pages with no page label, between VII-T-26 on PDF p. 391 and VII-T-30 on PDF p. 395)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The text says the precision studies (Table 3) 'were generated from the use of a long-term lot number of quality control material'. These are original-method CVs; the creatinine used in later analyses was recalibrated (Selvin 2013). The same table gives Hitachi glucose total CV 0.8-1.2% within-run / 0.9-1.2% total, and cholesterol total CV 2.0-2.9% (within-run 1.4-2.3%). lab-acc.pdf (PDF p. 30) says those profile values (SGP, CHP, TRP, SFP) should not be used routinely."
+   },
+   {
+    "label": "Serum creatinine CVa (secondary citation)",
+    "value": "Inter-assay CVs 2.7% at 1.7 mg/dL, 2.1% at 3.5 mg/dL, 2.0% at 4.4 mg/dL",
+    "source": "Selvin E et al. Within-person variability in kidney measures. Am J Kidney Dis 2013 (PMC3628297, PMID 23337799, doi:10.1053/j.ajkd.2012.11.048)",
+    "location": "Methods, 'Assays', first paragraph",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Identical to the total CVs in labman Table 3; Selvin calls them inter-assay CVs. Selvin's within-person CV for standardized creatinine (7.6%) is a total CV (biological plus analytical), not a CVa."
+   },
+   {
+    "label": "HbA1c CVa (Bio-Rad Diamat ion-exchange HPLC, Diabetes Diagnostic Laboratory, Univ. of Missouri-Columbia)",
+    "value": "Pool WB5 (mean 4.6% HbA1c): CV 1.73%. Pool WB6 (mean 10.2%): CV 1.57%. 20 runs each (frozen whole-blood batch QC)",
+    "source": "NHANES III Laboratory Procedures Manual (labman.pdf)",
+    "location": "Section VII-O 'Glycosylated Hemoglobin in Whole Blood', 10. QC Procedures, Table 5 'Precision and Accuracy', manual p. VII-O-11 (PDF p. 291)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The column header is just 'CV (%)'. The text says 'Daily means and ranges are calculated from 20 interassay determinations' and that Table 5 shows 'representative pools used during this survey', so this is best read as an interassay CV. Sample QC: duplicates with CV >10% are reanalysed. Specimens with HbC, other variants or Diamat failure were run by an 'alternative standardized affinity method' (VII-O pages); no CV is given for that method."
+   },
+   {
+    "label": "HbA1c precision statement in NHANES III data-file documentation",
+    "value": "'excellent, long-term precision (interassay CV's 2.0)'. There is no comparison symbol before 2.0 in either source",
+    "source": "Local NHANES III documentation: E:\\Research\\uacr-prevent\\studies\\nhanes3_testretest\\data\\lab-acc.pdf and LABSE-acc.pdf",
+    "location": "lab-acc.pdf PDF p. 114, variable note GHP; LABSE-acc.pdf PDF p. 72, variable note GHR",
+    "access": "full_text",
+    "status": "verified",
+    "note": "I checked the raw content streams again. LABSE has the literal string '(\\(interassay CV's 2.0\\). )Tj', and lab-acc p. 114 has '[(excellent, long-term precision \\(interassay CV's 2.0\\). It was )]TJ'. Neither has a separate glyph or drawn path between them. Apart from this note, neither document gives a CVa for any target analyte; a search for CV, precision and interassay found only this note and the G1P note on lab-acc p. 30."
+   },
+   {
+    "label": "Plasma glucose CVa (hexokinase, Roche Cobas Mira, Diabetes Diagnostic Laboratory, Univ. of Missouri) - the recommended G1P variable",
+    "value": "Total CV: BC1 (mean 74.4 mg/dL) 1.9%; IHL2 (94.5 mg/dL) 1.6%; BC2 (283.0 mg/dL) 2.2%; IHH2 (499.3 mg/dL) 1.8%. 20 runs each",
+    "source": "NHANES III Laboratory Procedures Manual (labman.pdf)",
+    "location": "Section VII-M 'Glucose in Plasma', 10. QC Procedures, Table 3 'Precision and Accuracy' (column 'Total CV, %'), manual p. VII-M-8 (PDF p. 258)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The manual calls Table 3 'An example of the precision and accuracy for the controls used for NHANES specimens'. Sample QC rule on the same page: duplicates with CV >5% are reanalysed. lab-acc.pdf PDF p. 30: 'the appropriate variables to use are G1P, TGP, TCP and FEP'; the profile values (SGP, CHP, TRP, SFP) 'should not be used routinely'."
+   },
+   {
+    "label": "Urine albumin CVa (solid-phase fluorescent immunoassay, Univ. of Minnesota) - NHANES III manual",
+    "value": "No CV table in the manual. Acceptance criterion only: 'Interassay variation must be ≤10% of the coefficient of variance (CV%)'",
+    "source": "NHANES III Laboratory Procedures Manual (labman.pdf)",
+    "location": "Section VII-HH 'Microalbumin in Urine', 10. QC Procedures, manual p. VII-HH-12 (PDF p. 603); section begins VII-HH-11 (PDF p. 602)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Confirmed in the raw stream: the '≤' is a drawn path (a left-pointing chevron with a 0.24 pt base bar) placed between 'must be' and '10%'. This is a QC acceptance limit, not an observed CVa. A search of the urine sections (PDF pp. 590-625) found no other CV or precision figures."
+   },
+   {
+    "label": "Urine albumin CVa (NHANES III, observed)",
+    "value": "Inter-assay CVs from 4.8% (mean 7.11 µg/mL) to 16.1% (mean 1.67 µg/mL)",
+    "source": "Selvin E et al. Am J Kidney Dis 2013 (PMC3628297, doi:10.1053/j.ajkd.2012.11.048)",
+    "location": "Methods, 'Assays', second paragraph",
+    "access": "full_text",
+    "status": "verified",
+    "note": "This is the only observed NHANES III urine albumin CVa found; Lacher 2005 Table 1 has no urine albumin row. Selvin's within-person CVs (urine albumin 37.3%, urine creatinine 43.0%, ACR 11.3%, log scale) are total variability, not CVa."
+   },
+   {
+    "label": "Urine creatinine CVa (Jaffe rate, Beckman ASTRA, Univ. of Minnesota) - NHANES III manual",
+    "value": "No CV table in the manual. Acceptance criterion only: 'Interassay variation must be ≤10% of the coefficient of variance (CV)'",
+    "source": "NHANES III Laboratory Procedures Manual (labman.pdf)",
+    "location": "Section VII-II 'Creatinine in Urine', 10. QC Procedures (starts VII-II-7, PDF p. 614), criterion on manual p. VII-II-8 (PDF p. 615)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The '≤' is the same drawn path as in VII-HH, confirmed in the raw stream. The manual says interassay QC 'is monitored by the Microalbumin Laboratory'. This is a QC limit, not an observed CVa."
+   },
+   {
+    "label": "Urine creatinine CVa (NHANES III, observed)",
+    "value": "Inter-assay CVs from 1.5% (mean 5.77 mg/dL) to 7.7% (mean 0.91 mg/dL), modified kinetic Jaffe on a Synchron AS/Astra analyzer (units as printed)",
+    "source": "Selvin E et al. Am J Kidney Dis 2013 (PMC3628297, doi:10.1053/j.ajkd.2012.11.048)",
+    "location": "Methods, 'Assays', second paragraph",
+    "access": "full_text",
+    "status": "verified",
+    "note": "Values match the source as printed. The units are doubtful: labman VII-II-7 (PDF p. 614) gives a linear range of 10-400 mg/dL and says values <1.0 mg/dL are reported as '<1 mg/dL', so a pool at 0.91 mg/dL could not be reported. Results were converted to mmol/L on the KDS worksheet (same page), so the pool means are probably mmol/L. That is my inference, not stated in the source."
+   },
+   {
+    "label": "Lacher 2005: NHANES III method imprecision (CVi, which the paper treats as CVa when bias is absent)",
+    "value": "Method CVi: total cholesterol 2.3%; HDL-cholesterol 2.5%; serum creatinine 1.0%; urine creatinine 2.2%; plasma glucose 1.7%; blood glycohemoglobin 3.1%. No urine albumin row",
+    "source": "Lacher DA, Hughes JP, Carroll MD. Clin Chem 2005;51:450-2 (PMID 15590751, doi:10.1373/clinchem.2004.039354). Internet Archive captures of the publisher pages: Table 1 at https://web.archive.org/web/20140228154954/http://www.clinchem.org/content/51/2/450/T1.expansion.html; full text at .../20150724131034/http://www.clinchem.org/content/51/2/450.full",
+    "location": "Table 1 'BP, WP, and method CV and index of individuality for laboratory analytes from NHANES III', column 'Method CVi, %'. Text: 'the analytical CV (CVa) equals the laboratory method imprecision (CVi) if there is no bias present'; 'The laboratory methods including imprecision (CVi) for NHANES III have been described (6)', where ref 6 is labman.pdf",
+    "access": "full_text",
+    "status": "verified",
+    "note": "CORRECTION: this was previously marked inaccessible ('unknown'). I fetched both archived pages myself. Lacher does not say which labman table each CVi comes from, and several do not match the labman QC tables: TC 2.3% vs Table 8 1.25-1.33%; creatinine 1.0% vs Hitachi total CV 2.0-2.7%; HbA1c 3.1% vs Table 5 1.57-1.73% and the data-file note '2.0'. HDL-C (2.5% vs AQ13 2.49%) and glucose (1.7% vs 1.6-2.2%) agree. Table footnote 3 says outliers were deleted by the Tukey method for these analytes."
+   },
+   {
+    "label": "Lacher 2005: NHANES III within-person biological CV (CVw, analytical part removed) - NHANES-specific counterpart to CVI",
+    "value": "CVw: total cholesterol 8.2%; HDL-cholesterol 12.4%; serum creatinine 6.8%; urine creatinine 43.0%; plasma glucose 8.3%; glycohemoglobin 1.5%. (CVg: 22.3, 28.3, 18.7, 61.3, 12.5, 9.6%)",
+    "source": "Lacher DA et al. Clin Chem 2005;51:450-2 (archived publisher pages as above)",
+    "location": "Table 1, columns 'WP ... CVw, %' and 'BP ... CVg, %'. Text: 'The CVw was calculated as [(CVt)^2 - (CVa)^2]^1/2'; WP sample has a mean (SD) of 17 (8) days between measurements",
+    "access": "full_text",
+    "status": "verified",
+    "note": "This confirms the 8.2/8.3/1.5% that Selvin 2013 (Discussion) cites. These are biological CVs, not CVa. Minor inconsistency in the source: the worked TC example in the text uses CVw 0.079 and CVg 0.226, while Table 1 gives 8.2 and 22.3."
+   },
+   {
+    "label": "EFLM BV Database CVI: Cholesterol (serum/plasma, global meta-analysis)",
+    "value": "CVI 5.4% (CI 4.9-6.6), 36 estimates; CVG 16.0% (12.9-17.7)",
+    "source": "Aarsand AK et al. EFLM Biological Variation Database, https://biologicalvariation.eu/meta_calculations (API /api/measurands, analyte id 492)",
+    "location": "'Biological Variation by Measurand' page, 'Cholesterol - Meta Analysis' table, Updated 8/10/2026 (API updated_at 2026-10-08)",
+    "access": "official_page",
+    "status": "verified",
+    "note": "Accessed 2026-10-09. I checked both the rendered page (built-in browser) and the API. API: median 5.3534, lower 4.9612, upper 6.6319, number_used 36. The page shows 5.4 / 4.9 / 6.6."
+   },
+   {
+    "label": "EFLM BV Database CVI: HDL cholesterol (serum/plasma)",
+    "value": "CVI 5.7% (CI 4.7-7.8), 24 estimates; CVG 22.8% (14.2-51.4)",
+    "source": "EFLM Biological Variation Database, https://biologicalvariation.eu/meta_calculations (analyte id 106)",
+    "location": "'HDL cholesterol - Meta Analysis' table; Updated 8/10/2026",
+    "access": "official_page",
+    "status": "verified",
+    "note": "Accessed 2026-10-09. API: median 5.7124, upper 7.8547, number_used 24. The rendered page shows 5.7 / 4.7 / 7.8."
+   },
+   {
+    "label": "EFLM BV Database CVI: Creatinine (serum/plasma)",
+    "value": "CVI 4.4% (CI 2.3-4.7), 15 estimates; CVG 16.1% (12.4-17.1)",
+    "source": "EFLM Biological Variation Database, https://biologicalvariation.eu/meta_calculations (analyte id 1501)",
+    "location": "'Creatinine - Meta Analysis' table (Serum/plasma); Updated 8/10/2026",
+    "access": "official_page",
+    "status": "verified",
+    "note": "Accessed 2026-10-09. API: median 4.3921, number_used 15. The meta-analysis covers serum/plasma only."
+   },
+   {
+    "label": "EFLM BV Database CVI: HbA1c (whole blood)",
+    "value": "NGSP units: CVI 1.2% (CI 0.2-7.0), 6 estimates; CVG 5.4% (4.3-7.5). IFCC units: CVI 1.6% (1.3-2.5), 2 estimates; CVG 7.3% (7.1-7.5)",
+    "source": "EFLM Biological Variation Database, https://biologicalvariation.eu/meta_calculations (analyte ids 1641 NGSP, 1497 IFCC)",
+    "location": "'Haemoglobin A1c (NGSP) - Meta Analysis' and 'Haemoglobin A1c (IFCC) - Meta Analysis' tables; Updated 8/10/2026",
+    "access": "official_page",
+    "status": "verified",
+    "note": "Accessed 2026-10-09. API NGSP CVI: median 1.1730, lower 0.29, upper 7.0, number_used 6. The page shows 0.2 as the lower bound. The NHANES III Diamat reports NGSP/DCCT %, so the NGSP entry applies."
+   },
+   {
+    "label": "EFLM BV Database CVI: Glucose (serum/plasma)",
+    "value": "CVI 4.9% (CI 3.0-6.7), 11 estimates; CVG 8.1% (2.7-10.8)",
+    "source": "EFLM Biological Variation Database, https://biologicalvariation.eu/meta_calculations (analyte id 1518)",
+    "location": "'Glucose - Meta Analysis' table; Updated 8/10/2026",
+    "access": "official_page",
+    "status": "verified",
+    "note": "Accessed 2026-10-09. API: median 4.8893, number_used 11."
+   },
+   {
+    "label": "EFLM BV Database CVI: Urine albumin",
+    "value": "No meta-analysis for any urine matrix; the only albumin meta-analysis is serum/plasma (CVI 2.5%, CI 1.2-3.0). Spot-urine datasets in healthy adults: random urine 29.0% (Hofmann & Guder 1989, BIVAC D, males), 49.0%, 79.0% and 86.0% (Howey 1987, BIVAC C); morning urine 36.0%, 35.0% and 35.0% (Howey 1987, BIVAC C). Across all 25 urine-matrix datasets: 24.8-86.0%. No urine dataset is graded A or B",
+    "source": "EFLM Biological Variation Database API /api/bv_specifications/filtered_by_analyte?id=1515 and /api/references",
+    "location": "Albumin (id 1515) datasets 5183 (ref 754: Hofmann W, Guder WG, J Clin Chem Clin Biochem 1989;27:589-600); 5062, 5063, 5061 (random) and 5057, 5059, 5060 (morning) (ref 187: Howey JE, Browning MC, Fraser CG, Clin Chem 1987;33:2034-38). Grade from the 'score_display' field",
+    "access": "official_page",
+    "status": "verified",
+    "note": "CORRECTION: the earlier extraction called 5183, 5057, 5059 and 5062 'BIVAC grade A'. It read the 'scale' field, which is the score for BIVAC item 1 only. The overall grade ('score_display') is D3 for 5183 and C8,10,13 for all Howey datasets. It also left out the healthy-adult Howey datasets 5060 (35.0%), 5061 (86.0%) and 5063 (79.0%). No urine albumin dataset is flagged include_in_meta_analysis. Albumin/creatinine (id 1754) is listed as BIVAC-only (bv_spec_count 18), but the filtered endpoint returns 'no-records'. Accessed 2026-10-09."
+   },
+   {
+    "label": "EFLM BV Database CVI: Urine creatinine",
+    "value": "No meta-analysis for urine; the creatinine meta-analysis covers serum/plasma only. Spot-urine datasets in healthy adults: random urine 47.4% (CI 42.6-53.4, mixed sex), 45.2% (males), 50.5% (females) (Kong 2022, all BIVAC C); 31.6% (Shephard 1981, BIVAC D, males); 36.3% (Ricós 1994, BIVAC C); morning urine 31.1% (Ricós 1994, BIVAC C); second-morning urine 49.0% (CI 44.8-54.3, Çalık & Şeneş 2023, BIVAC B). 24-h urine: 2.6-15.7%",
+    "source": "EFLM Biological Variation Database API /api/bv_specifications/filtered_by_analyte?id=1501 and /api/references",
+    "location": "Creatinine (id 1501) datasets 5153/5154/5155 (ref 741: Kong LR et al. BMC Nephrol 2022;23:195), 5137 (ref 82: Shephard MDS et al. Clin Chem 1981;27:569-73), 5076/5077 (ref 29: Ricós C et al. Clin Chem 1994;40:472-7), 4993 (ref 771: Çalık GY, Şeneş M, Clin Chem Lab Med 2023, doi:10.1515/cclm-2022-1290); 24-h datasets 3194, 3195, 3196, 4992, 5075, 5105, 5106",
+    "access": "official_page",
+    "status": "verified",
+    "note": "CORRECTION: the earlier extraction graded Kong 2022 and Shephard 1981 as BIVAC A. Their score_display grades are C8,10,13 and D3; only Çalık & Şeneş (B8) was right. Datasets 4993, 3194 and 5075 are flagged include_in_meta_analysis; the others are not. Accessed 2026-10-09."
+   }
+  ],
+  "conclusion": "I re-opened every primary source myself:\n- **labman.pdf:** fetched into memory from wwwn.cdc.gov and text-extracted with my own script; selected raw pages also saved.\n- **lab-acc.pdf and LABSE-acc.pdf:** re-extracted page by page from the local files.\n- **Selvin 2013 and Miller 2010:** full text via PubMed/PMC.\n- **Lacher 2005:** Internet Archive copies of the clinchem.org Table 1 and full-text pages.\n- **CDC LSP page:** WebFetch.\n- **EFLM BV database:** its API plus the rendered meta_calculations page.\n\nAll labman values, page numbers, Selvin values and EFLM meta-analysis CVIs in the extraction are confirmed.\n\n**Corrections:**\n1. **Lacher 2005 is accessible.** Its status changes from unknown to verified (full text). Table 1 'Method CVi, %' gives NHANES-specific imprecision, which the paper says equals CVa when there is no bias:\n\n   | Analyte | Lacher CVi | labman QC tables |\n   |---|---|---|\n   | Total cholesterol | 2.3% | 1.25-1.33% |\n   | HDL-C | 2.5% | 2.49% (AQ13) |\n   | Serum creatinine | 1.0% | 2.0-2.7% |\n   | Urine creatinine | 2.2% | no table |\n   | Plasma glucose | 1.7% | 1.6-2.2% |\n   | Glycohemoglobin | 3.1% | 1.57-1.73% |\n\n   There is no urine albumin row. Lacher cites labman but does not say which table each value comes from. HDL-C and glucose agree with labman; total cholesterol, creatinine and HbA1c do not, so report both. Lacher's CVw values (TC 8.2, HDL 12.4, creatinine 6.8, urine creatinine 43.0, glucose 8.3, GHb 1.5%) are biological CVs with the analytical part removed.\n2. **The EFLM urine BIVAC grades were wrong.** The earlier agent read the 'scale' field, which scores BIVAC item 1 only, as the overall grade. The real grades ('score_display') are:\n   - Howey 1987 and Kong 2022: C.\n   - Hofmann & Guder 1989 and Shephard 1981: D.\n   - Çalık & Şeneş 2023: B (correct before).\n   - No urine albumin or urine creatinine dataset is graded A.\n   - I also added the missing healthy-adult datasets: Howey 5060, 5061 and 5063, and Ricós 1994.\n3. **CDC LSP:** the mmol/L table prints '0.03 (RV)' for total cholesterol, which settles the earlier ambiguity: the limit is SD ≤ 0.03×RV, i.e. CV ≤3%. Lacher's text confirms the NCEP total-cholesterol criterion (<3% imprecision). The HDL ≤4% goal is labelled NCEP only by context in Miller 2010, so it stays 'likely'.\n\n**Recommended CVa for the table:**\n\n| Analyte | Primary value (source) | Alternative / note |\n|---|---|---|\n| Total cholesterol | 1.25-1.33% (labman Table 8, VII-Q-16) | Lacher 2.3% |\n| HDL-C | 2.49% (AQ13 pool, labman Table 8) | Lacher 2.5% |\n| Serum creatinine | 2.0-2.7% (labman Hitachi 737 Table 3; Selvin gives the same) | Lacher 1.0% |\n| HbA1c | 1.57-1.73% (labman Table 5, VII-O-11) | data-file note '2.0'; Lacher 3.1% |\n| Plasma glucose | 1.6-2.2% (labman Table 3, VII-M-8) | Lacher 1.7% |\n| Urine albumin | 4.8-16.1% (Selvin 2013) | labman gives only a ≤10% acceptance limit |\n| Urine creatinine | 1.5-7.7% (Selvin; pool units probably mmol/L) | Lacher 2.2% |\n\nNCEP and CDC values are goals only.\n\n**Flags in the sources:**\n- The Q20 mean differs between Table 7 (261) and Table 8 (213).\n- The AQ13 within-run CV (7.73%) is larger than its total CV (2.49%), which is impossible, so it is probably a typo.\n\n**Browser save dialog:** my first attempt to open labman.pdf in the built-in browser made CDC serve it as a download, and a save dialog was shown. I did not save the file; the dialog can be dismissed.\n\n**Files** (scratchpad C:\\Users\\YUNHAO~1\\AppData\\Local\\Temp\\claude\\E--Research\\fccdbcf4-2207-4940-b330-975070b3d26a\\scratchpad\\verify_cva):\n- vlabman.txt and vlabman.txt.raw.txt: labman text and raw streams.\n- lab_pages.txt and labse_pages.txt: the local documentation, by page.\n- vlabman.ps1 and flatepages.ps1: the extraction scripts."
+ },
+ "pce": {
+  "items": [
+   {
+    "label": "Source document and table location (Circulation version)",
+    "value": "Appendix 7, 'Development and Steps for Implementation of the ASCVD Pooled Cohort Risk Equations'. The article's table of contents gives its start page as S71, and the article runs S49-S73. Appendix 7 contains Table A (HTML element id T1a), 'Equation Parameters of the Pooled Cohort Equations for Estimation of 10-Year Risk of Hard ASCVD* and Specific Examples for Each Race and Sex Group', and Table B (id T1b), 'Estimating an Individual's 10-Year Risk of Incident Hard ASCVD'.",
+    "source": "Goff DC Jr et al. 2013 ACC/AHA Guideline on the Assessment of Cardiovascular Risk. Circulation 2014;129(25 Suppl 2):S49-S73. doi:10.1161/01.cir.0000437741.48606.98; PMID 24222018, confirmed by PubMed esummary. I re-read the open-access corrected HTML on ahajournals.org in the browser pane on 2026-10-09.",
+    "location": "Circulation (corrected online version), Appendix 7, Tables A and B. Section 4 text says 'A specific clinical vignette is also provided as an example in Appendix 7.'",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The exact print page of Table A is not verified. It must fall between S71 and S73. The Circulation record is not in PMC: the PubMed ID converter returns no PMCID for PMID 24222018. The PMC copy is the JACC co-publication: J Am Coll Cardiol 2014;63(25 Pt B):2935-2959, doi:10.1016/j.jacc.2013.11.005, PMID 24239921, PMC4700825. It is an NIH author manuscript (NIHMS633784). In it, the same tables are Table A (table-wrap T11) and Table B (T12), inside 'Appendix 4' (app id APP3), which has the same title. I re-fetched the PMC XML through NCBI efetch. Every Table A cell matches the Circulation version."
+   },
+   {
+    "label": "Correction notice affecting appendix numbering",
+    "value": "The Circulation correction (Circulation 2014;129(25 Suppl 2):S74-S75) lists 12 changes. Item 3: 'Appendixes have been reordered and renumbered' so that the author and reviewer RWI tables come first as Appendixes 1 and 2. Item 12 refers to 'Appendix 3, (Appendix 6 in published document)', which confirms a +3 shift. None of the 12 items changes any Table A or Table B value; the only table change is item 6, which edits Table 4, the recommendations table.",
+    "source": "Circulation correction, doi:10.1161/CIR.0000000000000067. I re-read it on ahajournals.org.",
+    "location": "Correction items 1-12; item 3 is the renumbering, item 6 is Table 4, item 12 gives the Appendix 3 → 6 mapping.",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The PMC/JACC manuscript keeps the pre-renumbering order: App 2 = CQ2 evidence statements, App 4 = PCE development, App 7 = abbreviations. Circulation has App 5 = CQ2, App 7 = PCE, App 3 = abbreviations. This is consistent with the PCE tables being Appendix 4 in PMC and Appendix 7 in Circulation."
+   },
+   {
+    "label": "Equation / how to compute (Table B)",
+    "value": "Risk = 1 - S10^exp(IndX'B - MeanX'B). IndX'B is the individual's sum of coefficient × value, and MeanX'B is the race- and sex-specific overall mean of that sum. Age, total cholesterol, HDL-C and SBP are entered as natural logs. Age interactions are ln(age) × ln(lipid or SBP), or ln(age) × the smoker indicator. Only the treated or the untreated SBP term is used, whichever matches the patient. Worked example (white men): '1 − 0.9144^e(60.69–61.18)' 'equates to a 5.3% probability'.",
+    "source": "Circulation 2014;129(25 Suppl 2):S49-S73; PMC4700825",
+    "location": "Circulation Appendix 7, Table B (text table). PMC4700825 Appendix 4, Table B (T12).",
+    "access": "full_text",
+    "status": "verified",
+    "note": "In the Circulation HTML the formula is rendered '1 − S10(lndX’B–MeanX’B)', with the superscript e missing. The PMC XML renders it '1−S10e(IndX'B−MeanX'B)'. Correction to the earlier note: both versions say the profile is 'provided in Table 5', but it is actually in Table A. This is an internal mislabel. It is NOT inherited verbatim from the NHLBI Work Group Report, whose own Table 5 text says the profile is 'provided in tables 4a and 4b'."
+   },
+   {
+    "label": "Table A footnotes (meaning of N/A and dash; Coefficient × Value definition)",
+    "value": "Footnote *: 'Defined as first occurrence of nonfatal myocardial infarction or CHD death, or fatal or nonfatal stroke.' Footnote †: Coefficient × Value is the natural log of the value multiplied by the parameter estimate for age, lipids and BP. For age interactions, ln(age) is multiplied by ln(lipid or BP) and then by the parameter estimate. The † footnote also says that 'N/A' means the covariate was not included in the model for that sex–race group, and that '—' means the value was not used in the example (the example used untreated rather than treated SBP).",
+    "source": "Circulation 2014;129(25 Suppl 2):S49-S73; PMC4700825",
+    "location": "Circulation Appendix 7, Table A footnotes * and †. PMC4700825 Table A (T11) footnotes * and †.",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The men's section has no rows at all for Ln Age Squared, Ln Age × Ln Treated SBP or Ln Age × Ln Untreated SBP. These terms are not in the men's models, so their coefficients are effectively 0. In the abbreviation list Circulation expands CHD as 'coronary heart disease'; the PMC manuscript has 'congestive heart disease'."
+   },
+   {
+    "label": "White women: Ln Age (y)",
+    "value": "-29.799",
+    "source": "Circulation 2014 S49-S73; PMC4700825; NHLBI report Table 4a",
+    "location": "Circ App 7 Table A, Women section, row 'Ln Age (y)', White 'Coefficient' column (same cell in PMC App 4 Table A/T11; NHLBI Table 4a 'Log Age (yr)')",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Ln Age, Squared",
+    "value": "4.884",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age, Squared', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Ln Total Cholesterol (mg/dL)",
+    "value": "13.540",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Total Cholesterol (mg/dL)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Ln Age × Ln Total Cholesterol",
+    "value": "-3.114",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age × Ln Total Cholesterol', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Ln HDL-C (mg/dL)",
+    "value": "-13.578",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln HDL-C (mg/dL)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Ln Age × Ln HDL-C",
+    "value": "3.149",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age × Ln HDL-C', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Ln Treated Systolic BP (mm Hg)",
+    "value": "2.019",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Treated Systolic BP (mm Hg)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Ln Age × Ln Treated Systolic BP",
+    "value": "N/A (not in model)",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age × Ln Treated Systolic BP', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Ln Untreated Systolic BP (mm Hg)",
+    "value": "1.957",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Untreated Systolic BP (mm Hg)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Ln Age × Ln Untreated Systolic BP",
+    "value": "N/A (not in model)",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age × Ln Untreated Systolic BP', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Current Smoker (1=Yes, 0=No)",
+    "value": "7.574",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Current Smoker (1=Yes, 0=No)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Ln Age × Current Smoker",
+    "value": "-1.665",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age × Current Smoker', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Diabetes (1=Yes, 0=No)",
+    "value": "0.661",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Diabetes (1=Yes, 0=No)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Mean (Coefficient × Value)",
+    "value": "-29.18",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Mean (Coefficient × Value)', White 'Coefficient × Value' column",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White women: Baseline Survival S10",
+    "value": "0.9665",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Baseline Survival', White 'Coefficient × Value' column",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Ln Age (y)",
+    "value": "17.114",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age (y)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Ln Age, Squared",
+    "value": "N/A (not in model)",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age, Squared', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Ln Total Cholesterol",
+    "value": "0.940",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Total Cholesterol (mg/dL)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Ln Age × Ln Total Cholesterol",
+    "value": "N/A (not in model)",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age × Ln Total Cholesterol', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Ln HDL-C",
+    "value": "-18.920",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln HDL-C (mg/dL)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Ln Age × Ln HDL-C",
+    "value": "4.475",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age × Ln HDL-C', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Ln Treated Systolic BP",
+    "value": "29.291",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Treated Systolic BP (mm Hg)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Ln Age × Ln Treated Systolic BP",
+    "value": "-6.432",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age × Ln Treated Systolic BP', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Ln Untreated Systolic BP",
+    "value": "27.820",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Untreated Systolic BP (mm Hg)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Ln Age × Ln Untreated Systolic BP",
+    "value": "-6.087",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age × Ln Untreated Systolic BP', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Current Smoker",
+    "value": "0.691",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Current Smoker (1=Yes, 0=No)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Ln Age × Current Smoker",
+    "value": "N/A (not in model)",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Ln Age × Current Smoker', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Diabetes",
+    "value": "0.874",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Diabetes (1=Yes, 0=No)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Mean (Coefficient × Value)",
+    "value": "86.61",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Mean (Coefficient × Value)', African American 'Coefficient × Value' column",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American women: Baseline Survival S10",
+    "value": "0.9533",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, row 'Baseline Survival', African American 'Coefficient × Value' column",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Ln Age (y)",
+    "value": "12.344",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men section, row 'Ln Age (y)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Ln Age, Squared",
+    "value": "Not in model; the row is absent from the men's section (coefficient effectively 0)",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men section (no such row)",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Ln Total Cholesterol",
+    "value": "11.853",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Total Cholesterol (mg/dL)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Ln Age × Ln Total Cholesterol",
+    "value": "-2.664",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Age × Ln Total Cholesterol', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Ln HDL-C",
+    "value": "-7.990",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln HDL-C (mg/dL)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Ln Age × Ln HDL-C",
+    "value": "1.769",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Age × Ln HDL-C', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Ln Treated Systolic BP",
+    "value": "1.797",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Treated Systolic BP (mm Hg)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Ln Age × Ln Treated Systolic BP",
+    "value": "Not in model; the row is absent from the men's section",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men section (no such row)",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Ln Untreated Systolic BP",
+    "value": "1.764",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Untreated Systolic BP (mm Hg)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Ln Age × Ln Untreated Systolic BP",
+    "value": "Not in model; the row is absent from the men's section",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men section (no such row)",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Current Smoker",
+    "value": "7.837",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Current Smoker (1=Yes, 0=No)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Ln Age × Current Smoker",
+    "value": "-1.795",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Age × Current Smoker', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Diabetes",
+    "value": "0.658",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Diabetes (1=Yes, 0=No)', White Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Mean (Coefficient × Value)",
+    "value": "61.18",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Mean (Coefficient × Value)', White 'Coefficient × Value' column",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "White men: Baseline Survival S10",
+    "value": "0.9144",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Baseline Survival', White 'Coefficient × Value' column",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Ln Age (y)",
+    "value": "2.469",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Age (y)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Ln Age, Squared",
+    "value": "Not in model; the row is absent from the men's section",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men section (no such row)",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Ln Total Cholesterol",
+    "value": "0.302",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Total Cholesterol (mg/dL)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Ln Age × Ln Total Cholesterol",
+    "value": "N/A (not in model)",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Age × Ln Total Cholesterol', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Ln HDL-C",
+    "value": "-0.307",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln HDL-C (mg/dL)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Ln Age × Ln HDL-C",
+    "value": "N/A (not in model)",
+    "source": "Circulation 2014; PMC4700825",
+    "location": "Circ App 7 Table A, Men, row 'Ln Age × Ln HDL-C', African American Coefficient",
+    "access": "full_text",
+    "status": "verified",
+    "note": "This cell is blank in the NHLBI Table 4b text layer and N/A in both guideline versions."
+   },
+   {
+    "label": "African American men: Ln Treated Systolic BP",
+    "value": "1.916",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Treated Systolic BP (mm Hg)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Ln Age × Ln Treated Systolic BP",
+    "value": "Not in model; the row is absent from the men's section",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men section (no such row)",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Ln Untreated Systolic BP",
+    "value": "1.809",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Untreated Systolic BP (mm Hg)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Ln Age × Ln Untreated Systolic BP",
+    "value": "Not in model; the row is absent from the men's section",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men section (no such row)",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Current Smoker",
+    "value": "0.549",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Current Smoker (1=Yes, 0=No)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Ln Age × Current Smoker",
+    "value": "N/A (not in model)",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Ln Age × Current Smoker', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Diabetes",
+    "value": "0.645",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Diabetes (1=Yes, 0=No)', African American Coefficient",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Mean (Coefficient × Value)",
+    "value": "19.54",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Mean (Coefficient × Value)', African American 'Coefficient × Value' column",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "African American men: Baseline Survival S10",
+    "value": "0.8954",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, row 'Baseline Survival', African American 'Coefficient × Value' column",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "Worked example: input profile (same for all 4 groups)",
+    "value": "Age 55 years, total cholesterol 213 mg/dL, HDL-C 50 mg/dL, untreated systolic BP 120 mm Hg, nonsmoker, no diabetes. Table B says the profile is 'based on the overall sample mean'.",
+    "source": "Circulation 2014; PMC4700825",
+    "location": "Circ App 7 Table A section headers 'Women (Example: 55 years of age with total cholesterol 213 mg/dL, HDL-C 50 mg/dL, untreated systolic BP 120 mm Hg, nonsmoker, and without diabetes)' and the matching 'Men (Example: ...)' header; Table B first paragraph; Section 4 vignette paragraph",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "Worked example: 'Individual Example Value' column (ln-transformed inputs)",
+    "value": "Ln Age 4.01; Ln Age squared 16.06 (white women only); Ln TC 5.36; Ln Age × Ln TC 21.48 (white groups); Ln HDL-C 3.91; Ln Age × Ln HDL-C 15.68 (all except African American men); Ln untreated SBP 4.79; Ln Age × Ln untreated SBP 19.19 (African American women only); smoker 0; Ln Age × smoker 0 (white groups); diabetes 0. The treated-SBP rows show '—' (not used).",
+    "source": "Circulation 2014; PMC4700825",
+    "location": "Circ App 7 Table A, 'Individual Example Value' columns (White and African American, Women and Men sections)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The NHLBI report's Tables 4a/4b ('Ind. Value' column) print the raw values (55, 213, 50, 120) rather than the ln values."
+   },
+   {
+    "label": "Worked example: White women Coefficient × Value terms, Individual Sum, risk",
+    "value": "Terms: Ln Age -119.41; Ln Age squared 78.44; Ln TC 72.59; Ln Age × Ln TC -66.91; Ln HDL -53.12; Ln Age × Ln HDL 49.37; Ln untreated SBP 9.37; smoker 0; Ln Age × smoker 0; diabetes 0. Individual Sum -29.67. Mean -29.18. S10 0.9665. Estimated 10-year risk of hard ASCVD 2.1%.",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, White 'Coefficient × Value' column; rows 'Individual Sum', 'Mean (Coefficient × Value)', 'Baseline Survival', 'Estimated 10-y Risk of Hard ASCVD'",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "Worked example: African American women Coefficient × Value terms, Individual Sum, risk",
+    "value": "Terms: Ln Age 68.58; Ln TC 5.04; Ln HDL -74.01; Ln Age × Ln HDL 70.15; Ln untreated SBP 133.19; Ln Age × Ln untreated SBP -116.79; smoker 0; diabetes 0. Individual Sum 86.16. Mean 86.61. S10 0.9533. Estimated 10-year risk 3.0%.",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4a",
+    "location": "Circ App 7 Table A, Women, African American 'Coefficient × Value' column and summary rows",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "Worked example: White men Coefficient × Value terms, Individual Sum, risk",
+    "value": "Terms: Ln Age 49.47; Ln TC 63.55; Ln Age × Ln TC -57.24; Ln HDL -31.26; Ln Age × Ln HDL 27.73; Ln untreated SBP 8.45; smoker 0; Ln Age × smoker 0; diabetes 0. Individual Sum 60.69. Mean 61.18. S10 0.9144. Estimated 10-year risk 5.3%.",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, White 'Coefficient × Value' column and summary rows; also the worked equation in Table B",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The printed terms add up to 60.70, not the printed Individual Sum of 60.69. The full-precision sum is 60.6995 (see the arithmetic check)."
+   },
+   {
+    "label": "Worked example: African American men Coefficient × Value terms, Individual Sum, risk",
+    "value": "Terms: Ln Age 9.89; Ln TC 1.62; Ln HDL -1.20; Ln untreated SBP 8.66; smoker 0; diabetes 0. Individual Sum 18.97. Mean 19.54. S10 0.8954. Estimated 10-year risk 6.1%.",
+    "source": "Circulation 2014; PMC4700825; NHLBI Table 4b",
+    "location": "Circ App 7 Table A, Men, African American 'Coefficient × Value' column and summary rows",
+    "access": "full_text",
+    "status": "verified"
+   },
+   {
+    "label": "Body-text statement of the 4 example risks",
+    "value": "2.1% for white women; 3.0% for African-American women; 5.3% for white men; 6.1% for African-American men. Patient: 55 years, nonsmoker, no diabetes, total cholesterol 213 mg/dL, HDL-C 50 mg/dL, untreated SBP 120 mm Hg.",
+    "source": "Circulation 2014; PMC4700825",
+    "location": "Section 4, 'Development of New Pooled Cohort ASCVD Risk Equations' (starts p. S55 per the Circulation TOC), the paragraph citing Appendix 7 (Appendix 4 in PMC4700825)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The exact print page of the paragraph is not verified; the section starts at S55."
+   },
+   {
+    "label": "Arithmetic check (derived by the verifier; not printed in the source)",
+    "value": "I used exact logs: ln55 = 4.007333, ln213 = 5.361292, ln50 = 3.912023, ln120 = 4.787492. Exact sums: WW -29.6767, AAW 86.1677, WM 60.6995, AAM 18.9728. Resulting risks: 2.052%, 3.026%, 5.384%, 6.073%. With the printed rounded sums the risks are 2.066%, 3.004%, 5.335%, 6.057%, which reproduces the printed 2.1%, 3.0%, 5.3% and 6.1%.",
+    "source": "Verifier computation (PowerShell) from the Table A coefficients, means and S10",
+    "location": "N/A (derived)",
+    "access": "full_text",
+    "status": "verified",
+    "note": "The coefficients, means and S10 values are internally consistent with the printed examples. With full-precision logs, white men compute to 5.38%, which would round to 5.4%. The printed 5.3% comes from the rounded Individual Sum of 60.69. Four printed terms differ by 0.01 from the exact values: WW Ln Age² 78.43 vs printed 78.44; WW Ln Age × Ln TC -66.90 vs -66.91 (not flagged in the earlier extraction); WM Ln Age × Ln TC -57.23 vs -57.24; AAW Ln Age × Ln untreated SBP -116.78 vs -116.79 (not flagged in the earlier extraction). The WM printed terms also sum to 60.70, not the printed 60.69."
+   },
+   {
+    "label": "Cross-check: NHLBI Full Work Group Report (Tables 4a/4b, Table 5)",
+    "value": "Every coefficient (with signs), Coefficient × Value term, Individual Sum, Mean (Coefficient × Value), Baseline Survival and estimated risk in Tables 4a (women) and 4b (men) matches guideline Table A. WW: mean -29.18, S10 0.9665, 2.1%. AAW: 86.61, 0.9533, 3.0%. WM: 61.18, 0.9144, 5.3%. AAM: 19.54, 0.8954, 6.1%.",
+    "source": "Assessing Cardiovascular Risk: Systematic Evidence Review From the Risk Assessment Work Group, 2013 (NHLBI), https://www.nhlbi.nih.gov/sites/default/files/media/docs/risk-assessment.pdf. I re-fetched it on 2026-10-09 and extracted the text locally. In this PDF the minus signs are separate en-dash glyphs (WinAnsi \\226), and they are present.",
+    "location": "Table 4a (printed report p. 14), Table 4b (report p. 15), Table 5 (report p. 16, per the report TOC). The earlier page-marked extraction maps these to PDF pp. 24-26.",
+    "access": "official_page",
+    "status": "verified",
+    "note": "Table 5 prose contradicts the report's own tables: it describes the profile as having 'an untreated SBP of 124 mmHg' and says 'This individual is a current smoker'. Tables 4a/4b use SBP 120 and smoker = 0, and the guideline's Table B says 120 mm Hg and not a current smoker. The guideline's Table A/B is authoritative. Report Table 5 says the profile is in 'tables 4a and 4b'. Verifier's extracted text: C:\\Users\\YUNHAO~1\\AppData\\Local\\Temp\\claude\\E--Research\\fccdbcf4-2207-4940-b330-975070b3d26a\\scratchpad\\verify_pce\\nhlbi_text.txt"
+   }
+  ],
+  "conclusion": "I re-checked every item against the primary sources myself. All the requested values are confirmed. I made a few corrections to the notes, but none to the numbers.\n\n**What I re-read**\n- **Circulation:** the open-access HTML of Goff DC Jr et al., Circulation 2014;129(25 Suppl 2):S49-S73 ([doi:10.1161/01.cir.0000437741.48606.98](https://doi.org/10.1161/01.cir.0000437741.48606.98), PMID 24222018), read in the browser pane. The equations are in **Appendix 7**, Table A (coefficients, means, baseline survivals and the worked example) and Table B (method and formula). The table of contents gives the appendix's start page as S71.\n- **PMC:** the Circulation version has no PMC copy (PubMed returns no PMCID for 24222018). The PMC copy is the JACC co-publication, an NIH author manuscript ([doi:10.1016/j.jacc.2013.11.005](https://doi.org/10.1016/j.jacc.2013.11.005), PMID 24239921, PMC4700825, NIHMS633784). I re-fetched its XML, and according to PubMed's PMC record the same tables appear there as Table A (T11) and Table B (T12) in **Appendix 4**. Every cell matches the Circulation version.\n- **Correction notice:** the Circulation correction ([doi:10.1161/CIR.0000000000000067](https://doi.org/10.1161/CIR.0000000000000067)) renumbered the appendixes. That explains Appendix 4 in PMC versus Appendix 7 in Circulation. None of its 12 items changes a value in Table A or Table B.\n- **NHLBI Work Group Report:** I re-fetched the PDF and extracted its text. Its Tables 4a and 4b (report pages 14-15) match the guideline in every value, with the minus signs confirmed.\n\n**Values confirmed**\n- All 13 coefficients for each of the four groups. Where a term is not in a group's model, I recorded it as N/A (marked N/A in the table) or \"row absent\" (no such row in the men's section).\n- Mean (coefficient × value): white women −29.18, African American women 86.61, white men 61.18, African American men 19.54.\n- Baseline survival S10: 0.9665, 0.9533, 0.9144, 0.8954 in the same order.\n- The example person (age 55, total cholesterol 213 mg/dL, HDL 50 mg/dL, untreated SBP 120 mm Hg, nonsmoker, no diabetes), with the ln values the table uses: age 4.01, age² 16.06, TC 5.36, age×TC 21.48, HDL 3.91, age×HDL 15.68, SBP 4.79, age×SBP 19.19.\n- The coefficient × value terms, individual sums (−29.67, 86.16, 60.69, 18.97) and risks (2.1%, 3.0%, 5.3%, 6.1%). Section 4 of the guideline repeats the four risks in its text.\n\n**Corrections and additions**\n1. **The \"Table 5\" mislabel.** Table B says the example profile is \"provided in Table 5\", but it is in Table A. The earlier note said this was copied from the NHLBI report. It wasn't: the report's own text points to its Tables 4a and 4b.\n2. **Rounding in the printed terms.** Recomputing from full-precision logs, four printed terms are 0.01 off: white women ln age² (78.43 vs printed 78.44), white women ln age×ln TC (−66.90 vs −66.91), white men ln age×ln TC (−57.23 vs −57.24) and African American women ln age×ln untreated SBP (−116.78 vs −116.79). The earlier extraction caught only two of these. The white men's printed terms also add up to 60.70, while the printed individual sum is 60.69.\n3. **Risks from full-precision inputs.** These give 2.05%, 3.03%, 5.38% and 6.07%. The printed 5.3% for white men only comes out if you use the rounded sum of 60.69; full precision would round to 5.4%.\n4. **NHLBI report details.** Its example column prints the raw values (55, 213, 50, 120), not the ln values. Its Table 5 text wrongly says SBP 124 mm Hg and current smoker. Use the guideline's version.\n5. **Not checked.** I did not confirm the exact print page of Table A (it must fall within S71-S73) or of the Section 4 paragraph (the section starts at S55).\n\nMy extracted copy of the NHLBI report is at C:\\Users\\YUNHAO~1\\AppData\\Local\\Temp\\claude\\E--Research\\fccdbcf4-2207-4940-b330-975070b3d26a\\scratchpad\\verify_pce\\nhlbi_text.txt. The research-desk reference-lookup server failed to connect, and the biorender, owkin, synapse and wiley servers need authorization. None of them was needed for this task."
+ }
+}

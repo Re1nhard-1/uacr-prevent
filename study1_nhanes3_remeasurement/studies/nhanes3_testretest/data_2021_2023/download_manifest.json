@@ -1,0 +1,165 @@
+{
+ "retrieved_utc": "2026-10-10T00:54:09.124415+00:00",
+ "files": [
+  {
+   "file": "DEMO_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DEMO_L.xpt",
+   "bytes": 2582160,
+   "sha256": "ca4374a158b493b8b0163e1388da21d57a18d1b9cecff2aa4e2fa2bec494fe23"
+  },
+  {
+   "file": "DEMO_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DEMO_L.htm",
+   "bytes": 88008,
+   "sha256": "d85d99207a3f03345f1f16223537005bc85b9ea3a67e84c8f0543aaf89d43975"
+  },
+  {
+   "file": "BPXO_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BPXO_L.xpt",
+   "bytes": 696720,
+   "sha256": "189aa9bed689d2c69cf8d780b01de85073276fea5694dd52cdf696229f9054a6"
+  },
+  {
+   "file": "BPXO_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BPXO_L.htm",
+   "bytes": 29840,
+   "sha256": "9f0f7db59f1df6a0ba546aa92a5414810cc367d7015625578cf8d5a98df8b949"
+  },
+  {
+   "file": "TCHOL_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/TCHOL_L.xpt",
+   "bytes": 259520,
+   "sha256": "5c3312e555bb0706fd97cbd63fcbc9e78f00bda8d2d149732d9dd368169b25d3"
+  },
+  {
+   "file": "TCHOL_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/TCHOL_L.htm",
+   "bytes": 21783,
+   "sha256": "33672b2e18b5b2dc43531b813ef5304101063757d8a5f3f023870be77f6ade1d"
+  },
+  {
+   "file": "HDL_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/HDL_L.xpt",
+   "bytes": 259520,
+   "sha256": "c1bb43df5ca366f470b411c043f4aee7ae6552a7f4bca1178bc87b24fb9a7300"
+  },
+  {
+   "file": "HDL_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/HDL_L.htm",
+   "bytes": 21119,
+   "sha256": "85ef65cd452eb46b47a352791a11faf13df7201f67ea786eb05472b931cebae1"
+  },
+  {
+   "file": "BIOPRO_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BIOPRO_L.xpt",
+   "bytes": 2425520,
+   "sha256": "912b345aad6b71d53a3bc299a7f3bb0d5530e9fa5b6e76d2d00103979861a476"
+  },
+  {
+   "file": "BIOPRO_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BIOPRO_L.htm",
+   "bytes": 204228,
+   "sha256": "e0e489726de02a42e52abd23eef959b73f741212257fba2151c9bf20a33c76b7"
+  },
+  {
+   "file": "GHB_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/GHB_L.xpt",
+   "bytes": 174000,
+   "sha256": "67aee0353160e2392dc0a33bece99b90764a630c76d82415ac4639105ad9dd03"
+  },
+  {
+   "file": "GHB_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/GHB_L.htm",
+   "bytes": 20158,
+   "sha256": "c65e1cec9596ff6b6db9719278400b82e25f30416653adc54ecf2c5cf96ccd53"
+  },
+  {
+   "file": "ALB_CR_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/ALB_CR_L.xpt",
+   "bytes": 545440,
+   "sha256": "fc011a80d14419884559372a3196f0a268b494f4f2fa972d00be1f3a23ba3c41"
+  },
+  {
+   "file": "ALB_CR_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/ALB_CR_L.htm",
+   "bytes": 31116,
+   "sha256": "2e1d5ceeaf5264af9acac4faa4e1c71e65549922cdcddbb3648f851d777148f9"
+  },
+  {
+   "file": "BPQ_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BPQ_L.xpt",
+   "bytes": 409680,
+   "sha256": "0acde3af0526c375942fe0735e3bf69a0422bcbc606f98a478209d2f47baa4b5"
+  },
+  {
+   "file": "BPQ_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BPQ_L.htm",
+   "bytes": 20058,
+   "sha256": "a53de1dd9f2461717b0b84dca4f52056c4db9876af9e63e3fbb1c5ee78c80847"
+  },
+  {
+   "file": "DIQ_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DIQ_L.xpt",
+   "bytes": 847600,
+   "sha256": "9535a023673ae869afae19d842d8679e06f6a464606ac15900686b41ef05090f"
+  },
+  {
+   "file": "DIQ_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DIQ_L.htm",
+   "bytes": 32437,
+   "sha256": "cfc823723f5e37039b39108a614513d6c1f210f30f885a45d6a4ea07a718896a"
+  },
+  {
+   "file": "MCQ_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/MCQ_L.xpt",
+   "bytes": 3294000,
+   "sha256": "0889bb3eaa5adedf1a11c4af2d4776fc4c4c3cfdeea24fcedb77c4636b478f61"
+  },
+  {
+   "file": "MCQ_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/MCQ_L.htm",
+   "bytes": 131685,
+   "sha256": "d302acc7a487e005139b5b792e7afd9f8a454538cae565259cdf72ea78d209ae"
+  },
+  {
+   "file": "SMQ_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/SMQ_L.xpt",
+   "bytes": 651120,
+   "sha256": "abbefebfa5585b1e19c079fa14be20c113a4649318070197214b258d05b93c50"
+  },
+  {
+   "file": "SMQ_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/SMQ_L.htm",
+   "bytes": 31348,
+   "sha256": "ed1178c439a311cd6b866e9061c51abbbef6403a4239844a7a81075f2f3a850d"
+  },
+  {
+   "file": "RXQ_RX_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/RXQ_RX_L.xpt",
+   "bytes": 287600,
+   "sha256": "b801ca006aa8b505f597c4b28221e6f8c8b033781f214c16d45a114c5b564211"
+  },
+  {
+   "file": "RXQ_RX_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/RXQ_RX_L.htm",
+   "bytes": 14383,
+   "sha256": "e5168fd63f837366a59f1bb4e5d027f29670038f2a9a219230b1dc0f9571c729"
+  },
+  {
+   "file": "raw_trigly/TRIGLY_L.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/TRIGLY_L.xpt",
+   "bytes": 321840,
+   "sha256": "77679864c33b98d9b6db528f3a0ac0a15ea34bde9731c04d23bc9801277975f4",
+   "retrieved_utc": "2026-10-10T19:32:58.127782+00:00",
+   "purpose": "E10 (30-year pathway transport): fasting LDL-C, NIH equation 2"
+  },
+  {
+   "file": "raw_trigly/TRIGLY_L.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/TRIGLY_L.htm",
+   "bytes": 74753,
+   "sha256": "956652402bba82d0775da3101ecff32f978ff11e4c4288d5928c21576b3957cf",
+   "retrieved_utc": "2026-10-10T19:32:58.128283+00:00",
+   "purpose": "E10 (30-year pathway transport): fasting LDL-C, NIH equation 2"
+  }
+ ]
+}

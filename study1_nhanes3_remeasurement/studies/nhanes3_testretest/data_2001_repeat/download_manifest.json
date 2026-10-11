@@ -1,0 +1,41 @@
+{
+ "retrieved_utc": "2026-10-10T00:54:07.675752+00:00",
+ "files": [
+  {
+   "file": "L13_2_B.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2001/DataFiles/L13_2_B.xpt",
+   "bytes": 45680,
+   "sha256": "dee7988de1da45ffac0c8e13f41c644ec61660954e9a706635a5f2cb32bc2ecc"
+  },
+  {
+   "file": "L13_2_B.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2001/DataFiles/L13_2_B.htm",
+   "bytes": 37210,
+   "sha256": "934ec298113c5a1c67d1a7fd5c92f86b6454094814bf5ac68093c86c2a3b1509"
+  },
+  {
+   "file": "L10_2_B.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2001/DataFiles/L10_2_B.xpt",
+   "bytes": 42160,
+   "sha256": "88f8ce699045b7974c857b1f1b934c93a845b91a84895e289c0122ed96dabb1c"
+  },
+  {
+   "file": "L10_2_B.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2001/DataFiles/L10_2_B.htm",
+   "bytes": 28681,
+   "sha256": "3ad88cb39896ad3e3a0950297f7e20c5605f1763aed1501652e83c461afd51d2"
+  },
+  {
+   "file": "L40_2_B.xpt",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2001/DataFiles/L40_2_B.xpt",
+   "bytes": 176640,
+   "sha256": "096bc2cce18964fff8bcf67a7afce5480be20e0ea8593fe42b2a0999d9a159d0"
+  },
+  {
+   "file": "L40_2_B.htm",
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2001/DataFiles/L40_2_B.htm",
+   "bytes": 117028,
+   "sha256": "149406697df0766cd739b75bdd8abafdd4b7b4ffc1cd12c88166e284733708f6"
+  }
+ ]
+}

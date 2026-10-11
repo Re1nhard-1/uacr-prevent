@@ -1,0 +1,121 @@
+﻿[
+    {
+        "file":  "adult.sas",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/1a/adult.sas",
+        "bytes":  130935,
+        "sha256":  "b8d61f5bc56590d95220d88058bb054995f3beb7aeb400af88868c2679f73d4c",
+        "downloaded_utc":  "2026-10-08T23:23:51.7887563Z"
+    },
+    {
+        "file":  "exam.sas",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/1a/exam.sas",
+        "bytes":  258558,
+        "sha256":  "240d4c917c3f437063240dbb038184d8e34e2834c5d2596a3ca389ef6ccb3fe6",
+        "downloaded_utc":  "2026-10-08T23:23:52.2644788Z"
+    },
+    {
+        "file":  "lab.sas",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/1a/lab.sas",
+        "bytes":  42079,
+        "sha256":  "fe804748e3881bb8f2a92c57af816d603bdd02e1587f835547cbfc4f82ab8304",
+        "downloaded_utc":  "2026-10-08T23:23:52.4345425Z"
+    },
+    {
+        "file":  "examse.sas",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/3a/examse.sas",
+        "bytes":  535399,
+        "sha256":  "5dcfc7ed6820323f5b04b047ba4f1216dd70440b04d8a23e873d3a238382ae7a",
+        "downloaded_utc":  "2026-10-08T23:23:52.8271228Z"
+    },
+    {
+        "file":  "labse.sas",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/3a/labse.sas",
+        "bytes":  55944,
+        "sha256":  "d733af58ce19836507f1d287135c1a3511dbe36e8145091564d29386cbf8b786",
+        "downloaded_utc":  "2026-10-08T23:23:53.5208234Z"
+    },
+    {
+        "file":  "ADULT-acc.pdf",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/1a/ADULT-acc.pdf",
+        "bytes":  2863586,
+        "sha256":  "a5f03642de78afcaf22f923a6bb91971c485679b3da23d569ef00abe2e6c9b6e",
+        "downloaded_utc":  "2026-10-08T23:23:56.1588228Z"
+    },
+    {
+        "file":  "exam-acc.pdf",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/1a/exam-acc.pdf",
+        "bytes":  4515011,
+        "sha256":  "6add2277996ce1971e92009527acf6bb75b56b671c68e3b6ba6b577d23c654d0",
+        "downloaded_utc":  "2026-10-08T23:23:58.4767558Z"
+    },
+    {
+        "file":  "lab-acc.pdf",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/1a/lab-acc.pdf",
+        "bytes":  681142,
+        "sha256":  "26784eaf88077dddb1766f7556c13ea8e5b6386c859262e0a7e7e49f2a6b8d0b",
+        "downloaded_utc":  "2026-10-08T23:23:58.9218650Z"
+    },
+    {
+        "file":  "EXAMSE-acc.pdf",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/3a/EXAMSE-acc.pdf",
+        "bytes":  6128420,
+        "sha256":  "84c53d66db004099e654f8e43b862c56219b7ece4ea79e9f51e45bf800e63af7",
+        "downloaded_utc":  "2026-10-08T23:24:01.7968019Z"
+    },
+    {
+        "file":  "LABSE-acc.pdf",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/3a/LABSE-acc.pdf",
+        "bytes":  603292,
+        "sha256":  "a9e7b8ea0a47b770867e83ad72ff092864f5bdba4f41a0bdfad6c9255c8538e2",
+        "downloaded_utc":  "2026-10-08T23:24:02.2159045Z"
+    },
+    {
+        "file":  "pupremed.xpt",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/2a/pupremed.xpt",
+        "bytes":  1307600,
+        "sha256":  "2668b92986f3ec2f11148209bd404e05328ee30b3203e5d02b69839f232584b4",
+        "downloaded_utc":  "2026-10-08T23:24:02.9562453Z"
+    },
+    {
+        "file":  "pupremed.pdf",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/2a/pupremed.pdf",
+        "bytes":  420408,
+        "sha256":  "dfdd66c791a4324bc37774ae2da611bbd72e087bc81347b33a17b73a04fd100a",
+        "downloaded_utc":  "2026-10-08T23:24:03.4900612Z"
+    },
+    {
+        "file":  "labse.dat",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/3a/labse.dat",
+        "bytes":  1804220,
+        "sha256":  "29f9fc2c63d3191fae86dea8429092cf202a9cf60ba7046b9513440f8841c2fe",
+        "downloaded_utc":  "2026-10-08T23:24:04.4575930Z"
+    },
+    {
+        "file":  "examse.dat",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/3a/examse.dat",
+        "bytes":  11609312,
+        "sha256":  "3ab1c4e145a4939d525367ee04e40ebfa77d1b5bf3ef2044cbc34ad8ddca1b37",
+        "downloaded_utc":  "2026-10-08T23:24:10.2225404Z"
+    },
+    {
+        "file":  "lab.dat",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/1a/lab.dat",
+        "bytes":  57945628,
+        "sha256":  "b87ae166c02e4907b08b7a52a1c01122b4173ec2970b891b624f43cedc038e48",
+        "downloaded_utc":  "2026-10-08T23:24:37.5891558Z"
+    },
+    {
+        "file":  "adult.dat",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/1a/adult.dat",
+        "bytes":  67107314,
+        "sha256":  "32a93a474cbd3bd0dd2ddc82153c47cf0b9f81eda025e255dd251bb5620a3adf",
+        "downloaded_utc":  "2026-10-08T23:25:08.9381245Z"
+    },
+    {
+        "file":  "exam.dat",
+        "url":  "https://wwwn.cdc.gov/nchs/data/nhanes3/1a/exam.dat",
+        "bytes":  195090426,
+        "sha256":  "b2eba81d3c4f921a4fafe6847818e27813eab4a3494bcc26f90a6fe3fcc71fec",
+        "downloaded_utc":  "2026-10-08T23:26:40.4079094Z"
+    }
+]

@@ -1,0 +1,1105 @@
+{
+ "label": "E11: net benefit lost by single-visit risk-threshold decisions (decision-curve logic), Study 1 NHANES III",
+ "protocol": "studies\\nhanes3_testretest\\extensions5_protocol_20261010.md",
+ "protocol_sha256": "1966a8e62a52b297b784657444bf95d533132769449848f89c14f24240460b8e",
+ "protocol_sha256_before_addendum": "9601c8d6ba54aba9e7a0307d15b7f6009dde8d72e3f36dc70e234170a5cd9c70",
+ "units": "net benefit in true-positive-equivalent units over the risk horizon; loss fraction = regret / achievable net benefit (relative risk reduction cancels)",
+ "ascvd10": {
+  "label": "base PREVENT 10-year ASCVD, statin-naive",
+  "n": 749,
+  "delta": -0.015654616222435275,
+  "sigma": 0.16380333531234925,
+  "npmle": {
+   "converged": false,
+   "iterations": 100000,
+   "last_max_change": 1.170193472330161e-08,
+   "loglik": -1195.8383976601745
+  },
+  "thresholds": {
+   "5": {
+    "pt": 0.05,
+    "achievable_nb_per_1000": 16.73169809082472,
+    "kappa_single_vs_usual": 0.027534272557179426,
+    "regret_single_per_1000": 0.14499229801469818,
+    "loss_fraction_single": 0.008665725213761096,
+    "mean_abs_risk_gap_pp_among_disagreements": 0.5002590238326363,
+    "regret_two_day_per_1000": 0.0669064012946762,
+    "loss_fraction_two_day": 0.003998781291144987,
+    "nb_treat_all_per_1000": -7.387059654059043,
+    "loss_fraction_single_vs_best_default": 0.008665725213761096,
+    "extra_measurements_per_net_tp_two_day": 12806.409889682296,
+    "targeted_zone_risk_pct": [
+     4.280144514565433,
+     5.833545865979393
+    ],
+    "targeted_fraction_remeasured": 0.069675,
+    "regret_targeted_per_1000": 0.0710458409478478,
+    "loss_fraction_targeted": 0.0042461823397834135,
+    "targeted_share_of_single_regret_recovered": 0.5046156058504792,
+    "mc_check_regret_single_per_1000": 0.14341558148964254,
+    "extra_measurements_per_net_tp_targeted": 962.7642641576355,
+    "ci": {
+     "loss_fraction_single": [
+      0.006001816197307019,
+      0.012327394506084919
+     ],
+     "loss_fraction_two_day": [
+      0.0027584518683479663,
+      0.00562785260129522
+     ],
+     "regret_single_per_1000": [
+      0.10335328115442526,
+      0.19654661370456433
+     ],
+     "achievable_nb_per_1000": [
+      14.160758628358368,
+      19.36447110339786
+     ],
+     "kappa_single_vs_usual": [
+      0.019604983314932885,
+      0.03542666514247859
+     ],
+     "loss_fraction_targeted": [
+      0.002832980411330559,
+      0.006382974489519251
+     ],
+     "targeted_share_of_single_regret_recovered": [
+      0.40997907280883844,
+      0.6045936979078607
+     ],
+     "targeted_fraction_remeasured": [
+      0.056793750000000004,
+      0.08395124999999999
+     ],
+     "mean_abs_risk_gap_pp_among_disagreements": [
+      0.3830811245654936,
+      0.6833210581270714
+     ],
+     "regret_two_day_per_1000": [
+      0.04718934223807599,
+      0.09123562515507389
+     ],
+     "loss_fraction_single_vs_best_default": [
+      0.006001816197307019,
+      0.012327394506084919
+     ]
+    },
+    "observed_flip_between_visits": 0.04005340453938585,
+    "empirical": {
+     "reference": "two-visit mean (understates regret)",
+     "achievable_nb_per_1000": 16.962474795441498,
+     "regret_single_per_1000": 0.09955128122697321,
+     "loss_fraction_single": 0.0058689125512349566,
+     "disagreement_single_vs_mean": 0.020026702269692925,
+     "mean_abs_risk_gap_pp_among_disagreements": 0.47223809438035186
+    },
+    "reading_point": "minor (<5%)",
+    "reading_ci": [
+     "minor (<5%)",
+     "minor (<5%)"
+    ],
+    "ci_uniform_start": {
+     "loss_fraction_single": [
+      0.004586119627199079,
+      0.012830447480400813
+     ],
+     "loss_fraction_two_day": [
+      0.0014018363025227979,
+      0.006271837420390782
+     ],
+     "regret_single_per_1000": [
+      0.07770901667176326,
+      0.21079453322732994
+     ],
+     "achievable_nb_per_1000": [
+      14.173389346060723,
+      19.34041290157864
+     ],
+     "kappa_single_vs_usual": [
+      0.017139835548770285,
+      0.04108367119018421
+     ],
+     "loss_fraction_targeted": [
+      0.0016159923147791853,
+      0.006729259624919195
+     ],
+     "targeted_share_of_single_regret_recovered": [
+      0.3873319303216262,
+      0.69157390961286
+     ],
+     "targeted_fraction_remeasured": [
+      0.05679875,
+      0.0844025
+     ],
+     "mean_abs_risk_gap_pp_among_disagreements": [
+      0.21426054565641778,
+      0.8726971537739184
+     ],
+     "regret_two_day_per_1000": [
+      0.024092418483483945,
+      0.1034273551806086
+     ],
+     "loss_fraction_single_vs_best_default": [
+      0.004586119627199079,
+      0.012830447480400813
+     ]
+    },
+    "reading_ci_uniform_start": [
+     "minor (<5%)",
+     "minor (<5%)"
+    ],
+    "squarem_check": {
+     "loss_fraction_single": 0.008665656925144032,
+     "abs_diff_vs_plain_em": 6.828861706491274e-08
+    },
+    "note": "kappa_single_vs_usual = single-visit decision disagreement with the usual-level decision (not Cohen kappa)",
+    "sens_empirical_errors": {
+     "pt": 0.05,
+     "achievable_nb_per_1000": 16.73169809082472,
+     "kappa_single_vs_usual": 0.02451263662955632,
+     "regret_single_per_1000": 0.1534046329658669,
+     "loss_fraction_single": 0.00916850352744474,
+     "mean_abs_risk_gap_pp_among_disagreements": 0.5945276451487599,
+     "regret_two_day_per_1000": 0.07727870186196191,
+     "loss_fraction_two_day": 0.004618700471552243,
+     "nb_treat_all_per_1000": -7.387059654059043,
+     "loss_fraction_single_vs_best_default": 0.00916850352744474,
+     "extra_measurements_per_net_tp_two_day": 13136.128327088583
+    },
+    "sens_smooth_g": {
+     "converged": true,
+     "pt": 0.05,
+     "achievable_nb_per_1000": 16.520376474168266,
+     "kappa_single_vs_usual": 0.03147820111418681,
+     "regret_single_per_1000": 0.16386335543420344,
+     "loss_fraction_single": 0.009918863271089788,
+     "mean_abs_risk_gap_pp_among_disagreements": 0.4945333028968251,
+     "regret_two_day_per_1000": 0.0812512018353455,
+     "loss_fraction_two_day": 0.004918241540221084,
+     "nb_treat_all_per_1000": -7.4524620259330865,
+     "loss_fraction_single_vs_best_default": 0.009918863271089788,
+     "extra_measurements_per_net_tp_two_day": 12104.756460601755,
+     "targeted_zone_risk_pct": [
+      4.280144514565433,
+      5.833545865979393
+     ],
+     "targeted_fraction_remeasured": 0.078455,
+     "regret_targeted_per_1000": 0.08473964035483726,
+     "loss_fraction_targeted": 0.005129401287394302,
+     "targeted_share_of_single_regret_recovered": 0.4822280516468366,
+     "mc_check_regret_single_per_1000": 0.1636620922094408,
+     "extra_measurements_per_net_tp_targeted": 994.0770738412343
+    },
+    "post_audit_sens_sigma_by_age": {
+     "loss_fraction_single": 0.006266960259239214,
+     "regret_single_per_1000": 0.10534415319298207,
+     "achievable_nb_per_1000": 16.809449690968755,
+     "bands": {
+      "30-39": {
+       "n": 189,
+       "sigma": 0.18687326876208876,
+       "loss_fraction_single": 0.03558207674020609,
+       "converged": true
+      },
+      "40-59": {
+       "n": 310,
+       "sigma": 0.18298111533589884,
+       "loss_fraction_single": 0.031776761918155316,
+       "converged": false
+      },
+      "60-79": {
+       "n": 250,
+       "sigma": 0.11263101370088296,
+       "loss_fraction_single": 0.002958328877272333,
+       "converged": true
+      }
+     }
+    },
+    "post_audit_sens_variance_inflation": {
+     "1.5": {
+      "loss_fraction_single": 0.014515083229383363,
+      "loss_fraction_two_day": 0.009083718748050463,
+      "regret_single_per_1000": 0.23973050174904684,
+      "achievable_nb_per_1000": 16.51595777720051,
+      "kappa_single_vs_usual": 0.03133683617443499,
+      "converged": false
+     },
+     "2.0": {
+      "loss_fraction_single": 0.02269760128883359,
+      "loss_fraction_two_day": 0.01670702786405807,
+      "regret_single_per_1000": 0.37093700519835515,
+      "achievable_nb_per_1000": 16.34256415372152,
+      "kappa_single_vs_usual": 0.032409604708490816,
+      "converged": false
+     }
+    }
+   },
+   "3": {
+    "pt": 0.03,
+    "achievable_nb_per_1000": 24.35153733937957,
+    "kappa_single_vs_usual": 0.022005874557234645,
+    "regret_single_per_1000": 0.10608603932236674,
+    "loss_fraction_single": 0.00435644114964405,
+    "mean_abs_risk_gap_pp_among_disagreements": 0.4676181256739248,
+    "regret_two_day_per_1000": 0.05164742317527007,
+    "loss_fraction_two_day": 0.0021209101690573572,
+    "nb_treat_all_per_1000": 13.383807555303006,
+    "loss_fraction_single_vs_best_default": 0.00967256136054584,
+    "extra_measurements_per_net_tp_two_day": 18369.313380375712,
+    "targeted_zone_risk_pct": [
+     2.6854539566072813,
+     3.3501203501255987
+    ],
+    "targeted_fraction_remeasured": 0.045235,
+    "regret_targeted_per_1000": 0.05841100260079223,
+    "loss_fraction_targeted": 0.002398657702252503,
+    "targeted_share_of_single_regret_recovered": 0.43659155880253653,
+    "mc_check_regret_single_per_1000": 0.1036743476484768,
+    "extra_measurements_per_net_tp_targeted": 999.3737747916175,
+    "ci": {
+     "loss_fraction_single": [
+      0.00301311778962127,
+      0.005974589126788562
+     ],
+     "loss_fraction_two_day": [
+      0.0013272703713145674,
+      0.003067081121549856
+     ],
+     "regret_single_per_1000": [
+      0.07701385264404881,
+      0.1390105624194017
+     ],
+     "achievable_nb_per_1000": [
+      21.087003059295622,
+      27.55397705839217
+     ],
+     "kappa_single_vs_usual": [
+      0.0155362638453536,
+      0.0288148283723062
+     ],
+     "loss_fraction_targeted": [
+      0.0015016144370533547,
+      0.0036369600583032887
+     ],
+     "targeted_share_of_single_regret_recovered": [
+      0.35491991272896445,
+      0.5306668364481009
+     ],
+     "targeted_fraction_remeasured": [
+      0.03615,
+      0.0569
+     ],
+     "mean_abs_risk_gap_pp_among_disagreements": [
+      0.4357311232333371,
+      0.5187079271998989
+     ],
+     "regret_two_day_per_1000": [
+      0.03309565496646413,
+      0.0722020663424317
+     ],
+     "loss_fraction_single_vs_best_default": [
+      0.006777919638780024,
+      0.013007981220781877
+     ]
+    },
+    "observed_flip_between_visits": 0.03471295060080107,
+    "empirical": {
+     "reference": "two-visit mean (understates regret)",
+     "achievable_nb_per_1000": 24.549390212909135,
+     "regret_single_per_1000": 0.06833298802776606,
+     "loss_fraction_single": 0.0027834902388668547,
+     "disagreement_single_vs_mean": 0.017356475300400534,
+     "mean_abs_risk_gap_pp_among_disagreements": 0.3818920445524068
+    },
+    "reading_point": "minor (<5%)",
+    "reading_ci": [
+     "minor (<5%)",
+     "minor (<5%)"
+    ],
+    "ci_uniform_start": {
+     "loss_fraction_single": [
+      0.0029061881670883927,
+      0.0059754131257901775
+     ],
+     "loss_fraction_two_day": [
+      0.0012355362613089807,
+      0.00319907257928003
+     ],
+     "regret_single_per_1000": [
+      0.07199142209506332,
+      0.13918824791191403
+     ],
+     "achievable_nb_per_1000": [
+      21.08564700181997,
+      27.51665494026476
+     ],
+     "kappa_single_vs_usual": [
+      0.015033528681524687,
+      0.03132927191547615
+     ],
+     "loss_fraction_targeted": [
+      0.0014106823698698755,
+      0.0036731097999185202
+     ],
+     "targeted_share_of_single_regret_recovered": [
+      0.30513428091149714,
+      0.5447644418970957
+     ],
+     "targeted_fraction_remeasured": [
+      0.03584875,
+      0.05690125
+     ],
+     "mean_abs_risk_gap_pp_among_disagreements": [
+      0.3144125056749877,
+      0.56623951150516
+     ],
+     "regret_two_day_per_1000": [
+      0.03154937765778177,
+      0.07612218684508862
+     ],
+     "loss_fraction_single_vs_best_default": [
+      0.006395878144936862,
+      0.013010518771105432
+     ]
+    },
+    "reading_ci_uniform_start": [
+     "minor (<5%)",
+     "minor (<5%)"
+    ],
+    "squarem_check": {
+     "loss_fraction_single": 0.004356586969080653,
+     "abs_diff_vs_plain_em": 1.458194366036475e-07
+    },
+    "note": "kappa_single_vs_usual = single-visit decision disagreement with the usual-level decision (not Cohen kappa)",
+    "sens_empirical_errors": {
+     "pt": 0.03,
+     "achievable_nb_per_1000": 24.35153733937957,
+     "kappa_single_vs_usual": 0.016513989976643537,
+     "regret_single_per_1000": 0.09780609599439818,
+     "loss_fraction_single": 0.004016423876296021,
+     "mean_abs_risk_gap_pp_among_disagreements": 0.574494190978363,
+     "regret_two_day_per_1000": 0.04550960290566006,
+     "loss_fraction_two_day": 0.0018688595414493676,
+     "nb_treat_all_per_1000": 13.383807555303006,
+     "loss_fraction_single_vs_best_default": 0.008917624514819596,
+     "extra_measurements_per_net_tp_two_day": 19121.741075509068
+    },
+    "sens_smooth_g": {
+     "converged": true,
+     "pt": 0.03,
+     "achievable_nb_per_1000": 24.141730659986337,
+     "kappa_single_vs_usual": 0.028553671990735652,
+     "regret_single_per_1000": 0.08907131726673441,
+     "loss_fraction_single": 0.003689516651528446,
+     "mean_abs_risk_gap_pp_among_disagreements": 0.3025851728519011,
+     "regret_two_day_per_1000": 0.04414001939064872,
+     "loss_fraction_two_day": 0.0018283701368522224,
+     "nb_treat_all_per_1000": 13.319753685941823,
+     "loss_fraction_single_vs_best_default": 0.008230595710965152,
+     "extra_measurements_per_net_tp_two_day": 22256.201072977274,
+     "targeted_zone_risk_pct": [
+      2.6854539566072813,
+      3.3501203501255987
+     ],
+     "targeted_fraction_remeasured": 0.04884,
+     "regret_targeted_per_1000": 0.04854329276487828,
+     "loss_fraction_targeted": 0.002010762751377069,
+     "targeted_share_of_single_regret_recovered": 0.4407370291993385,
+     "mc_check_regret_single_per_1000": 0.08679868916653272,
+     "extra_measurements_per_net_tp_targeted": 1276.6826276537502
+    },
+    "post_audit_sens_sigma_by_age": {
+     "loss_fraction_single": 0.0043807276820264,
+     "regret_single_per_1000": 0.10694523126078137,
+     "achievable_nb_per_1000": 24.412663608277875,
+     "bands": {
+      "30-39": {
+       "n": 189,
+       "sigma": 0.18687326876208876,
+       "loss_fraction_single": 0.0528491281250507,
+       "converged": true
+      },
+      "40-59": {
+       "n": 310,
+       "sigma": 0.18298111533589884,
+       "loss_fraction_single": 0.02612919814472851,
+       "converged": false
+      },
+      "60-79": {
+       "n": 250,
+       "sigma": 0.11263101370088296,
+       "loss_fraction_single": 0.0005524944239404613,
+       "converged": true
+      }
+     }
+    },
+    "post_audit_sens_variance_inflation": {
+     "1.5": {
+      "loss_fraction_single": 0.00614078104497828,
+      "loss_fraction_two_day": 0.004308933966127388,
+      "regret_single_per_1000": 0.1481349606381546,
+      "achievable_nb_per_1000": 24.123146478133147,
+      "kappa_single_vs_usual": 0.029755675054715196,
+      "converged": false
+     },
+     "2.0": {
+      "loss_fraction_single": 0.006834404079625989,
+      "loss_fraction_two_day": 0.005242724313606219,
+      "regret_single_per_1000": 0.16313636459679468,
+      "achievable_nb_per_1000": 23.86987405136313,
+      "kappa_single_vs_usual": 0.039531265725775644,
+      "converged": false
+     }
+    }
+   },
+   "10": {
+    "pt": 0.1,
+    "achievable_nb_per_1000": 4.897631937927765,
+    "kappa_single_vs_usual": 0.03480693244012373,
+    "regret_single_per_1000": 0.37651421189119433,
+    "loss_fraction_single": 0.07687678793815222,
+    "mean_abs_risk_gap_pp_among_disagreements": 0.9735497125033934,
+    "regret_two_day_per_1000": 0.20715624108601338,
+    "loss_fraction_two_day": 0.04229722521240809,
+    "nb_treat_all_per_1000": -63.35300741261787,
+    "loss_fraction_single_vs_best_default": 0.07687678793815222,
+    "extra_measurements_per_net_tp_two_day": 5904.6527024720845,
+    "targeted_zone_risk_pct": [
+     9.110436332491656,
+     10.965943029646716
+    ],
+    "targeted_fraction_remeasured": 0.055245,
+    "regret_targeted_per_1000": 0.23860295810653792,
+    "loss_fraction_targeted": 0.0487180255949354,
+    "targeted_share_of_single_regret_recovered": 0.355852212915063,
+    "mc_check_regret_single_per_1000": 0.3704164834382577,
+    "extra_measurements_per_net_tp_targeted": 419.1148052597131,
+    "ci": {
+     "loss_fraction_single": [
+      0.05439857987316078,
+      0.10561582220163163
+     ],
+     "loss_fraction_two_day": [
+      0.028061273124908588,
+      0.059980961302359824
+     ],
+     "regret_single_per_1000": [
+      0.2875600521584412,
+      0.48170804319101207
+     ],
+     "achievable_nb_per_1000": [
+      3.803993620411472,
+      6.120327210324996
+     ],
+     "kappa_single_vs_usual": [
+      0.025106456361296384,
+      0.04396102397294707
+     ],
+     "loss_fraction_targeted": [
+      0.03311695317344617,
+      0.06977024330665639
+     ],
+     "targeted_share_of_single_regret_recovered": [
+      0.29649762378695943,
+      0.441382994616516
+     ],
+     "targeted_fraction_remeasured": [
+      0.043498749999999996,
+      0.0677025
+     ],
+     "mean_abs_risk_gap_pp_among_disagreements": [
+      0.8439181449583253,
+      1.2141581946831566
+     ],
+     "regret_two_day_per_1000": [
+      0.14841367162080446,
+      0.26896685596269443
+     ],
+     "loss_fraction_single_vs_best_default": [
+      0.05439857987316078,
+      0.10561582220163163
+     ]
+    },
+    "observed_flip_between_visits": 0.036048064085447265,
+    "empirical": {
+     "reference": "two-visit mean (understates regret)",
+     "achievable_nb_per_1000": 5.155725808525243,
+     "regret_single_per_1000": 0.11088109168001631,
+     "loss_fraction_single": 0.021506398089803196,
+     "disagreement_single_vs_mean": 0.018024032042723633,
+     "mean_abs_risk_gap_pp_among_disagreements": 0.5536662511222148
+    },
+    "reading_point": "modest (5-<15%)",
+    "reading_ci": [
+     "modest (5-<15%)",
+     "modest (5-<15%)"
+    ],
+    "ci_uniform_start": {
+     "loss_fraction_single": [
+      0.04027642204670556,
+      0.10719672690569991
+     ],
+     "loss_fraction_two_day": [
+      0.014112618567002173,
+      0.05850362981020351
+     ],
+     "regret_single_per_1000": [
+      0.1886217667543101,
+      0.5188090125747502
+     ],
+     "achievable_nb_per_1000": [
+      3.726073584031614,
+      6.1299059187719305
+     ],
+     "kappa_single_vs_usual": [
+      0.02341933103870372,
+      0.0506539682737927
+     ],
+     "loss_fraction_targeted": [
+      0.018940168435615905,
+      0.06846240818093519
+     ],
+     "targeted_share_of_single_regret_recovered": [
+      0.2882552647430982,
+      0.5612299564358215
+     ],
+     "targeted_fraction_remeasured": [
+      0.04364875,
+      0.068
+     ],
+     "mean_abs_risk_gap_pp_among_disagreements": [
+      0.37931912169132115,
+      1.511986930103662
+     ],
+     "regret_two_day_per_1000": [
+      0.06788707012990008,
+      0.28175088113291624
+     ],
+     "loss_fraction_single_vs_best_default": [
+      0.04027642204670556,
+      0.10719672690569991
+     ]
+    },
+    "reading_ci_uniform_start": [
+     "minor (<5%)",
+     "modest (5-<15%)"
+    ],
+    "squarem_check": {
+     "loss_fraction_single": 0.07685195201351162,
+     "abs_diff_vs_plain_em": 2.4835924640601026e-05
+    },
+    "note": "kappa_single_vs_usual = single-visit decision disagreement with the usual-level decision (not Cohen kappa)",
+    "sens_empirical_errors": {
+     "pt": 0.1,
+     "achievable_nb_per_1000": 4.897631937927765,
+     "kappa_single_vs_usual": 0.02881498877554415,
+     "regret_single_per_1000": 0.35180390296111563,
+     "loss_fraction_single": 0.07183142943770641,
+     "mean_abs_risk_gap_pp_among_disagreements": 1.0988153253550066,
+     "regret_two_day_per_1000": 0.2067630916733235,
+     "loss_fraction_two_day": 0.042216951844038925,
+     "nb_treat_all_per_1000": -63.35300741261787,
+     "loss_fraction_single_vs_best_default": 0.07183142943770641,
+     "extra_measurements_per_net_tp_two_day": 6894.611186473476
+    },
+    "sens_smooth_g": {
+     "converged": true,
+     "pt": 0.1,
+     "achievable_nb_per_1000": 5.0164424588111824,
+     "kappa_single_vs_usual": 0.03418834867443656,
+     "regret_single_per_1000": 0.34089530875256696,
+     "loss_fraction_single": 0.06795559035144474,
+     "mean_abs_risk_gap_pp_among_disagreements": 0.8973986453657419,
+     "regret_two_day_per_1000": 0.1748277076684339,
+     "loss_fraction_two_day": 0.03485093452260296,
+     "nb_treat_all_per_1000": -63.42204324959602,
+     "loss_fraction_single_vs_best_default": 0.06795559035144474,
+     "extra_measurements_per_net_tp_two_day": 6021.64415859407,
+     "targeted_zone_risk_pct": [
+      9.110436332491656,
+      10.965943029646716
+     ],
+     "targeted_fraction_remeasured": 0.053115,
+     "regret_targeted_per_1000": 0.2043535341625734,
+     "loss_fraction_targeted": 0.04073674438418695,
+     "targeted_share_of_single_regret_recovered": 0.3942939941125058,
+     "mc_check_regret_single_per_1000": 0.3373807295556695,
+     "extra_measurements_per_net_tp_targeted": 399.2792589744142
+    },
+    "post_audit_sens_sigma_by_age": {
+     "loss_fraction_single": 0.048709855864851916,
+     "regret_single_per_1000": 0.24627379982046443,
+     "achievable_nb_per_1000": 5.055933659581424,
+     "bands": {
+      "30-39": {
+       "n": 189,
+       "sigma": 0.18687326876208876,
+       "loss_fraction_single": null,
+       "converged": true
+      },
+      "40-59": {
+       "n": 310,
+       "sigma": 0.18298111533589884,
+       "loss_fraction_single": 0.06883414973885028,
+       "converged": false
+      },
+      "60-79": {
+       "n": 250,
+       "sigma": 0.11263101370088296,
+       "loss_fraction_single": 0.04545082114975478,
+       "converged": true
+      }
+     }
+    },
+    "post_audit_sens_variance_inflation": {
+     "1.5": {
+      "loss_fraction_single": 0.11291188566029553,
+      "loss_fraction_two_day": 0.07468397732227737,
+      "regret_single_per_1000": 0.5185800919026811,
+      "achievable_nb_per_1000": 4.5927856830136635,
+      "kappa_single_vs_usual": 0.0440852326665736,
+      "converged": false
+     },
+     "2.0": {
+      "loss_fraction_single": 0.16864593371821934,
+      "loss_fraction_two_day": 0.13470619458986494,
+      "regret_single_per_1000": 0.735293607306832,
+      "achievable_nb_per_1000": 4.359984205343434,
+      "kappa_single_vs_usual": 0.049817188343443175,
+      "converged": false
+     }
+    }
+   }
+  },
+  "post_audit": {
+   "squarem_full_sample": {
+    "converged": false,
+    "em_evaluations": 60000,
+    "loglik": -1195.8389578726903
+   },
+   "uniform_bootstrap_converged_at_tol": 250,
+   "n_boot": 1000,
+   "uniform_refit_cap": "20,000 EM evaluations (functional stable to <0.01 pp in checks)"
+  },
+  "post_audit_sens_5pct_ages_30_59": {
+   "n": 499,
+   "converged": false,
+   "pt": 0.05,
+   "achievable_nb_per_1000": 2.890099435438561,
+   "kappa_single_vs_usual": 0.021911148650621454,
+   "regret_single_per_1000": 0.0966279348900694,
+   "loss_fraction_single": 0.03343412122960625,
+   "mean_abs_risk_gap_pp_among_disagreements": 0.4189489999327915,
+   "regret_two_day_per_1000": 0.04974369974429428,
+   "loss_fraction_two_day": 0.017211760652361734,
+   "nb_treat_all_per_1000": -32.283259215031464,
+   "loss_fraction_single_vs_best_default": 0.03343412122960625,
+   "extra_measurements_per_net_tp_two_day": 21329.13114377878
+  }
+ },
+ "cvd10_bp": {
+  "label": "PREVENT 10-year total CVD, not on BP medication (all BP levels)",
+  "n": 623,
+  "delta": -0.021094468350714386,
+  "sigma": 0.15401842842000904,
+  "npmle": {
+   "converged": false,
+   "iterations": 100000,
+   "last_max_change": 1.0256834537952786e-08,
+   "loglik": -996.8513954945987
+  },
+  "thresholds": {
+   "7.5": {
+    "pt": 0.075,
+    "achievable_nb_per_1000": 19.965420805345268,
+    "kappa_single_vs_usual": 0.026772356456331182,
+    "regret_single_per_1000": 0.1767812405953962,
+    "loss_fraction_single": 0.008854370880480878,
+    "mean_abs_risk_gap_pp_among_disagreements": 0.6107891466986327,
+    "regret_two_day_per_1000": 0.08648028612258257,
+    "loss_fraction_two_day": 0.004331503300918633,
+    "nb_treat_all_per_1000": -21.71857376648126,
+    "loss_fraction_single_vs_best_default": 0.008854370880480878,
+    "extra_measurements_per_net_tp_two_day": 11074.080067460018,
+    "targeted_zone_risk_pct": [
+     7.254039754883005,
+     7.753602733316124
+    ],
+    "targeted_fraction_remeasured": 0.01514,
+    "regret_targeted_per_1000": 0.13770763730219537,
+    "loss_fraction_targeted": 0.006897307031231089,
+    "targeted_share_of_single_regret_recovered": 0.21966771232254056,
+    "mc_check_regret_single_per_1000": 0.17647307368513643,
+    "extra_measurements_per_net_tp_targeted": 390.55409696516256,
+    "ci": {
+     "loss_fraction_single": [
+      0.006307904044398954,
+      0.012548211496536938
+     ],
+     "loss_fraction_two_day": [
+      0.0029510516485461414,
+      0.006214268072354104
+     ],
+     "regret_single_per_1000": [
+      0.12523227046368962,
+      0.24393491525377964
+     ],
+     "achievable_nb_per_1000": [
+      16.395913396881536,
+      23.649145983301707
+     ],
+     "kappa_single_vs_usual": [
+      0.01749554734824106,
+      0.03566520144363777
+     ],
+     "loss_fraction_targeted": [
+      0.004683656847029427,
+      0.010013010220781634
+     ],
+     "targeted_share_of_single_regret_recovered": [
+      0.13927358784627805,
+      0.3009720371242859
+     ],
+     "targeted_fraction_remeasured": [
+      0.01125,
+      0.0188
+     ],
+     "mean_abs_risk_gap_pp_among_disagreements": [
+      0.4204291426712407,
+      0.9824673213039041
+     ],
+     "regret_two_day_per_1000": [
+      0.059244659823437615,
+      0.12230984550757111
+     ],
+     "loss_fraction_single_vs_best_default": [
+      0.006307904044398954,
+      0.012548211496536938
+     ]
+    },
+    "observed_flip_between_visits": 0.028892455858747994,
+    "empirical": {
+     "reference": "two-visit mean (understates regret)",
+     "achievable_nb_per_1000": 20.20652524620725,
+     "regret_single_per_1000": 0.08060933062955654,
+     "loss_fraction_single": 0.003989272259696746,
+     "disagreement_single_vs_mean": 0.014446227929373997,
+     "mean_abs_risk_gap_pp_among_disagreements": 0.5161460223171965
+    },
+    "reading_point": "minor (<5%)",
+    "reading_ci": [
+     "minor (<5%)",
+     "minor (<5%)"
+    ],
+    "ci_uniform_start": {
+     "loss_fraction_single": [
+      0.004364063193258467,
+      0.01377893366635186
+     ],
+     "loss_fraction_two_day": [
+      0.0017288285625175974,
+      0.007349334834307307
+     ],
+     "regret_single_per_1000": [
+      0.08561072542566545,
+      0.2663701798238535
+     ],
+     "achievable_nb_per_1000": [
+      16.361385321123002,
+      23.606799903760187
+     ],
+     "kappa_single_vs_usual": [
+      0.01663981597077234,
+      0.038352834466322434
+     ],
+     "loss_fraction_targeted": [
+      0.003092505204403885,
+      0.01143311096466306
+     ],
+     "targeted_share_of_single_regret_recovered": [
+      0.1334393800915262,
+      0.33706337386732443
+     ],
+     "targeted_fraction_remeasured": [
+      0.01115,
+      0.01885
+     ],
+     "mean_abs_risk_gap_pp_among_disagreements": [
+      0.22836271115640783,
+      1.1513793299876882
+     ],
+     "regret_two_day_per_1000": [
+      0.03511419772229687,
+      0.14406009874900852
+     ],
+     "loss_fraction_single_vs_best_default": [
+      0.004364063193258467,
+      0.01377893366635186
+     ]
+    },
+    "reading_ci_uniform_start": [
+     "minor (<5%)",
+     "minor (<5%)"
+    ],
+    "squarem_check": {
+     "loss_fraction_single": 0.008857003350185008,
+     "abs_diff_vs_plain_em": 2.632469704130433e-06
+    },
+    "note": "kappa_single_vs_usual = single-visit decision disagreement with the usual-level decision (not Cohen kappa)",
+    "post_audit_sens_sigma_by_age": {
+     "loss_fraction_single": 0.006923459528333437,
+     "regret_single_per_1000": 0.13890193626786618,
+     "achievable_nb_per_1000": 20.06250425808463,
+     "bands": {
+      "30-39": {
+       "n": 183,
+       "sigma": 0.17278695151657258,
+       "loss_fraction_single": null,
+       "converged": true
+      },
+      "40-59": {
+       "n": 258,
+       "sigma": 0.16436791271014775,
+       "loss_fraction_single": 0.042132655878374,
+       "converged": true
+      },
+      "60-79": {
+       "n": 182,
+       "sigma": 0.11444550871268046,
+       "loss_fraction_single": 0.004342761716234786,
+       "converged": true
+      }
+     }
+    },
+    "post_audit_sens_variance_inflation": {
+     "1.5": {
+      "loss_fraction_single": 0.011165853021105685,
+      "loss_fraction_two_day": 0.007012364885984403,
+      "regret_single_per_1000": 0.21987161430209798,
+      "achievable_nb_per_1000": 19.691430102697648,
+      "kappa_single_vs_usual": 0.03592060960431723,
+      "converged": false
+     },
+     "2.0": {
+      "loss_fraction_single": 0.0130716664690892,
+      "loss_fraction_two_day": 0.008892358813252038,
+      "regret_single_per_1000": 0.25336237143547796,
+      "achievable_nb_per_1000": 19.38256090259099,
+      "kappa_single_vs_usual": 0.04345122318825937,
+      "converged": false
+     }
+    }
+   }
+  },
+  "post_audit": {
+   "squarem_full_sample": {
+    "converged": false,
+    "em_evaluations": 60000,
+    "loglik": -996.8513957645512
+   },
+   "uniform_bootstrap_converged_at_tol": 462,
+   "n_boot": 1000,
+   "uniform_refit_cap": "20,000 EM evaluations (functional stable to <0.01 pp in checks)"
+  }
+ },
+ "ascvd30": {
+  "label": "base PREVENT 30-year ASCVD, ages 30-59 statin-naive",
+  "n": 499,
+  "delta": -0.012944902252221363,
+  "sigma": 0.17476441230348297,
+  "npmle": {
+   "converged": false,
+   "iterations": 100000,
+   "last_max_change": 4.0329490164081605e-09,
+   "loglik": -663.7412565332052
+  },
+  "thresholds": {
+   "10": {
+    "pt": 0.1,
+    "achievable_nb_per_1000": 30.55645207286555,
+    "kappa_single_vs_usual": 0.06555320658007384,
+    "regret_single_per_1000": 0.47821703571386354,
+    "loss_fraction_single": 0.01565028016254954,
+    "mean_abs_risk_gap_pp_among_disagreements": 0.6565587781228449,
+    "regret_two_day_per_1000": 0.20059295248232914,
+    "loss_fraction_two_day": 0.0065646676519901925,
+    "nb_treat_all_per_1000": -5.850202068744822,
+    "loss_fraction_single_vs_best_default": 0.01565028016254954,
+    "extra_measurements_per_net_tp_two_day": 3601.9929840381133,
+    "targeted_zone_risk_pct": [
+     8.824738957115386,
+     11.31236022975206
+    ],
+    "targeted_fraction_remeasured": 0.11055,
+    "regret_targeted_per_1000": 0.23161609458947974,
+    "loss_fraction_targeted": 0.007579940695901579,
+    "targeted_share_of_single_regret_recovered": 0.5029361196673161,
+    "mc_check_regret_single_per_1000": 0.4659684675427624,
+    "extra_measurements_per_net_tp_targeted": 471.72554135834486,
+    "ci": {
+     "loss_fraction_single": [
+      0.010294855210409772,
+      0.023059364358719615
+     ],
+     "loss_fraction_two_day": [
+      0.003835758724620472,
+      0.010249960900905549
+     ],
+     "regret_single_per_1000": [
+      0.32015301010442,
+      0.6660753605525428
+     ],
+     "achievable_nb_per_1000": [
+      24.766771835638618,
+      36.279196695746634
+     ],
+     "kappa_single_vs_usual": [
+      0.04931330515368228,
+      0.08360296272791642
+     ],
+     "loss_fraction_targeted": [
+      0.004301390005105727,
+      0.012308206799281986
+     ],
+     "targeted_share_of_single_regret_recovered": [
+      0.4241088631684598,
+      0.6104932842046322
+     ],
+     "targeted_fraction_remeasured": [
+      0.0936,
+      0.13025375
+     ],
+     "mean_abs_risk_gap_pp_among_disagreements": [
+      0.4001814679801475,
+      1.005099807080507
+     ],
+     "regret_two_day_per_1000": [
+      0.11906612865516814,
+      0.29219054915311005
+     ],
+     "loss_fraction_single_vs_best_default": [
+      0.010377351520960164,
+      0.023059364358719615
+     ]
+    },
+    "observed_flip_between_visits": 0.06813627254509018,
+    "empirical": {
+     "reference": "two-visit mean (understates regret)",
+     "achievable_nb_per_1000": 31.293591491502703,
+     "regret_single_per_1000": 0.266437193824796,
+     "loss_fraction_single": 0.008514113629212006,
+     "disagreement_single_vs_mean": 0.03406813627254509,
+     "mean_abs_risk_gap_pp_among_disagreements": 0.7038643749806818
+    },
+    "reading_point": "minor (<5%)",
+    "reading_ci": [
+     "minor (<5%)",
+     "minor (<5%)"
+    ],
+    "ci_uniform_start": {
+     "loss_fraction_single": [
+      0.008932398392738234,
+      0.031675760155102296
+     ],
+     "loss_fraction_two_day": [
+      0.003021773276722886,
+      0.017717933014584075
+     ],
+     "regret_single_per_1000": [
+      0.2731197381996555,
+      0.9001090370455452
+     ],
+     "achievable_nb_per_1000": [
+      24.904833076831224,
+      36.40883471869065
+     ],
+     "kappa_single_vs_usual": [
+      0.04300306124881342,
+      0.08147907095928181
+     ],
+     "loss_fraction_targeted": [
+      0.003718524644790865,
+      0.01972461619090223
+     ],
+     "targeted_share_of_single_regret_recovered": [
+      0.30807355516554547,
+      0.6155497017618352
+     ],
+     "targeted_fraction_remeasured": [
+      0.09369625000000001,
+      0.13115249999999998
+     ],
+     "mean_abs_risk_gap_pp_among_disagreements": [
+      0.35463382637707236,
+      1.5596353631293083
+     ],
+     "regret_two_day_per_1000": [
+      0.09812807903942539,
+      0.5106733946429303
+     ],
+     "loss_fraction_single_vs_best_default": [
+      0.008933544893684536,
+      0.031675760155102296
+     ]
+    },
+    "reading_ci_uniform_start": [
+     "minor (<5%)",
+     "minor (<5%)"
+    ],
+    "squarem_check": {
+     "loss_fraction_single": 0.015647664560068466,
+     "abs_diff_vs_plain_em": 2.615602481072926e-06
+    },
+    "note": "kappa_single_vs_usual = single-visit decision disagreement with the usual-level decision (not Cohen kappa)",
+    "post_audit_sens_sigma_by_age": {
+     "loss_fraction_single": 0.01963137152300133,
+     "regret_single_per_1000": 0.6033584722509906,
+     "achievable_nb_per_1000": 30.734402410145336,
+     "bands": {
+      "30-39": {
+       "n": 189,
+       "sigma": 0.18182135636764427,
+       "loss_fraction_single": 0.07661618515978838,
+       "converged": true
+      },
+      "40-59": {
+       "n": 310,
+       "sigma": 0.17056262037898745,
+       "loss_fraction_single": 0.01779068582323575,
+       "converged": true
+      }
+     }
+    },
+    "post_audit_sens_variance_inflation": {
+     "1.5": {
+      "loss_fraction_single": 0.03234676082547575,
+      "loss_fraction_two_day": 0.024276678079401127,
+      "regret_single_per_1000": 0.9747218672836537,
+      "achievable_nb_per_1000": 30.13352318467633,
+      "kappa_single_vs_usual": 0.07010075934845718,
+      "converged": false
+     },
+     "2.0": {
+      "loss_fraction_single": 0.039864595844280176,
+      "loss_fraction_two_day": 0.03270224945448193,
+      "regret_single_per_1000": 1.1747616614298166,
+      "achievable_nb_per_1000": 29.468796473409448,
+      "kappa_single_vs_usual": 0.08510875545398801,
+      "converged": false
+     }
+    }
+   }
+  },
+  "post_audit": {
+   "squarem_full_sample": {
+    "converged": true,
+    "em_evaluations": 24804,
+    "loglik": -663.7412563702695
+   },
+   "uniform_bootstrap_converged_at_tol": 303,
+   "n_boot": 1000,
+   "uniform_refit_cap": "20,000 EM evaluations (functional stable to <0.01 pp in checks)"
+  }
+ },
+ "limits": "assumes calibration and that the guideline threshold is the benefit-harm exchange rate; risk-threshold components only (BP stage, LDL-C 160/190 and HbA1c 6.5% components not covered); usual level = average over the about 2-week process (variance-inflation sensitivity for a longer-term level); loss fractions are specific to this population; 1988-1994 measurement; model-based"
+}

@@ -1,0 +1,1609 @@
+{
+ "label": "E12: analyses prompted by the independent referee review of revision 7 draft 1 (zone intervals; per-zone and exchange-rate stakes; subsample checks; error-variance scenarios)",
+ "protocol": "studies\\nhanes3_testretest\\extensions6_protocol_20261011.md",
+ "protocol_sha256": "5e1e9241d6d08a76d0567e75dedf7118f24c0c2e9cb15df9caaf47d7da01c228",
+ "protocol_sha256_before_addendum": "87ada74d2802cd7188db3592c6b9db4310847f67a807c803805b3b0a0de164fe",
+ "A_zone_intervals": {
+  "reproduction_max_abs_diff_vs_frozen": 3.885780586188048e-16,
+  "thresholds": {
+   "3.0": {
+    "peak_pi_at_threshold": 0.454468105160755,
+    "peak_ci": [
+     0.2858947136059106,
+     0.6096186312886747
+    ],
+    "0.25": {
+     "point": [
+      2.6854539566072813,
+      3.3501203501255987
+     ],
+     "untruncated_point": [
+      2.6854539566072813,
+      3.3501203501255987
+     ],
+     "lower_limit_ci": [
+      2.518255585540369,
+      2.8913731467164148
+     ],
+     "upper_limit_ci": [
+      3.112577080203123,
+      3.5705269918169886
+     ],
+     "width_pp_ci": [
+      0.22120393348670842,
+      1.0522714062766196
+     ],
+     "width_pp": 0.6646663935183175,
+     "dstar_logit": 0.114,
+     "dstar_logit_ci": [
+      0.038,
+      0.18
+     ],
+     "width_logit": 0.228,
+     "width_logit_ci": [
+      0.076,
+      0.36
+     ],
+     "lower_limit_at_truncation_share": null,
+     "empty_replicates": 35,
+     "replicates": 4000,
+     "note": "limit, width and d* intervals are percentile intervals among replicates with a non-empty zone; limits truncated at the logit midpoints"
+    },
+    "0.1": {
+     "point": [
+      2.340554097271002,
+      3.837941620303205
+     ],
+     "untruncated_point": [
+      2.340554097271002,
+      3.837941620303205
+     ],
+     "lower_limit_ci": [
+      2.156044365133119,
+      2.5330266594501367
+     ],
+     "upper_limit_ci": [
+      3.5499262004814955,
+      3.8781111837002826
+     ],
+     "width_pp_ci": [
+      1.0168995410313588,
+      1.7220668185671637
+     ],
+     "width_pp": 1.4973875230322031,
+     "dstar_logit": 0.255,
+     "dstar_logit_ci": [
+      0.17400000000000002,
+      0.339
+     ],
+     "width_logit": 0.51,
+     "width_logit_ci": [
+      0.34800000000000003,
+      0.678
+     ],
+     "lower_limit_at_truncation_share": null,
+     "empty_replicates": 0,
+     "replicates": 4000,
+     "note": "limit, width and d* intervals are percentile intervals among replicates with a non-empty zone; limits truncated at the logit midpoints"
+    }
+   },
+   "5.0": {
+    "peak_pi_at_threshold": 0.55036662655949,
+    "peak_ci": [
+     0.38409472688422414,
+     0.6960460855418635
+    ],
+    "0.25": {
+     "point": [
+      4.280144514565433,
+      5.833545865979393
+     ],
+     "untruncated_point": [
+      4.280144514565433,
+      5.833545865979393
+     ],
+     "lower_limit_ci": [
+      4.037084762501935,
+      4.550157817816385
+     ],
+     "upper_limit_ci": [
+      5.491756160708182,
+      6.177801748006894
+     ],
+     "width_pp_ci": [
+      0.9415983428917976,
+      2.1407169855049597
+     ],
+     "width_pp": 1.5534013514139602,
+     "dstar_logit": 0.163,
+     "dstar_logit_ci": [
+      0.099,
+      0.224
+     ],
+     "width_logit": 0.326,
+     "width_logit_ci": [
+      0.198,
+      0.448
+     ],
+     "lower_limit_at_truncation_share": 0.0007503751875937969,
+     "empty_replicates": 2,
+     "replicates": 4000,
+     "note": "limit, width and d* intervals are percentile intervals among replicates with a non-empty zone; limits truncated at the logit midpoints"
+    },
+    "0.1": {
+     "point": [
+      3.8781111837002826,
+      6.670515211672597
+     ],
+     "untruncated_point": [
+      3.731111644976449,
+      6.670515211672597
+     ],
+     "lower_limit_ci": [
+      3.8781111837002826,
+      4.002361696424823
+     ],
+     "upper_limit_ci": [
+      6.230173292390181,
+      7.103939312130601
+     ],
+     "width_pp_ci": [
+      2.227811595965358,
+      3.2258281284303183
+     ],
+     "width_pp": 2.792404027972314,
+     "dstar_logit": 0.306,
+     "dstar_logit_ci": [
+      0.233,
+      0.393
+     ],
+     "width_logit": 0.612,
+     "width_logit_ci": [
+      0.466,
+      0.786
+     ],
+     "lower_limit_at_truncation_share": 0.8485,
+     "empty_replicates": 0,
+     "replicates": 4000,
+     "note": "limit, width and d* intervals are percentile intervals among replicates with a non-empty zone; limits truncated at the logit midpoints"
+    }
+   },
+   "10.0": {
+    "peak_pi_at_threshold": 0.43142585676621265,
+    "peak_ci": [
+     0.29194428949991574,
+     0.5582723057796766
+    ],
+    "0.25": {
+     "point": [
+      9.110436332491656,
+      10.965943029646716
+     ],
+     "untruncated_point": [
+      9.110436332491656,
+      10.965943029646716
+     ],
+     "lower_limit_ci": [
+      8.704792349331308,
+      9.654434619241544
+     ],
+     "upper_limit_ci": [
+      10.356516469608867,
+      11.463725767318653
+     ],
+     "width_pp_ci": [
+      0.702081850367323,
+      2.758933417987345
+     ],
+     "width_pp": 1.855506697155061,
+     "dstar_logit": 0.10300000000000001,
+     "dstar_logit_ci": [
+      0.039,
+      0.153
+     ],
+     "width_logit": 0.20600000000000002,
+     "width_logit_ci": [
+      0.078,
+      0.306
+     ],
+     "lower_limit_at_truncation_share": null,
+     "empty_replicates": 20,
+     "replicates": 4000,
+     "note": "limit, width and d* intervals are percentile intervals among replicates with a non-empty zone; limits truncated at the logit midpoints"
+    },
+    "0.1": {
+     "point": [
+      8.023011450387468,
+      12.398478779211654
+     ],
+     "untruncated_point": [
+      8.023011450387468,
+      12.398478779211654
+     ],
+     "lower_limit_ci": [
+      7.4797748658195395,
+      8.500569653598198
+     ],
+     "upper_limit_ci": [
+      11.73001106185275,
+      13.247796557794567
+     ],
+     "width_pp_ci": [
+      3.2294414082545515,
+      5.768021691975028
+     ],
+     "width_pp": 4.375467328824186,
+     "dstar_logit": 0.242,
+     "dstar_logit_ci": [
+      0.178975,
+      0.318
+     ],
+     "width_logit": 0.484,
+     "width_logit_ci": [
+      0.35795,
+      0.636
+     ],
+     "lower_limit_at_truncation_share": null,
+     "empty_replicates": 0,
+     "replicates": 4000,
+     "note": "limit, width and d* intervals are percentile intervals among replicates with a non-empty zone; limits truncated at the logit midpoints"
+    }
+   }
+  },
+  "share_in_union_zone_0.25": {
+   "fixed_zone_share": 0.16469038208168643,
+   "ci_sampling_only": [
+    0.13930270229779584,
+    0.18953391905124578
+   ],
+   "ci_zone_and_sampling": [
+    0.10789473684210527,
+    0.22751460358742542
+   ],
+   "n": 759,
+   "in_zone_n": 125
+  },
+  "share_in_union_zone_0.1": {
+   "fixed_zone_share": 0.35046113306982873,
+   "ci_sampling_only": [
+    0.31249803952321203,
+    0.3874837716378162
+   ],
+   "ci_zone_and_sampling": [
+    0.28136052163358044,
+    0.43690230975018524
+   ],
+   "n": 759,
+   "in_zone_n": 266
+  },
+  "cvd75_curve": {
+   "events": 23,
+   "peak_pi_at_threshold": 0.2853445925684954,
+   "peak_ci": [
+    0.1348085995434859,
+    0.4573288820482963
+   ],
+   "0.25": {
+    "point": [
+     7.254039754883005,
+     7.753602733316124
+    ],
+    "lower_limit_ci": [
+     6.568576893773079,
+     7.472297131813065
+    ],
+    "upper_limit_ci": [
+     7.527797218208006,
+     8.551411939299376
+    ],
+    "width_pp": 0.4995629784331195,
+    "width_pp_ci": [
+     0.055500086394941306,
+     1.9828350455262966
+    ],
+    "empty_replicates": 1424,
+    "replicates": 4000
+   },
+   "0.1": {
+    "point": [
+     5.895005670519422,
+     9.497871714196691
+    ],
+    "lower_limit_ci": [
+     5.425357349118931,
+     6.721328675604835
+    ],
+    "upper_limit_ci": [
+     8.360795306865123,
+     10.281732485775782
+    ],
+    "width_pp": 3.6028660436772695,
+    "width_pp_ci": [
+     1.6394666312602881,
+     4.856375136656851
+    ],
+    "empty_replicates": 15,
+    "replicates": 4000
+   }
+  }
+ },
+ "C_subsample": {
+  "interval_missing_n": 0,
+  "interval_summary": {
+   "min": 3.0,
+   "median": 16.0,
+   "max": 48.0
+  },
+  "tertile_cutpoints_days": [
+   14.0,
+   21.0
+  ],
+  "theta_by_interval_tertile": [
+   {
+    "n": 309,
+    "events": 33,
+    "estimate": 0.10679611650485436,
+    "deff": 1.0648993042888881,
+    "G": 80,
+    "df": 79,
+    "wilson": [
+     0.07706082394025755,
+     0.14618790749058497
+    ],
+    "lower": 0.07570231030150204,
+    "upper": 0.14860794907745511,
+    "method": "CR1 logit-t, deff floored at 1",
+    "days_min": 3.0,
+    "days_max": 14.0,
+    "days_median": 10.0
+   },
+   {
+    "n": 250,
+    "events": 33,
+    "estimate": 0.132,
+    "deff": 1.1638618397076304,
+    "G": 83,
+    "df": 82,
+    "wilson": [
+     0.09555801652382931,
+     0.1795800919048179
+    ],
+    "lower": 0.09242454663072666,
+    "upper": 0.1850658692953643,
+    "method": "CR1 logit-t, deff floored at 1",
+    "days_min": 15.0,
+    "days_max": 21.0,
+    "days_median": 19.0
+   },
+   {
+    "n": 200,
+    "events": 13,
+    "estimate": 0.065,
+    "deff": 1.291182542947249,
+    "G": 64,
+    "df": 63,
+    "wilson": [
+     0.03837635464915299,
+     0.10801907929906895
+    ],
+    "lower": 0.03497682552598638,
+    "upper": 0.11765234302140211,
+    "method": "CR1 logit-t, deff floored at 1",
+    "days_min": 22.0,
+    "days_max": 48.0,
+    "days_median": 27.0
+   }
+  ],
+  "trend_per_10_days": {
+   "log_or": -0.24440124251944165,
+   "se_cr1": 0.15700006138979716,
+   "or": 0.78317332877112,
+   "or_ci": [
+    0.5734968101143098,
+    1.0695098073451907
+   ],
+   "G": 98,
+   "method": "logistic regression of the change indicator on interval/10 days; CR1 cluster-robust (pseudo-PSU) variance; t(G-1)"
+  },
+  "complete_vs_incomplete": {
+   "n_complete": 759,
+   "n_incomplete": 220,
+   "rows": {
+    "age_years": {
+     "complete_mean": 51.11198945981555,
+     "complete_sd": 13.724940267659173,
+     "incomplete_mean": 50.58181818181818,
+     "incomplete_sd": 13.720552073095876,
+     "std_diff": 0.03863448792524885
+    },
+    "women": {
+     "complete_pct": 55.33596837944664,
+     "incomplete_pct": 55.45454545454545,
+     "complete_n": 759,
+     "incomplete_n": 220,
+     "std_diff": -0.002385471492380867
+    },
+    "non_hispanic_white": {
+     "complete_pct": 47.69433465085639,
+     "incomplete_pct": 31.363636363636367,
+     "complete_n": 759,
+     "incomplete_n": 220,
+     "std_diff": 0.3387787292040095
+    },
+    "non_hispanic_black": {
+     "complete_pct": 27.009222661396574,
+     "incomplete_pct": 37.27272727272727,
+     "complete_n": 759,
+     "incomplete_n": 220,
+     "std_diff": -0.22110584620680138
+    },
+    "mexican_american": {
+     "complete_pct": 21.870882740447957,
+     "incomplete_pct": 25.90909090909091,
+     "complete_n": 759,
+     "incomplete_n": 220,
+     "std_diff": -0.09480849815329015
+    },
+    "other": {
+     "complete_pct": 3.4255599472990776,
+     "incomplete_pct": 5.454545454545454,
+     "complete_n": 759,
+     "incomplete_n": 220,
+     "std_diff": -0.09862211267274773
+    },
+    "current_smoking": {
+     "complete_pct": 26.48221343873518,
+     "incomplete_pct": 31.363636363636367,
+     "complete_n": 759,
+     "incomplete_n": 220,
+     "std_diff": -0.10781786053496385
+    },
+    "bp_treatment": {
+     "complete_pct": 17.918313570487484,
+     "incomplete_pct": 19.090909090909093,
+     "complete_n": 759,
+     "incomplete_n": 220,
+     "std_diff": -0.030198907494544465
+    },
+    "self_reported_diabetes": {
+     "complete_pct": 8.300395256916996,
+     "incomplete_pct": 8.181818181818182,
+     "complete_n": 759,
+     "incomplete_n": 220,
+     "std_diff": 0.004312060945904256
+    },
+    "statin_use_where_known": {
+     "complete_pct": 1.3175230566534915,
+     "incomplete_pct": 1.82648401826484,
+     "complete_n": 759,
+     "incomplete_n": 219,
+     "std_diff": -0.04092505710819906
+    },
+    "statin_unknown_n": {
+     "complete": 0,
+     "incomplete": 1
+    }
+   }
+  },
+  "published_values_note": "Lacher 2005 and Selvin 2013 derived their within-person variation estimates from the same NHANES III second-examination subsample; agreement with them checks data processing, not representativeness."
+ },
+ "D_error_scenarios": {
+  "model_A_frozen_theta_sim": 0.11388801054018445,
+  "observed_theta": 0.10408432147562582,
+  "sd_observed": {
+   "sbp": 7.31832332547055,
+   "tc": 0.07749088223409487,
+   "hdl": 0.1285643378242974,
+   "scr": 0.08216841264134404,
+   "h": 0.2109444014743176
+  },
+  "modern_laboratory_cvw_pct": {
+   "tc": 5.561375729079991,
+   "hdl": 6.220136654447392,
+   "scr": 5.162363799656124,
+   "h": 2.33238075793812
+  },
+  "eflm_cvi_pct": {
+   "tc": 5.4,
+   "hdl": 5.7,
+   "scr": 4.4,
+   "h": 1.2
+  },
+  "cva_pct": {
+   "tc": 1.33,
+   "hdl": 2.49,
+   "scr": 2.7,
+   "h": 2.0
+  },
+  "hba1c_mean_used": 5.641436100131753,
+  "R_SIM": 200,
+  "zones_from_simulated_first_assessment": true,
+  "grid": [
+   {
+    "laboratory": "observed",
+    "sbp_multiplier": 0.75,
+    "sd_used": {
+     "sbp": 5.488742494102913,
+     "tc": 0.07749088223409487,
+     "hdl": 0.1285643378242974,
+     "scr": 0.08216841264134404,
+     "h": 0.2109444014743176
+    },
+    "cvw_pct_implied": {
+     "tc": 7.760735792091497,
+     "hdl": 12.909742493922865,
+     "scr": 8.2307300974241,
+     "h_sd_units": 0.2109444014743176,
+     "sbp_mm_hg": 5.488742494102913
+    },
+    "theta_sim": 0.10280632411067193,
+    "rows_for_curve": 151800,
+    "thresholds": {
+     "3.0": {
+      "peak": 0.5317552741608275,
+      "0.25": [
+       2.61069815387685,
+       3.445300046214498
+      ],
+      "0.1": [
+       2.2952717893630505,
+       3.8781111837002826
+      ]
+     },
+     "5.0": {
+      "peak": 0.5042162790656687,
+      "0.25": [
+       4.417402230369998,
+       5.6548889619993785
+      ],
+      "0.1": [
+       3.892413033305574,
+       6.401757891806765
+      ]
+     },
+     "10.0": {
+      "peak": 0.4354419879947101,
+      "0.25": [
+       9.151923244300757,
+       10.917221102053794
+      ],
+      "0.1": [
+       8.126931005761111,
+       12.247219924327162
+      ]
+     }
+    },
+    "share_simulated_first_assessment_in_union_zone": {
+     "0.25": 0.16772068511198945,
+     "0.1": 0.35028985507246374
+    },
+    "share_observed_first_visit_risk_in_union_zone": {
+     "0.25": 0.152832674571805,
+     "0.1": 0.3425559947299078
+    }
+   },
+   {
+    "laboratory": "observed",
+    "sbp_multiplier": 1.0,
+    "sd_used": {
+     "sbp": 7.31832332547055,
+     "tc": 0.07749088223409487,
+     "hdl": 0.1285643378242974,
+     "scr": 0.08216841264134404,
+     "h": 0.2109444014743176
+    },
+    "cvw_pct_implied": {
+     "tc": 7.760735792091497,
+     "hdl": 12.909742493922865,
+     "scr": 8.2307300974241,
+     "h_sd_units": 0.2109444014743176,
+     "sbp_mm_hg": 7.31832332547055
+    },
+    "theta_sim": 0.1155270092226614,
+    "rows_for_curve": 151800,
+    "thresholds": {
+     "3.0": {
+      "peak": 0.553099736108444,
+      "0.25": [
+       2.5503662536428484,
+       3.5260366300109434
+      ],
+      "0.1": [
+       2.2137443157368497,
+       3.8781111837002826
+      ]
+     },
+     "5.0": {
+      "peak": 0.5221747195778095,
+      "0.25": [
+       4.329578512917078,
+       5.767975255878758
+      ],
+      "0.1": [
+       3.8781111837002826,
+       6.602359612797557
+      ]
+     },
+     "10.0": {
+      "peak": 0.4443421947706744,
+      "0.25": [
+       9.044409183693974,
+       11.044294674090779
+      ],
+      "0.1": [
+       7.934904431869367,
+       12.529403034489853
+      ]
+     }
+    },
+    "share_simulated_first_assessment_in_union_zone": {
+     "0.25": 0.19412384716732542,
+     "0.1": 0.38476943346508563
+    },
+    "share_observed_first_visit_risk_in_union_zone": {
+     "0.25": 0.18181818181818182,
+     "0.1": 0.38735177865612647
+    }
+   },
+   {
+    "laboratory": "observed",
+    "sbp_multiplier": 1.25,
+    "sd_used": {
+     "sbp": 9.147904156838187,
+     "tc": 0.07749088223409487,
+     "hdl": 0.1285643378242974,
+     "scr": 0.08216841264134404,
+     "h": 0.2109444014743176
+    },
+    "cvw_pct_implied": {
+     "tc": 7.760735792091497,
+     "hdl": 12.909742493922865,
+     "scr": 8.2307300974241,
+     "h_sd_units": 0.2109444014743176,
+     "sbp_mm_hg": 9.147904156838187
+    },
+    "theta_sim": 0.12490777338603426,
+    "rows_for_curve": 151800,
+    "thresholds": {
+     "3.0": {
+      "peak": 0.5432118942710673,
+      "0.25": [
+       2.5109015481108683,
+       3.5808705124712112
+      ],
+      "0.1": [
+       2.1392323304000094,
+       3.8781111837002826
+      ]
+     },
+     "5.0": {
+      "peak": 0.5168980888660649,
+      "0.25": [
+       4.2597065374928915,
+       5.861072813476188
+      ],
+      "0.1": [
+       3.8781111837002826,
+       6.827850265928416
+      ]
+     },
+     "10.0": {
+      "peak": 0.43607593147443663,
+      "0.25": [
+       8.96248144821631,
+       11.14292336948188
+      ],
+      "0.1": [
+       7.732750883636849,
+       12.839503498371387
+      ]
+     }
+    },
+    "share_simulated_first_assessment_in_union_zone": {
+     "0.25": 0.21654150197628458,
+     "0.1": 0.4199934123847167
+    },
+    "share_observed_first_visit_risk_in_union_zone": {
+     "0.25": 0.21212121212121213,
+     "0.1": 0.4150197628458498
+    }
+   },
+   {
+    "laboratory": "observed",
+    "sbp_multiplier": 1.5,
+    "sd_used": {
+     "sbp": 10.977484988205825,
+     "tc": 0.07749088223409487,
+     "hdl": 0.1285643378242974,
+     "scr": 0.08216841264134404,
+     "h": 0.2109444014743176
+    },
+    "cvw_pct_implied": {
+     "tc": 7.760735792091497,
+     "hdl": 12.909742493922865,
+     "scr": 8.2307300974241,
+     "h_sd_units": 0.2109444014743176,
+     "sbp_mm_hg": 10.977484988205825
+    },
+    "theta_sim": 0.13828722002635047,
+    "rows_for_curve": 151800,
+    "thresholds": {
+     "3.0": {
+      "peak": 0.5475956555507083,
+      "0.25": [
+       2.455211604593813,
+       3.66113472304131
+      ],
+      "0.1": [
+       2.057077317669851,
+       3.8781111837002826
+      ]
+     },
+     "5.0": {
+      "peak": 0.5251647133206183,
+      "0.25": [
+       4.166887235712932,
+       5.989272311949567
+      ],
+      "0.1": [
+       3.8781111837002826,
+       7.093340253184823
+      ]
+     },
+     "10.0": {
+      "peak": 0.4477394987979867,
+      "0.25": [
+       8.80063081862185,
+       11.342493176199902
+      ],
+      "0.1": [
+       7.465946021449903,
+       13.270798968755699
+      ]
+     }
+    },
+    "share_simulated_first_assessment_in_union_zone": {
+     "0.25": 0.24915678524374177,
+     "0.1": 0.4631752305665349
+    },
+    "share_observed_first_visit_risk_in_union_zone": {
+     "0.25": 0.23978919631093545,
+     "0.1": 0.4519104084321476
+    }
+   },
+   {
+    "laboratory": "modern",
+    "sbp_multiplier": 0.75,
+    "sd_used": {
+     "tc": 0.05557082737431854,
+     "hdl": 0.062141327877194445,
+     "scr": 0.05158929330839444,
+     "h": 0.1315797700708477,
+     "sbp": 5.488742494102913
+    },
+    "cvw_pct_implied": {
+     "tc": 5.561375729080004,
+     "hdl": 6.220136654447442,
+     "scr": 5.162363799656043,
+     "h_sd_units": 0.1315797700708477,
+     "sbp_mm_hg": 5.488742494102913
+    },
+    "theta_sim": 0.07334650856389988,
+    "rows_for_curve": 151800,
+    "thresholds": {
+     "3.0": {
+      "peak": 0.5086368763262686,
+      "0.25": [
+       2.719637117343017,
+       3.3082821318409303
+      ],
+      "0.1": [
+       2.4672147688041566,
+       3.643540047320068
+      ]
+     },
+     "5.0": {
+      "peak": 0.46930874218261603,
+      "0.25": [
+       4.602560413223445,
+       5.4298058325069
+      ],
+      "0.1": [
+       4.182889582845146,
+       5.966789687058933
+      ]
+     },
+     "10.0": {
+      "peak": 0.3934001860987539,
+      "0.25": [
+       9.481389636084165,
+       10.543672981030829
+      ],
+      "0.1": [
+       8.66513901532108,
+       11.514571409884727
+      ]
+     }
+    },
+    "share_simulated_first_assessment_in_union_zone": {
+     "0.25": 0.10908432147562583,
+     "0.1": 0.24818840579710144
+    },
+    "share_observed_first_visit_risk_in_union_zone": {
+     "0.25": 0.11067193675889328,
+     "0.1": 0.24242424242424243
+    }
+   },
+   {
+    "laboratory": "modern",
+    "sbp_multiplier": 1.0,
+    "sd_used": {
+     "tc": 0.05557082737431854,
+     "hdl": 0.062141327877194445,
+     "scr": 0.05158929330839444,
+     "h": 0.1315797700708477,
+     "sbp": 7.31832332547055
+    },
+    "cvw_pct_implied": {
+     "tc": 5.561375729080004,
+     "hdl": 6.220136654447442,
+     "scr": 5.162363799656043,
+     "h_sd_units": 0.1315797700708477,
+     "sbp_mm_hg": 7.31832332547055
+    },
+    "theta_sim": 0.08722002635046114,
+    "rows_for_curve": 151800,
+    "thresholds": {
+     "3.0": {
+      "peak": 0.5316884891926129,
+      "0.25": [
+       2.659443865651522,
+       3.382650705621866
+      ],
+      "0.1": [
+       2.382052881363945,
+       3.772059241132955
+      ]
+     },
+     "5.0": {
+      "peak": 0.49253445816308034,
+      "0.25": [
+       4.511229251227248,
+       5.538655170200616
+      ],
+      "0.1": [
+       4.048723114436794,
+       6.160436142790041
+      ]
+     },
+     "10.0": {
+      "peak": 0.4042528698664148,
+      "0.25": [
+       9.370404317494375,
+       10.666919188426851
+      ],
+      "0.1": [
+       8.461566678485385,
+       11.782140352841477
+      ]
+     }
+    },
+    "share_simulated_first_assessment_in_union_zone": {
+     "0.25": 0.13585638998682478,
+     "0.1": 0.2953425559947299
+    },
+    "share_observed_first_visit_risk_in_union_zone": {
+     "0.25": 0.13043478260869565,
+     "0.1": 0.28326745718050067
+    }
+   },
+   {
+    "laboratory": "modern",
+    "sbp_multiplier": 1.25,
+    "sd_used": {
+     "tc": 0.05557082737431854,
+     "hdl": 0.062141327877194445,
+     "scr": 0.05158929330839444,
+     "h": 0.1315797700708477,
+     "sbp": 9.147904156838187
+    },
+    "cvw_pct_implied": {
+     "tc": 5.561375729080004,
+     "hdl": 6.220136654447442,
+     "scr": 5.162363799656043,
+     "h_sd_units": 0.1315797700708477,
+     "sbp_mm_hg": 9.147904156838187
+    },
+    "theta_sim": 0.10081686429512515,
+    "rows_for_curve": 151800,
+    "thresholds": {
+     "3.0": {
+      "peak": 0.5358449073714884,
+      "0.25": [
+       2.61069815387685,
+       3.445300046214498
+      ],
+      "0.1": [
+       2.3020091936817324,
+       3.8781111837002826
+      ]
+     },
+     "5.0": {
+      "peak": 0.5048300967468126,
+      "0.25": [
+       4.425854468663595,
+       5.644228198067626
+      ],
+      "0.1": [
+       3.911160736019978,
+       6.3718634570732045
+      ]
+     },
+     "10.0": {
+      "peak": 0.41937821758531363,
+      "0.25": [
+       9.235407026333414,
+       10.820346881351064
+      ],
+      "0.1": [
+       8.216979931321786,
+       12.118835776366675
+      ]
+     }
+    },
+    "share_simulated_first_assessment_in_union_zone": {
+     "0.25": 0.16264822134387352,
+     "0.1": 0.344631093544137
+    },
+    "share_observed_first_visit_risk_in_union_zone": {
+     "0.25": 0.14624505928853754,
+     "0.1": 0.3346508563899868
+    }
+   },
+   {
+    "laboratory": "modern",
+    "sbp_multiplier": 1.5,
+    "sd_used": {
+     "tc": 0.05557082737431854,
+     "hdl": 0.062141327877194445,
+     "scr": 0.05158929330839444,
+     "h": 0.1315797700708477,
+     "sbp": 10.977484988205825
+    },
+    "cvw_pct_implied": {
+     "tc": 5.561375729080004,
+     "hdl": 6.220136654447442,
+     "scr": 5.162363799656043,
+     "h_sd_units": 0.1315797700708477,
+     "sbp_mm_hg": 10.977484988205825
+    },
+    "theta_sim": 0.11673254281949934,
+    "rows_for_curve": 151800,
+    "thresholds": {
+     "3.0": {
+      "peak": 0.534008353958273,
+      "0.25": [
+       2.5503662536428484,
+       3.5260366300109434
+      ],
+      "0.1": [
+       2.1986417323818834,
+       3.8781111837002826
+      ]
+     },
+     "5.0": {
+      "peak": 0.5128683614598638,
+      "0.25": [
+       4.313040243310155,
+       5.789754880596662
+      ],
+      "0.1": [
+       3.8781111837002826,
+       6.676743467304432
+      ]
+     },
+     "10.0": {
+      "peak": 0.4232676682021233,
+      "0.25": [
+       9.085625478756876,
+       10.995267619277401
+      ],
+      "0.1": [
+       7.913016238109058,
+       12.56231864171817
+      ]
+     }
+    },
+    "share_simulated_first_assessment_in_union_zone": {
+     "0.25": 0.19636363636363635,
+     "0.1": 0.3968050065876153
+    },
+    "share_observed_first_visit_risk_in_union_zone": {
+     "0.25": 0.17786561264822134,
+     "0.1": 0.3926218708827404
+    }
+   }
+  ],
+  "cva_provenance": "frozen NHANES III QC transcription: TC 1.33 (Q17 pool; Q20 pool 1.25), HDL 2.49 (AQ13 pool), creatinine 2.7 (1.7 mg/dL pool), HbA1c 2.0 (documentation inter-assay note; manual pools 1.57-1.73)",
+  "note": "model-based; independent errors around each participant's two-visit mean; modern laboratory level = sqrt(EFLM CVI^2 + observed NHANES III CVa^2) (research-protocol biological variation plus analytical imprecision; routine pre-analytical variation not included); SBP multipliers span plausible device and protocol effects and are not estimates of current practice; zones fitted to the simulated first assessment with the prespecified spline form (no intervals: scenario values)"
+ },
+ "B_stakes": {
+  "ascvd10": {
+   "n": 749,
+   "sigma": 0.16380333531234925,
+   "delta": -0.015654616222435275,
+   "thresholds": {
+    "5": {
+     "zone_risk_pct": [
+      4.280144514565433,
+      5.833545865979393
+     ],
+     "share_of_single_regret_from_zone": 0.8577246025796738,
+     "fraction_in_zone": 0.069675,
+     "regret_per_1000_in_zone": 1.7654979926363323,
+     "regret_per_1000_outside_zone": 0.02193266745783039,
+     "disagreement_in_zone": 0.30620739146035164,
+     "disagreement_outside_zone": 0.0061752613334049924,
+     "regret_single_per_1000_mc": 0.14341558148964254,
+     "ci_uniform_start": {
+      "share_of_single_regret_from_zone": [
+       0.80281679911921,
+       0.9143818102156539
+      ],
+      "fraction_in_zone": [
+       0.05679875,
+       0.0844025
+      ],
+      "regret_per_1000_in_zone": [
+       0.940312816524755,
+       2.443242315957903
+      ],
+      "regret_per_1000_outside_zone": [
+       0.008637974468791276,
+       0.03939951036045011
+      ],
+      "disagreement_in_zone": [
+       0.23934343244787168,
+       0.37811005714453627
+      ],
+      "disagreement_outside_zone": [
+       0.0023123859509887436,
+       0.012896480201608463
+      ],
+      "regret_single_per_1000_mc": [
+       0.07562494364064026,
+       0.21096094167684493
+      ]
+     },
+     "undefined_replicates": {},
+     "e11_regret_single_per_1000": 0.14499229801469818,
+     "e11_achievable_nb_per_1000": 16.73169809082472,
+     "e11_loss_fraction_single": 0.008665725213761096,
+     "exchange_rate_sensitivity": [
+      {
+       "decision_threshold": 0.05,
+       "exchange_rate": 0.03,
+       "nb_usual_rule_per_1000": 23.04528543703531,
+       "nb_single_visit_per_1000": 23.190200992556843,
+       "loss_per_1000": -0.14491555552153396,
+       "loss_fraction_of_usual_rule_nb": -0.006288295101289785,
+       "achievable_optimal_at_exchange_rate_per_1000": 24.351537339379572,
+       "loss_fraction_of_achievable_at_exchange_rate": -0.005950981800528332,
+       "ci_uniform_start": {
+        "loss_per_1000": [
+         -0.5077297115241309,
+         0.8005325393463321
+        ],
+        "loss_fraction_of_usual_rule_nb": [
+         -0.02242958925853363,
+         0.033309439706735
+        ],
+        "loss_fraction_of_achievable_at_exchange_rate": [
+         -0.020886189435536617,
+         0.032691071902341995
+        ]
+       },
+       "undefined_replicates": {},
+       "replicates_with_nonpositive_rule_nb": 0
+      },
+      {
+       "decision_threshold": 0.05,
+       "exchange_rate": 0.075,
+       "nb_usual_rule_per_1000": 8.45577954241355,
+       "nb_single_visit_per_1000": 7.930772895844602,
+       "loss_per_1000": 0.5250066465689475,
+       "loss_fraction_of_usual_rule_nb": 0.062088497451424064,
+       "achievable_optimal_at_exchange_rate_per_1000": 9.494244959949825,
+       "loss_fraction_of_achievable_at_exchange_rate": 0.05529735632307953,
+       "ci_uniform_start": {
+        "loss_per_1000": [
+         -0.7529298460657171,
+         0.9022352851966862
+        ],
+        "loss_fraction_of_usual_rule_nb": [
+         -0.10889106921823029,
+         0.10615364179807453
+        ],
+        "loss_fraction_of_achievable_at_exchange_rate": [
+         -0.08159003714182791,
+         0.09681883106268684
+        ]
+       },
+       "undefined_replicates": {},
+       "replicates_with_nonpositive_rule_nb": 0
+      }
+     ],
+     "exchange_rate_equal_to_threshold_check": {
+      "decision_threshold": 0.05,
+      "exchange_rate": 0.05,
+      "nb_usual_rule_per_1000": 16.73169809082472,
+      "nb_single_visit_per_1000": 16.586705792810026,
+      "loss_per_1000": 0.1449922980146963,
+      "loss_fraction_of_usual_rule_nb": 0.008665725213760982,
+      "achievable_optimal_at_exchange_rate_per_1000": 16.73169809082472,
+      "loss_fraction_of_achievable_at_exchange_rate": 0.008665725213760982
+     }
+    },
+    "3": {
+     "zone_risk_pct": [
+      2.6854539566072813,
+      3.3501203501255987
+     ],
+     "share_of_single_regret_from_zone": 0.723320829490746,
+     "fraction_in_zone": 0.045235,
+     "regret_per_1000_in_zone": 1.6577830250471586,
+     "regret_per_1000_outside_zone": 0.03004355261291374,
+     "disagreement_in_zone": 0.3390074057698685,
+     "disagreement_outside_zone": 0.0064518494079695,
+     "regret_single_per_1000_mc": 0.1036743476484768,
+     "ci_uniform_start": {
+      "share_of_single_regret_from_zone": [
+       0.643935871545097,
+       0.7961449369615223
+      ],
+      "fraction_in_zone": [
+       0.03584875,
+       0.05690125
+      ],
+      "regret_per_1000_in_zone": [
+       1.216469504050946,
+       1.9166818669603374
+      ],
+      "regret_per_1000_outside_zone": [
+       0.016940131002325363,
+       0.04809576080241631
+      ],
+      "disagreement_in_zone": [
+       0.28705166718684977,
+       0.3886625570445767
+      ],
+      "disagreement_outside_zone": [
+       0.003550175664226797,
+       0.01189414241996614
+      ],
+      "regret_single_per_1000_mc": [
+       0.07079941745010326,
+       0.14016908489013294
+      ]
+     },
+     "undefined_replicates": {},
+     "e11_regret_single_per_1000": 0.10608603932236674,
+     "e11_achievable_nb_per_1000": 24.35153733937957,
+     "e11_loss_fraction_single": 0.00435644114964405,
+     "exchange_rate_sensitivity": [
+      {
+       "decision_threshold": 0.03,
+       "exchange_rate": 0.02,
+       "nb_usual_rule_per_1000": 28.546837843061432,
+       "nb_single_visit_per_1000": 28.501293161011574,
+       "loss_per_1000": 0.04554468204985562,
+       "loss_fraction_of_usual_rule_nb": 0.0015954370252930017,
+       "achievable_optimal_at_exchange_rate_per_1000": 28.99888142869117,
+       "loss_fraction_of_achievable_at_exchange_rate": 0.0015705668565820687,
+       "ci_uniform_start": {
+        "loss_per_1000": [
+         -0.08552922922189579,
+         0.16586971513502008
+        ],
+        "loss_fraction_of_usual_rule_nb": [
+         -0.0029738782609102996,
+         0.005942345256443458
+        ],
+        "loss_fraction_of_achievable_at_exchange_rate": [
+         -0.002918746408846907,
+         0.005894165159335009
+        ]
+       },
+       "undefined_replicates": {},
+       "replicates_with_nonpositive_rule_nb": 0
+      },
+      {
+       "decision_threshold": 0.03,
+       "exchange_rate": 0.05,
+       "nb_usual_rule_per_1000": 15.695969984414887,
+       "nb_single_visit_per_1000": 15.464977565877657,
+       "loss_per_1000": 0.23099241853723024,
+       "loss_fraction_of_usual_rule_nb": 0.014716670506288634,
+       "achievable_optimal_at_exchange_rate_per_1000": 16.73169809082472,
+       "loss_fraction_of_achievable_at_exchange_rate": 0.01380567694225257,
+       "ci_uniform_start": {
+        "loss_per_1000": [
+         0.012723895739901125,
+         0.45737166435473137
+        ],
+        "loss_fraction_of_usual_rule_nb": [
+         0.000794400354454521,
+         0.030317858827644095
+        ],
+        "loss_fraction_of_achievable_at_exchange_rate": [
+         0.000740651234809971,
+         0.028411483099905464
+        ]
+       },
+       "undefined_replicates": {},
+       "replicates_with_nonpositive_rule_nb": 0
+      }
+     ],
+     "exchange_rate_equal_to_threshold_check": {
+      "decision_threshold": 0.03,
+      "exchange_rate": 0.03,
+      "nb_usual_rule_per_1000": 24.351537339379572,
+      "nb_single_visit_per_1000": 24.245451300057205,
+      "loss_per_1000": 0.10608603932236657,
+      "loss_fraction_of_usual_rule_nb": 0.004356441149644043,
+      "achievable_optimal_at_exchange_rate_per_1000": 24.351537339379572,
+      "loss_fraction_of_achievable_at_exchange_rate": 0.004356441149644043
+     }
+    },
+    "10": {
+     "zone_risk_pct": [
+      9.110436332491656,
+      10.965943029646716
+     ],
+     "share_of_single_regret_from_zone": 0.6517754432672281,
+     "fraction_in_zone": 0.055245,
+     "regret_per_1000_in_zone": 4.370139699275198,
+     "regret_per_1000_outside_zone": 0.1365307574469565,
+     "disagreement_in_zone": 0.3741515069237035,
+     "disagreement_outside_zone": 0.014448190271551883,
+     "regret_single_per_1000_mc": 0.3704164834382577,
+     "ci_uniform_start": {
+      "share_of_single_regret_from_zone": [
+       0.605414198480755,
+       0.7500968972916783
+      ],
+      "fraction_in_zone": [
+       0.04364875,
+       0.068
+      ],
+      "regret_per_1000_in_zone": [
+       2.3242784367756775,
+       6.0649447217671275
+      ],
+      "regret_per_1000_outside_zone": [
+       0.05526520938463336,
+       0.20193367362398762
+      ],
+      "disagreement_in_zone": [
+       0.3304774305555555,
+       0.4316053342228209
+      ],
+      "disagreement_outside_zone": [
+       0.007792504637329757,
+       0.02565932836749089
+      ],
+      "regret_single_per_1000_mc": [
+       0.18737818327312822,
+       0.5209078201022096
+      ]
+     },
+     "undefined_replicates": {},
+     "e11_regret_single_per_1000": 0.37651421189119433,
+     "e11_achievable_nb_per_1000": 4.897631937927765,
+     "e11_loss_fraction_single": 0.07687678793815222,
+     "exchange_rate_sensitivity": [
+      {
+       "decision_threshold": 0.1,
+       "exchange_rate": 0.075,
+       "nb_usual_rule_per_1000": 8.933860009662098,
+       "nb_single_visit_per_1000": 8.105445383678424,
+       "loss_per_1000": 0.8284146259836742,
+       "loss_fraction_of_usual_rule_nb": 0.09272751364894143,
+       "achievable_optimal_at_exchange_rate_per_1000": 9.494244959949825,
+       "loss_fraction_of_achievable_at_exchange_rate": 0.08725439774076064,
+       "ci_uniform_start": {
+        "loss_per_1000": [
+         -0.6057446856606701,
+         1.3601159740832123
+        ],
+        "loss_fraction_of_usual_rule_nb": [
+         -0.08755613401802462,
+         0.14439946632325384
+        ],
+        "loss_fraction_of_achievable_at_exchange_rate": [
+         -0.0674718664544743,
+         0.14120208202843318
+        ]
+       },
+       "undefined_replicates": {},
+       "replicates_with_nonpositive_rule_nb": 0
+      },
+      {
+       "decision_threshold": 0.1,
+       "exchange_rate": 0.15,
+       "nb_usual_rule_per_1000": -3.887099747611659,
+       "nb_single_visit_per_1000": -3.2800659994192216,
+       "loss_per_1000": -0.6070337481924376,
+       "loss_fraction_of_usual_rule_nb": null,
+       "achievable_optimal_at_exchange_rate_per_1000": 0.9188103611844844,
+       "loss_fraction_of_achievable_at_exchange_rate": -0.6606735990763969,
+       "ci_uniform_start": {
+        "loss_per_1000": [
+         -2.040150913940078,
+         2.2386518321137285
+        ],
+        "loss_fraction_of_achievable_at_exchange_rate": [
+         -2.5852809101354683,
+         2.690446887123523
+        ]
+       },
+       "undefined_replicates": {
+        "loss_fraction_of_usual_rule_nb": 999
+       },
+       "replicates_with_nonpositive_rule_nb": 999
+      }
+     ],
+     "exchange_rate_equal_to_threshold_check": {
+      "decision_threshold": 0.1,
+      "exchange_rate": 0.1,
+      "nb_usual_rule_per_1000": 4.897631937927765,
+      "nb_single_visit_per_1000": 4.52111772603657,
+      "loss_per_1000": 0.3765142118911952,
+      "loss_fraction_of_usual_rule_nb": 0.0768767879381524,
+      "achievable_optimal_at_exchange_rate_per_1000": 4.897631937927765,
+      "loss_fraction_of_achievable_at_exchange_rate": 0.0768767879381524
+     }
+    }
+   },
+   "ci_rule": "percentile intervals over the 1,000 uniform-start replicates; a ratio interval is reported only when the point and every replicate are defined (audit item 2)"
+  },
+  "cvd10_bp": {
+   "n": 623,
+   "sigma": 0.15401842842000904,
+   "delta": -0.021094468350714386,
+   "thresholds": {
+    "7.5": {
+     "zone_risk_pct": [
+      7.254039754883005,
+      7.753602733316124
+     ],
+     "share_of_single_regret_from_zone": 0.31507385783933556,
+     "fraction_in_zone": 0.01514,
+     "regret_per_1000_in_zone": 3.672526560815143,
+     "regret_per_1000_outside_zone": 0.12272914074527871,
+     "disagreement_in_zone": 0.45079260237780716,
+     "disagreement_outside_zone": 0.020348069776414922,
+     "regret_single_per_1000_mc": 0.17647307368513643,
+     "ci_uniform_start": {
+      "share_of_single_regret_from_zone": [
+       0.25373436097081564,
+       0.41413777626875853
+      ],
+      "fraction_in_zone": [
+       0.01115,
+       0.01885
+      ],
+      "regret_per_1000_in_zone": [
+       1.8584317331702598,
+       5.869703216559646
+      ],
+      "regret_per_1000_outside_zone": [
+       0.053883327019606346,
+       0.1938970634236784
+      ],
+      "disagreement_in_zone": [
+       0.3938458904109589,
+       0.5148166673079143
+      ],
+      "disagreement_outside_zone": [
+       0.011319142293488392,
+       0.0312602577098304
+      ],
+      "regret_single_per_1000_mc": [
+       0.08566706440191639,
+       0.26999528773706555
+      ]
+     },
+     "undefined_replicates": {},
+     "e11_regret_single_per_1000": 0.1767812405953962,
+     "e11_achievable_nb_per_1000": 19.965420805345268,
+     "e11_loss_fraction_single": 0.008854370880480878,
+     "exchange_rate_sensitivity": [
+      {
+       "decision_threshold": 0.075,
+       "exchange_rate": 0.05,
+       "nb_usual_rule_per_1000": 26.270556011130328,
+       "nb_single_visit_per_1000": 26.52721602850579,
+       "loss_per_1000": -0.2566600173754645,
+       "loss_fraction_of_usual_rule_nb": -0.009769873818685932,
+       "achievable_optimal_at_exchange_rate_per_1000": 27.66830218806908,
+       "loss_fraction_of_achievable_at_exchange_rate": -0.009276319726121088,
+       "ci_uniform_start": {
+        "loss_per_1000": [
+         -0.6279125040329548,
+         0.960181323491074
+        ],
+        "loss_fraction_of_usual_rule_nb": [
+         -0.02541375099901901,
+         0.03343541386554264
+        ],
+        "loss_fraction_of_achievable_at_exchange_rate": [
+         -0.02360386398694498,
+         0.03316044757324472
+        ]
+       },
+       "undefined_replicates": {},
+       "replicates_with_nonpositive_rule_nb": 0
+      },
+      {
+       "decision_threshold": 0.075,
+       "exchange_rate": 0.1,
+       "nb_usual_rule_per_1000": 13.310000310349924,
+       "nb_single_visit_per_1000": 12.675697741896402,
+       "loss_per_1000": 0.6343025684535218,
+       "loss_fraction_of_usual_rule_nb": 0.04765608968170234,
+       "achievable_optimal_at_exchange_rate_per_1000": 13.892272405023183,
+       "loss_fraction_of_achievable_at_exchange_rate": 0.04565866187767597,
+       "ci_uniform_start": {
+        "loss_per_1000": [
+         -0.767353694073928,
+         0.9642821684330338
+        ],
+        "loss_fraction_of_usual_rule_nb": [
+         -0.06361265952842322,
+         0.0730192265422409
+        ],
+        "loss_fraction_of_achievable_at_exchange_rate": [
+         -0.05538406408015945,
+         0.07204102444364918
+        ]
+       },
+       "undefined_replicates": {},
+       "replicates_with_nonpositive_rule_nb": 0
+      }
+     ],
+     "exchange_rate_equal_to_threshold_check": {
+      "decision_threshold": 0.075,
+      "exchange_rate": 0.075,
+      "nb_usual_rule_per_1000": 19.965420805345268,
+      "nb_single_visit_per_1000": 19.788639564749868,
+      "loss_per_1000": 0.17678124059539863,
+      "loss_fraction_of_usual_rule_nb": 0.008854370880481,
+      "achievable_optimal_at_exchange_rate_per_1000": 19.965420805345268,
+      "loss_fraction_of_achievable_at_exchange_rate": 0.008854370880481
+     }
+    }
+   },
+   "ci_rule": "percentile intervals over the 1,000 uniform-start replicates; a ratio interval is reported only when the point and every replicate are defined (audit item 2)"
+  },
+  "ascvd30": {
+   "n": 499,
+   "sigma": 0.17476441230348297,
+   "delta": -0.012944902252221363,
+   "thresholds": {
+    "10": {
+     "zone_risk_pct": [
+      8.824738957115386,
+      11.31236022975206
+     ],
+     "share_of_single_regret_from_zone": 0.7825313243312386,
+     "fraction_in_zone": 0.11055,
+     "regret_per_1000_in_zone": 3.298371071938812,
+     "regret_per_1000_outside_zone": 0.11392832147948363,
+     "disagreement_in_zone": 0.3770239710538218,
+     "disagreement_outside_zone": 0.025459553656754175,
+     "regret_single_per_1000_mc": 0.4659684675427624,
+     "ci_uniform_start": {
+      "share_of_single_regret_from_zone": [
+       0.6913615544961356,
+       0.8437170836218459
+      ],
+      "fraction_in_zone": [
+       0.09369625000000001,
+       0.13115249999999998
+      ],
+      "regret_per_1000_in_zone": [
+       1.9798604804421884,
+       5.8791050019442155
+      ],
+      "regret_per_1000_outside_zone": [
+       0.056707241636336926,
+       0.29812737272837847
+      ],
+      "disagreement_in_zone": [
+       0.3132259207643884,
+       0.4198516512713006
+      ],
+      "disagreement_outside_zone": [
+       0.011453846317821195,
+       0.035572393879840396
+      ],
+      "regret_single_per_1000_mc": [
+       0.2698940997336529,
+       0.9069798340451061
+      ]
+     },
+     "undefined_replicates": {},
+     "e11_regret_single_per_1000": 0.47821703571386354,
+     "e11_achievable_nb_per_1000": 30.55645207286555,
+     "e11_loss_fraction_single": 0.01565028016254954,
+     "exchange_rate_sensitivity": [
+      {
+       "decision_threshold": 0.1,
+       "exchange_rate": 0.075,
+       "nb_usual_rule_per_1000": 38.801560774218046,
+       "nb_single_visit_per_1000": 39.35592576802622,
+       "loss_per_1000": -0.5543649938081694,
+       "loss_fraction_of_usual_rule_nb": -0.014287182854162937,
+       "achievable_optimal_at_exchange_rate_per_1000": 41.55136763045517,
+       "loss_fraction_of_achievable_at_exchange_rate": -0.013341678635912006,
+       "ci_uniform_start": {
+        "loss_per_1000": [
+         -1.1394851567458926,
+         2.3479054011829756
+        ],
+        "loss_fraction_of_usual_rule_nb": [
+         -0.0293959579262575,
+         0.0580140162296413
+        ],
+        "loss_fraction_of_achievable_at_exchange_rate": [
+         -0.02717496777872954,
+         0.05783526795320001
+        ]
+       },
+       "undefined_replicates": {},
+       "replicates_with_nonpositive_rule_nb": 0
+      },
+      {
+       "decision_threshold": 0.1,
+       "exchange_rate": 0.15,
+       "nb_usual_rule_per_1000": 12.611215487568952,
+       "nb_single_visit_per_1000": 9.88561403466005,
+       "loss_per_1000": 2.7256014529089025,
+       "loss_fraction_of_usual_rule_nb": 0.216125198684898,
+       "achievable_optimal_at_exchange_rate_per_1000": 16.634401009638804,
+       "loss_fraction_of_achievable_at_exchange_rate": 0.1638532972320165,
+       "ci_uniform_start": {
+        "loss_per_1000": [
+         -3.5543026953766974,
+         3.6831634395322594
+        ],
+        "loss_fraction_of_usual_rule_nb": [
+         -0.771183623429691,
+         0.2954822314998576
+        ],
+        "loss_fraction_of_achievable_at_exchange_rate": [
+         -0.2249409737514394,
+         0.22317488350502027
+        ]
+       },
+       "undefined_replicates": {},
+       "replicates_with_nonpositive_rule_nb": 0
+      }
+     ],
+     "exchange_rate_equal_to_threshold_check": {
+      "decision_threshold": 0.1,
+      "exchange_rate": 0.1,
+      "nb_usual_rule_per_1000": 30.55645207286555,
+      "nb_single_visit_per_1000": 30.07823503715169,
+      "loss_per_1000": 0.478217035713862,
+      "loss_fraction_of_usual_rule_nb": 0.01565028016254949,
+      "achievable_optimal_at_exchange_rate_per_1000": 30.55645207286555,
+      "loss_fraction_of_achievable_at_exchange_rate": 0.01565028016254949
+     }
+    }
+   },
+   "ci_rule": "percentile intervals over the 1,000 uniform-start replicates; a ratio interval is reported only when the point and every replicate are defined (audit item 2)"
+  }
+ }
+}

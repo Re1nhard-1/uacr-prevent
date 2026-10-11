@@ -1,0 +1,8 @@
+{
+  "frozen_utc": "2026-10-09T01:14:06.470690+00:00",
+  "protocol_sha256": "75f76f1d52907c2c565393fe6d9d8bf277898da24f0fe93ea90996cf795c2089",
+  "prefreeze_facts_sha256": "2ec8f2423480f3e789c518fd39f3100c67bb9a83b696bdc9d77502a9f97594d6",
+  "variable_map_sha256": "712e64a33490f2510c0514c2e797c5eef7c946f097dd00c8a9d333774bd06c81",
+  "count_gate_results_sha256": "0cca4fbdbbc9340115a38a4e3a101fa6bec86f67201076861d6af514d617994c",
+  "note": "Frozen before any PREVENT, PCE or other risk value was computed in NHANES III data."
+}

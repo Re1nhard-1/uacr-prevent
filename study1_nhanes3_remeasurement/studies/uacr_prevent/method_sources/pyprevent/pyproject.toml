@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyprevent"
+version = "0.2.0"
+description = "Python implementation of the AHA PREVENT cardiovascular risk equations (10- and 30-year horizons)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Ryan King" }]
+keywords = [
+    "PREVENT",
+    "AHA",
+    "cardiovascular",
+    "ASCVD",
+    "heart-failure",
+    "risk-prediction",
+    "epidemiology",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Healthcare Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+]
+
+[project.urls]
+Homepage = "https://github.com/kingrc15/pyprevent"
+Repository = "https://github.com/kingrc15/pyprevent"
+Issues = "https://github.com/kingrc15/pyprevent/issues"
+
+[tool.setuptools]
+packages = ["prevent"]
+
+[tool.setuptools.package-data]
+prevent = ["data/*.csv", "data/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "r_parity: requires Rscript and AHAprevent (see scripts/r-env/)",
+    "aha_web: live AHA PreventCalculate API (network)",
+]
