@@ -18,3 +18,5 @@ Raw downloads, cleaning code, plotting code and figures are not included. This p
 ## Version 3.0.0
 
 `study1_nhanes3_remeasurement/` adds Study 1 (NHANES III remeasurement) and the post hoc analyses E1–E12 of *Reproducibility of PREVENT Risk Categories and Treatment Recommendations on Remeasurement: Sources, Threshold Zones, and Expected Net Benefit*: scripts, protocols, inputs and a runner. See its README. The files above are unchanged.
+
+Archived: https://doi.org/10.5281/zenodo.23299698 (version 3.0.0).
